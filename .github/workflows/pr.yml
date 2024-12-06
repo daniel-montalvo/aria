@@ -1,0 +1,21 @@
+name: Validator Checks
+on:
+  pull_request: {}
+jobs:
+  main:
+    name: Validate and Check
+    runs-on: ubuntu-20.04
+    permissions:
+      contents: write
+    strategy:
+      max-parallel: 1
+      matrix:
+        include:
+          - source: index.html
+          - source: accname/index.html
+          - source: core-aam/index.html
+    steps:
+      - uses: actions/checkout@v4
+      - uses: w3c/spec-prod@v2
+        with:
+          SOURCE: ${{ matrix.source }}
