@@ -1,0 +1,30 @@
+name: Update Netlify
+on:
+  pull_request_target:
+    types: [opened, synchronize]
+jobs:
+  update-netlify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name:  Get files changed
+        run: |
+          curl -s \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files \
+            | jq -r '.[].filename' > changed_files.txt
+          BASE_URL="${DEPLOY_URL:-https://deploy-preview-${{ github.event.pull_request.number }}--wai-aria.netlify.app}"
+          # Loop through files and make URLs
+          for file in $(git diff --name-only origin/main...HEAD); do
+            echo "${BASE_URL}/${file}" >> changed_files.txt
+          done
+      - name: Create or Update Comment
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            🚀 **Netlify Preview**: [View Site](${{ steps.netlify.outputs.deploy-url }})
+            🔄 **Changed Pages**:
+            $(cat changed_files.txt | sed 's/^/- [/g' | sed 's/$/](url)/g')
+          edit-mode: replace
