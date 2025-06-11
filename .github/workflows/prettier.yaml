@@ -29,7 +29,7 @@ jobs:
       - name: Run Prettier
         id: prettier
         run: |
-          changed_files=$(git diff --name-only ${{ github.base_ref }}...main -- $GITHUB_EVENT_PATH 2>/dev/null | grep -E '\.(html|css|json|js)$')
+          changed_files=$(git diff --name-only main...HEAD -- $GITHUB_EVENT_PATH 2>/dev/null | grep -E '\.(html|css|json|js)$')
           if [[ -n "$changed_files" ]]; then
             prettier --print-width 200 --write "$changed_files"
             echo "::set-output name=changed::true"
