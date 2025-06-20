@@ -51,4 +51,4 @@ jobs:
           git commit -m "Chore: Format files with Prettier"
 
           # Push to the same branch this workflow was triggered from
-          git push origin HEAD:${{ github.head_ref || github.ref_name }}
+          git push origin HEAD:${{ github.head_ref || github.ref_name }}`
