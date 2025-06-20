@@ -35,7 +35,7 @@ jobs:
           changed_files=$(git diff --name-only origin/main...HEAD | grep -E '\.(js|json|css|html)$' || true)
 
           if [[ -n "$changed_files" ]]; then
-            echo "$changed_files" | xargs prettier --write
+            echo "$changed_files" | xargs prettier --write --print-width 200
             echo "changed=true" >> "$GITHUB_OUTPUT"
           else
             echo "changed=false" >> "$GITHUB_OUTPUT"
