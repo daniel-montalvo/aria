@@ -1,3 +1,4 @@
+
 import axios from "axios";
 import fs from "fs";
 import path from "path";
@@ -28,6 +29,12 @@ const args = yargs(hideBin(process.argv))
     description: "GitHub personal access token",
     demandOption: true,
   })
+  .option("build_specs", {
+    alias: "b",
+    type: "boolean",
+    description: "Build specs before generating links",
+    default: true,
+  })
   .option("update_pr", {
     alias: "u",
     type: "boolean",
@@ -36,7 +43,7 @@ const args = yargs(hideBin(process.argv))
   })
   .help().argv;
 
-const { repo, pull_request_number, token, update_pr } = args;
+const { repo, pull_request_number, token, update_pr, build_specs } = args;
 
 async function updatePRDescription(markdownContent) {
   if (!update_pr) return;
@@ -79,7 +86,7 @@ ${cleanedBody}`.trim();
 }
 
 // Define the base URLs
-const previewBaseURL = `https://deploy-preview--${pull_request_number}--wai-aria-.netlify.app`;
+const previewBaseURL = `https://deploy-preview--${pull_request_number}--staging-aria-.netlify.app`;
 const EDBaseURL = `https://w3c.github.io`;
 
 async function getChangedFiles() {
@@ -147,5 +154,6 @@ async function getChangedFiles() {
   }
 }
 
-// Run the script
-getChangedFiles();
+(async () => {
+  await getChangedFiles();
+})();
