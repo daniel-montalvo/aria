@@ -22,7 +22,7 @@ jobs:
         run: npm install axios yargs respec
 
       - name: install chrome
-        run: npx puppeteer browsers install chrome -y
+        run: npx puppeteer browsers install chrome
 
       - name: Build site
         run: bash ./common/script/pr-preview.sh
