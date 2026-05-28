@@ -18,11 +18,11 @@ jobs:
         with:
           node-version: "lts/*"
       
-      - name: Install additional dependencies
-        run: npm install axios yargs
+      - name: Install dependencies
+        run: npm install axios yargs respec
 
-      - name : Install respec globally
-        run : npm install -g respec
+      - name: install chrome
+        run: npx puppeteer browsers install chrome -y
 
       - name: Build site
         run: bash ./common/script/pr-preview.sh
