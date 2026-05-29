@@ -22,7 +22,7 @@ jobs:
           node-version: "lts/*"
       
       - name: Install dependencies
-        run: npm install axios yargs respec
+        run: npm install axios yargs
 
       - name: Build site
         run: bash ./common/script/pr-preview.sh
