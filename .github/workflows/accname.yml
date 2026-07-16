@@ -1,4 +1,4 @@
-name: accname ED build
+name: accname
 on:
   push:
     branches:
@@ -14,7 +14,7 @@ concurrency:
   queue: max
 
 jobs:
-  update-accname-ed:
+  update-accname:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7

@@ -1,4 +1,4 @@
-name: pdf-aam ED build
+name: pdf-aam
 on:
   push:
     branches:
@@ -14,7 +14,7 @@ concurrency:
   queue: max
 
 jobs:
-  update-pdf-aam-ed:
+  update-pdf-aam:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7

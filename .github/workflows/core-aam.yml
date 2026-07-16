@@ -1,4 +1,4 @@
-name: core-aam ED build
+name: core-aam
 on:
   push:
     branches:
@@ -14,7 +14,7 @@ concurrency:
   queue: max
 
 jobs:
-  update-core-aam-ed:
+  update-core-aam:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7

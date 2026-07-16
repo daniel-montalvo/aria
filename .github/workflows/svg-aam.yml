@@ -1,4 +1,4 @@
-name: svg-aam ED build
+name: svg-aam
 on:
   push:
     branches:
@@ -14,7 +14,7 @@ concurrency:
   queue: max
 
 jobs:
-  update-svg-aam-ed:
+  update-svg-aam:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
