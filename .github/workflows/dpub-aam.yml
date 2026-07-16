@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: gh-pages-publish
+  group: gh-pages-push
   queue: max
 
 jobs:
