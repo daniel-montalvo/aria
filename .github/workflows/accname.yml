@@ -1,4 +1,4 @@
-name: accname ED
+name: accname ED build
 on:
   push:
     branches:
@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  update-accname:
+  update-accname-ed:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
