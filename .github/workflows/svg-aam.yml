@@ -9,6 +9,10 @@ on:
       - '.github/workflows/svg-aam.yml'
   workflow_dispatch:
 
+concurrency:
+  group: gh-pages-publish
+  cancel-in-progress: false
+
 jobs:
   update-svg-aam-ed:
     runs-on: ubuntu-latest

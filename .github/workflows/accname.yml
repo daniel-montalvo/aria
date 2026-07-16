@@ -9,6 +9,10 @@ on:
       - '.github/workflows/accname.yml'
   workflow_dispatch:
 
+concurrency:
+  group: gh-pages-publish
+  cancel-in-progress: false
+
 jobs:
   update-accname-ed:
     runs-on: ubuntu-latest

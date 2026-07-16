@@ -9,6 +9,10 @@ on:
       - '.github/workflows/mathml-aam.yml'
   workflow_dispatch:
 
+concurrency:
+  group: gh-pages-publish
+  cancel-in-progress: false
+
 jobs:
   update-mathml-aam-ed:
     runs-on: ubuntu-latest

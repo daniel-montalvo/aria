@@ -9,6 +9,10 @@ on:
       - '.github/workflows/html-amm.yml'
   workflow_dispatch:
 
+concurrency:
+  group: gh-pages-publish
+  cancel-in-progress: false
+
 jobs:
   update-html-aam-ed:
     runs-on: ubuntu-latest

@@ -9,6 +9,10 @@ on:
       - '.github/workflows/aria.yml'
   workflow_dispatch:
 
+concurrency:
+  group: gh-pages-publish
+  cancel-in-progress: false
+
 jobs:
   update-aria-ed:
     runs-on: ubuntu-latest
