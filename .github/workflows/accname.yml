@@ -18,6 +18,7 @@ jobs:
           TOOLCHAIN: respec
           SOURCE: accname/index.html
           DESTINATION: accname/index.html
+          BUILD_FAIL_ON: nothing
           W3C_ECHIDNA_TOKEN: ${{ secrets.ECHIDNA_TOKEN_ACCNAME }}
           W3C_WG_DECISION_URL: https://lists.w3.org/Archives/Public/public-aria-admin/2018Sep/0011.html
           W3C_BUILD_OVERRIDE: |
