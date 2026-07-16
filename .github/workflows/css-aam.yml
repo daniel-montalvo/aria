@@ -11,7 +11,7 @@ on:
 
 concurrency:
   group: gh-pages-publish
-  cancel-in-progress: false
+  queue: max
 
 jobs:
   update-css-aam-ed:
