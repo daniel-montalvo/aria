@@ -15,8 +15,8 @@ jobs:
       - uses: w3c/spec-prod@v2
         with:
           TOOLCHAIN: respec
-          SOURCE: aria/accname/index.html
-          DESTINATION: aria/accname/index.html
+          SOURCE: accname/index.html
+          DESTINATION: accname/index.html
           W3C_ECHIDNA_TOKEN: ${{ secrets.ECHIDNA_TOKEN_ACCNAME }}
           W3C_WG_DECISION_URL: https://lists.w3.org/Archives/Public/public-aria-admin/2018Sep/0011.html
           W3C_BUILD_OVERRIDE: |
