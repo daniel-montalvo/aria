@@ -16854,7 +16854,35 @@ button.ariaPressed; // null</pre
           Element includes ARIANotifyMixin;
           Document includes ARIANotifyMixin;
         </pre>
+        <p>
+          The ariaNotify API allows authors to provide notifications for accessibility. The <code>ariaNotify</code> method accepts a string as a first parameter and a configuration object as a second (optional) parameter.
+        </p>
+        <p>Since ariaNotify doesn't allow to specify the language of the notification, the notification inherits that of its containing element</p>
+        <p>For cases where the language of the notification differs from that of its containing element, authors can specify  a courier element and add language markup to convey the language.</p>
+        <aside class="example">
+          <p>
+            In this example, the document is in English, but the button used as the
+            courier has a French language declaration. The notification is therefore
+            conveyed in French.
+          </p>
+          <!-- ReSpec needs these examples to be unindented. -->
+          <pre class="example highlight html">
+&lt;html lang="en"&gt;
+  ...
+  &lt;button id="french-notification-courier" type="button" lang="fr"&gt;
+    Afficher la notification en français
+  &lt;/button&gt;
 
+  &lt;script&gt;
+    const courier = document.querySelector("#french-notification-courier");
+
+    courier.addEventListener("click", () =&gt; {
+      courier.ariaNotify("Votre téléchargement est terminé.");
+    });
+  &lt;/script&gt;
+&lt;/html&gt;</pre
+  >
+        </aside>
         <p>
           The User Agent processing steps for the
           <code><dfn data-df-type="method" data-dfn-for="ARIANotifyMixin">ariaNotify</dfn>(<var>announcement</var>, <var>options</var>)</code>
@@ -17244,7 +17272,11 @@ el.getAttribute("aria-label"); // Returns "Publish"</pre
     </section>
     <section class="informative">
       <h2>Security Considerations</h2>
-      <p>This specification introduces no new security considerations.</p>
+      <p>
+        The "aria-notify" permissions policy has a default allowlist of "*". This relaxes  the Permision Policy default because requiring embedders to opt in for each frame would leave announcements coming
+        from third-party content inaccessible by default. Authors who want tighter control can still restrict the "aria-notify" policy explicitly, for example with
+        <code>&lt;iframe allow="aria-notify 'none'"&gt;</code> or <code>Permissions-Policy: aria-notify=(self)</code>.
+      </p>
     </section>
     <section class="informative">
       <h2>Privacy Considerations</h2>
