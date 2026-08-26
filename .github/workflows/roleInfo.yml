@@ -31,7 +31,7 @@ jobs:
         with:
           node-version: "lts/*"
       - run: npm i linkedom prettier@3.6.0
-      - run: git checkout gh-pages index.html # checkout (respec'ed) aria spec from gh-pages (WARNING: changes get staged!)
+      - run: git checkout gh-pages -- index.html # checkout (respec'ed) aria spec from gh-pages (WARNING: changes get staged!)
       - run: node ./common/script/buildRoleInfo.js  # build roleInfo.js
       - run: npx prettier --write --print-width 200 ./common/script/roleInfo.js
       - run: git reset index.html # reset spec source (to avoid comittting, cf. warning above)
