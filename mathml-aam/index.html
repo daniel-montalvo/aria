@@ -218,8 +218,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     "wai-aria",
     "infra"
   ],
-  "publishISODate": "2026-08-26T00:00:00.000Z",
-  "generatedSubtitle": "W3C Editor's Draft 26 August 2026"
+  "publishISODate": "2026-08-29T00:00:00.000Z",
+  "generatedSubtitle": "W3C Editor's Draft 29 August 2026"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-ED"></head>
 
@@ -227,7 +227,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
   </a></p>
     <h1 id="title" class="title">MathML Accessibility API Mappings 1.0</h1> 
-    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2026-08-26">26 August 2026</time></p>
+    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2026-08-29">29 August 2026</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
@@ -292,16 +292,16 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   </div>
     <section id="abstract" class="introductory"><h2>Abstract</h2>
       <p>
-        The MathML Accessibility <abbr title="application programming interface">API</abbr> Mappings (MathML-AAM) specification defines how <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agents</a> map Mathematical Markup Language (MathML) [<cite><a class="bibref" data-link-type="biblio" href="#bib-mathml3" title="Mathematical Markup Language (MathML) Version 3.0 2nd Edition">MathML3</a></cite>] to platform <a data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessibility-api">accessibility APIs</a>. It
-        extends the Core Accessibility <abbr title="application programming interface">API</abbr> Mappings (CORE-AAM) specification [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam-1-2" title="Core Accessibility API Mappings 1.2">CORE-AAM-1.2</a></cite>].
+        The MathML Accessibility <abbr title="application programming interface">API</abbr> Mappings (MathML-AAM) specification defines how <a data-link-type="dfn" class="respec-offending-element" title="Couldn't find a match for &quot;infra&quot;" id="respec-offender-couldn-t-find-a-match-for-infra">user agents</a> map Mathematical Markup Language (MathML) [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-mathml3" title="Reference &quot;[MathML3]&quot; not found." id="respec-offender-reference-mathml3-not-found">MathML3</a></cite>] to platform <a data-link-type="dfn" class="respec-offending-element" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria">accessibility APIs</a>. It
+        extends the Core Accessibility <abbr title="application programming interface">API</abbr> Mappings (CORE-AAM) specification [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam-1-2" title="Reference &quot;[CORE-AAM-1.2]&quot; not found." id="respec-offender-reference-core-aam-1-2-not-found">CORE-AAM-1.2</a></cite>].
       </p>
       <p>
         This specification is intended for user agent developers responsible for MathML accessibility in their product. The goal of this specification is to maximize the accessibility of MathML
-        content by ensuring each <a data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#assistive-technology">assistive technology</a> receives MathML content with the <a data-link-type="dfn" data-cite-href="https://www.w3.org/TR/wai-aria-1.3/#dfn-role" href="https://www.w3.org/TR/wai-aria-1.3/#dfn-role">roles</a>, <a data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-state">states</a>, and <a data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-property">properties</a> it expects.
+        content by ensuring each <a data-link-type="dfn" class="respec-offending-element" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-0">assistive technology</a> receives MathML content with the <a data-link-type="dfn" data-cite-href="https://www.w3.org/TR/wai-aria-1.3/#dfn-role" class="respec-offending-element" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-1">roles</a>, <a data-link-type="dfn" class="respec-offending-element" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-2">states</a>, and <a data-link-type="dfn" class="respec-offending-element" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-3">properties</a> it expects.
       </p>
       <p>
         At the present time, this specification contains mappings for the subset of MathML contained in the MathML Core specification [<cite><a class="bibref" data-link-type="biblio" href="#bib-mathml-core" title="MathML Core">MathML-Core</a></cite>]. The reason why is that this subset contains the
-        <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-element">elements</a> and <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-attribute">attributes</a> from MathML which are exposed to <a data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#assistive-technology">assistive technologies</a> via platform <a data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessibility-api">accessibility APIs</a>.
+        <a data-link-type="dfn" class="respec-offending-element" title="Couldn't find a match for &quot;dom&quot;" id="respec-offender-couldn-t-find-a-match-for-dom">elements</a> and <a data-link-type="dfn" class="respec-offending-element" title="Couldn't find a match for &quot;dom&quot;" id="respec-offender-couldn-t-find-a-match-for-dom-0">attributes</a> from MathML which are exposed to <a data-link-type="dfn" class="respec-offending-element" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-4">assistive technologies</a> via platform <a data-link-type="dfn" class="respec-offending-element" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-5">accessibility APIs</a>.
       </p>
       <p>
         The MathML-AAM is part of the <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> suite described in the <a href="http://www.w3.org/WAI/intro/aria.php"><abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Overview</a>.
@@ -359,7 +359,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         The key word <em class="rfc2119">MUST</em> in this document
         is to be interpreted as described in
         <a href="https://www.rfc-editor.org/info/bcp14">BCP 14</a>
-        [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels">RFC2119</a></cite>] [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc8174" title="Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words">RFC8174</a></cite>]
+        [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-rfc2119" title="Reference &quot;[RFC2119]&quot; not found." id="respec-offender-reference-rfc2119-not-found">RFC2119</a></cite>] [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-rfc8174" title="Reference &quot;[RFC8174]&quot; not found." id="respec-offender-reference-rfc8174-not-found">RFC8174</a></cite>]
         when, and only when, it appears in all
         capitals, as shown here.
       </p>
@@ -380,22 +380,22 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       <section id="mapping_general"><div class="header-wrapper"><h3 id="x3-1-general-rules-for-exposing-wai-aria-semantics"><bdi class="secno">3.1 </bdi>General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics</h3><a class="self-link" href="#mapping_general" aria-label="Permalink for Section 3.1"></a></div>
         
         <p>
-          User agents <em class="rfc2119">MUST</em> conform to <a href="https://www.w3.org/TR/core-aam-1.2/#mapping_general">General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics</a>
-          in [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam-1-2" title="Core Accessibility API Mappings 1.2">CORE-AAM-1.2</a></cite>].
+          User agents <em class="rfc2119">MUST</em> conform to <a class="respec-offending-element" title="Couldn't find a match for &quot;CORE-AAM-1.2#mapping_general&quot;" id="respec-offender-couldn-t-find-a-match-for-core-aam-1-2-mapping_general">General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics</a>
+          in [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam-1-2" title="Reference &quot;[CORE-AAM-1.2]&quot; not found." id="respec-offender-reference-core-aam-1-2-not-found-0">CORE-AAM-1.2</a></cite>].
         </p>
       </section>
 
       <section id="mapping_conflicts"><div class="header-wrapper"><h3 id="x3-2-conflicts-between-native-semantics-and-wai-aria"><bdi class="secno">3.2 </bdi>Conflicts between native semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr></h3><a class="self-link" href="#mapping_conflicts" aria-label="Permalink for Section 3.2"></a></div>
         
         <p>
-          User agents <em class="rfc2119">MUST</em> conform to <a href="https://www.w3.org/TR/core-aam-1.2/#mapping_conflicts">Conflicts between native markup semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr></a>
-          in [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam-1-2" title="Core Accessibility API Mappings 1.2">CORE-AAM-1.2</a></cite>].
+          User agents <em class="rfc2119">MUST</em> conform to <a class="respec-offending-element" title="Couldn't find a match for &quot;CORE-AAM-1.2#mapping_conflicts&quot;" id="respec-offender-couldn-t-find-a-match-for-core-aam-1-2-mapping_conflicts">Conflicts between native markup semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr></a>
+          in [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam-1-2" title="Reference &quot;[CORE-AAM-1.2]&quot; not found." id="respec-offender-reference-core-aam-1-2-not-found-1">CORE-AAM-1.2</a></cite>].
         </p>
       </section>
 
       <section id="mapping_nodirect"><div class="header-wrapper"><h3 id="x3-3-exposing-features-that-do-not-directly-map-to-accessibility-api"><bdi class="secno">3.3 </bdi>Exposing features that do not directly map to accessibility <abbr title="application programming interface">API</abbr></h3><a class="self-link" href="#mapping_nodirect" aria-label="Permalink for Section 3.3"></a></div>
         
-        <p>User agents <em class="rfc2119">MUST</em> conform to <a href="https://www.w3.org/TR/core-aam-1.2/#mapping_nodirect">Exposing attributes that do not directly map to accessibility <abbr title="application programming interface">API</abbr> properties</a> in [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam-1-2" title="Core Accessibility API Mappings 1.2">CORE-AAM-1.2</a></cite>].</p>
+        <p>User agents <em class="rfc2119">MUST</em> conform to <a class="respec-offending-element" title="Couldn't find a match for &quot;CORE-AAM-1.2#mapping_nodirect&quot;" id="respec-offender-couldn-t-find-a-match-for-core-aam-1-2-mapping_nodirect">Exposing attributes that do not directly map to accessibility <abbr title="application programming interface">API</abbr> properties</a> in [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam-1-2" title="Reference &quot;[CORE-AAM-1.2]&quot; not found." id="respec-offender-reference-core-aam-1-2-not-found-2">CORE-AAM-1.2</a></cite>].</p>
       </section>
 
       <section id="mathml-element-mappings"><div class="header-wrapper"><h3 id="x3-4-mathml-element-mappings"><bdi class="secno">3.4 </bdi>MathML Element Mappings</h3><a class="self-link" href="#mathml-element-mappings" aria-label="Permalink for Section 3.4"></a></div>
@@ -406,11 +406,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter5.html#mixing.elements.annotation"><code>annotation</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter5.html#mixing.elements.annotation&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter5-html-mixing-elements-annotation"><code>annotation</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -443,11 +443,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter5.html#mixing.elements.annotation.xml"><code>annotation-xml</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter5.html#mixing.elements.annotation.xml&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter5-html-mixing-elements-annotation-xml"><code>annotation-xml</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-0">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -480,11 +480,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.maction"><code>maction</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.maction&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-maction"><code>maction</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-1">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -517,11 +517,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://html.spec.whatwg.org/multipage/embedded-content-other.html#mathml"><code>math</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;html/embedded-content-other.html#mathml&quot;" id="respec-offender-couldn-t-find-a-match-for-html-embedded-content-other-html-mathml"><code>math</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-2">wai-aria-1.1</a></cite>]</th>
               <td><a class="core-mapping" href="https://w3c.github.io/aria/core-aam/#role-map-math"><code>math</code></a> role</td>
             </tr>
             <tr>
@@ -556,11 +556,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.merror"><code>merror</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.merror&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-merror"><code>merror</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-3">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -593,11 +593,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mfrac"><code>mfrac</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.mfrac&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-mfrac"><code>mfrac</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-4">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -633,11 +633,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mi"><code>mi</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.mi&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-mi"><code>mi</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-5">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -670,11 +670,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mmultiscripts"><code>mmultiscripts</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.mmultiscripts&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-mmultiscripts"><code>mmultiscripts</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-6">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -703,13 +703,13 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                     <li>
                       <code>AXMathPostscripts</code> is an array of dictionaries of <code>AXMathSubscript</code> and <code>AXMathSupscript</code> pointing to postsubscript and postsupscript elements ,
                       i.e. N and N + 1 in-flow children starting from the second in-flow child and preceeding
-                      <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mprescripts"><code>mprescripts</code></a>
+                      <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.mprescripts&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-mprescripts"><code>mprescripts</code></a>
                       element if any;
                     </li>
                     <li>
                       <code>AXMathPrescripts</code> is an array of dictionaries of <code>AXMathSubscript</code> and <code>AXMathSupscript</code> pointing to presubscript and presupscript elements,
                       i.e. N and N + 1 in-flow children starting after
-                      <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mprescripts"><code>mprescripts</code></a>
+                      <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.mprescripts&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-mprescripts-0"><code>mprescripts</code></a>
                       element if any or from index 1.
                     </li>
                   </ul>
@@ -724,11 +724,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mn"><code>mn</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.mn&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-mn"><code>mn</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-7">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -761,11 +761,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mo"><code>mo</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.mo&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-mo"><code>mo</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-8">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -798,11 +798,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mover"><code>mover</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.mover&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-mover"><code>mover</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-9">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -836,11 +836,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mpadded"><code>mpadded</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.mpadded&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-mpadded"><code>mpadded</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-10">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -873,11 +873,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mphantom"><code>mphantom</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.mphantom&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-mphantom"><code>mphantom</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-11">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -910,11 +910,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mmultiscripts"><code>mprescripts</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.mmultiscripts&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-mmultiscripts-0"><code>mprescripts</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-12">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -944,11 +944,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mroot"><code>mroot</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.mroot&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-mroot"><code>mroot</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-13">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -984,11 +984,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mrow"><code>mrow</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.mrow&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-mrow"><code>mrow</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-14">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -1021,11 +1021,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.ms"><code>ms</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.ms&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-ms"><code>ms</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-15">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -1058,11 +1058,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mspace"><code>mspace</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.mspace&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-mspace"><code>mspace</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-16">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -1089,11 +1089,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mroot"><code>msqrt</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.mroot&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-mroot-0"><code>msqrt</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-17">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -1127,11 +1127,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mstyle"><code>mstyle</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.mstyle&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-mstyle"><code>mstyle</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-18">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -1164,11 +1164,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.msub"><code>msub</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.msub&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-msub"><code>msub</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-19">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -1204,11 +1204,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.msubsup"><code>msubsup</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.msubsup&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-msubsup"><code>msubsup</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-20">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -1244,11 +1244,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.msup"><code>msup</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.msup&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-msup"><code>msup</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-21">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -1284,11 +1284,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mtable"><code>mtable</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.mtable&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-mtable"><code>mtable</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-22">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -1322,11 +1322,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mtd"><code>mtd</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.mtd&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-mtd"><code>mtd</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-23">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -1360,11 +1360,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mtext"><code>mtext</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.mtext&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-mtext"><code>mtext</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-24">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -1397,11 +1397,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mtr"><code>mtr</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.mtr&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-mtr"><code>mtr</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-25">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -1434,11 +1434,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.munder"><code>munder</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.munder&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-munder"><code>munder</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-26">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -1474,11 +1474,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.munderover"><code>munderover</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.munderover&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-munderover"><code>munderover</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-27">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -1515,11 +1515,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mmultiscripts"><code>none</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.mmultiscripts&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-mmultiscripts-1"><code>none</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-28">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -1552,11 +1552,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th>MathML Specification</th>
               <td>
-                <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.semantics"><code>semantics</code></a>
+                <a class="respec-offending-element" title="Couldn't find a match for &quot;MathML3/chapter3.html#presm.semantics&quot;" id="respec-offender-couldn-t-find-a-match-for-mathml3-chapter3-html-presm-semantics"><code>semantics</code></a>
               </td>
             </tr>
             <tr>
-              <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
+              <th>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-1-1" title="Reference &quot;[wai-aria-1.1]&quot; not found." id="respec-offender-reference-wai-aria-1-1-not-found-29">wai-aria-1.1</a></cite>]</th>
               <td>No corresponding role</td>
             </tr>
             <tr>
@@ -1621,28 +1621,28 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 <section id="references" class="appendix"><div class="header-wrapper"><h2 id="c-references"><bdi class="secno">C. </bdi>References</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix C."></a></div><section id="normative-references"><div class="header-wrapper"><h3 id="c-1-normative-references"><bdi class="secno">C.1 </bdi>Normative references</h3><a class="self-link" href="#normative-references" aria-label="Permalink for Appendix C.1"></a></div>
     
     <dl class="bibliography"><dt id="bib-core-aam-1-2">[CORE-AAM-1.2]</dt><dd>
-      <a href="https://www.w3.org/TR/core-aam-1.2/"><cite>Core Accessibility API Mappings 1.2</cite></a>. Valerie Young; Cynthia Shelly.  W3C. 5 August 2026. CRD. URL: <a href="https://www.w3.org/TR/core-aam-1.2/">https://www.w3.org/TR/core-aam-1.2/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-html">[html]</dt><dd>
-      <a href="https://html.spec.whatwg.org/multipage/"><cite>HTML Standard</cite></a>. Anne van Kesteren; Domenic Denicola; Dominic Farolino; Ian Hickson; Philip Jägenstedt; Simon Pieters.  WHATWG. Living Standard. URL: <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-mathml3">[MathML3]</dt><dd>
-      <a href="https://www.w3.org/TR/MathML3/"><cite>Mathematical Markup Language (MathML) Version 3.0 2nd Edition</cite></a>. David Carlisle; Patrick D F Ion; Robert R Miner.  W3C. 10 April 2014. W3C Recommendation. URL: <a href="https://www.w3.org/TR/MathML3/">https://www.w3.org/TR/MathML3/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-rfc2119">[RFC2119]</dt><dd>
-      <a href="https://www.rfc-editor.org/info/rfc2119/"><cite>Key words for use in RFCs to Indicate Requirement Levels</cite></a>. S. Bradner.  IETF. March 1997. Best Current Practice. URL: <a href="https://www.rfc-editor.org/info/rfc2119/">https://www.rfc-editor.org/info/rfc2119/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-rfc8174">[RFC8174]</dt><dd>
-      <a href="https://www.rfc-editor.org/info/rfc8174/"><cite>Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words</cite></a>. B. Leiba.  IETF. May 2017. Best Current Practice. URL: <a href="https://www.rfc-editor.org/info/rfc8174/">https://www.rfc-editor.org/info/rfc8174/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-wai-aria-1-1">[wai-aria-1.1]</dt><dd>
-      <a href="https://www.w3.org/TR/wai-aria-1.1/"><cite>Accessible Rich Internet Applications (WAI-ARIA) 1.1</cite></a>. Joanmarie Diggs; Shane McCarron; Michael Cooper; Richard Schwerdtfeger; James Craig.  W3C. 14 December 2017. W3C Recommendation. URL: <a href="https://www.w3.org/TR/wai-aria-1.1/">https://www.w3.org/TR/wai-aria-1.1/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd></dl>
   </section><section id="informative-references"><div class="header-wrapper"><h3 id="c-2-informative-references"><bdi class="secno">C.2 </bdi>Informative references</h3><a class="self-link" href="#informative-references" aria-label="Permalink for Appendix C.2"></a></div>
     
     <dl class="bibliography"><dt id="bib-dom">[dom]</dt><dd>
-      <a href="https://dom.spec.whatwg.org/"><cite>DOM Standard</cite></a>. Anne van Kesteren.  WHATWG. Living Standard. URL: <a href="https://dom.spec.whatwg.org/">https://dom.spec.whatwg.org/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-infra">[infra]</dt><dd>
-      <a href="https://infra.spec.whatwg.org/"><cite>Infra Standard</cite></a>. Anne van Kesteren; Domenic Denicola.  WHATWG. Living Standard. URL: <a href="https://infra.spec.whatwg.org/">https://infra.spec.whatwg.org/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-mathml-core">[MathML-Core]</dt><dd>
       <a href="https://mathml-refresh.github.io/mathml-core/"><cite>MathML Core</cite></a>. David Carlisle; Frédéric Wang. URL: <a href="https://mathml-refresh.github.io/mathml-core/">https://mathml-refresh.github.io/mathml-core/</a>
     </dd><dt id="bib-wai-aria">[wai-aria]</dt><dd>
-      <a href="https://www.w3.org/TR/wai-aria/"><cite>Accessible Rich Internet Applications (WAI-ARIA) 1.0</cite></a>. James Craig; Michael Cooper et al.  W3C. 20 March 2014. W3C Recommendation. URL: <a href="https://www.w3.org/TR/wai-aria/">https://www.w3.org/TR/wai-aria/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd></dl>
   </section></section><p role="navigation" id="back-to-top">
     <a href="#title"><abbr title="Back to Top">↑</abbr></a>
