@@ -96,7 +96,7 @@ body:has(input[name=color-scheme][value=dark]:checked){color-scheme:dark}
 </style>
 <meta name="color-scheme" content="light">
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/dark.css" disabled="">
-<meta name="revision" content="1e7c8ff66256ee8777e8073fe79e1426213c377a">
+<meta name="revision" content="72b0856bcbc1aa2d457ef42185a5134fa87ff253">
 <meta name="description" content="SVG Accessibility API Mappings (SVG-AAM) defines how user agents map Scalable Vector Graphics (SVG) [SVG2] markup to platform
         accessibility application programming interfaces (APIs). It is intended for SVG user
         agent developers responsible for SVG accessibility in their user agent.">
@@ -266,16 +266,16 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     "wai-aria",
     "infra"
   ],
-  "gitRevision": "1e7c8ff66256ee8777e8073fe79e1426213c377a",
-  "publishISODate": "2026-08-26T00:00:00.000Z",
-  "generatedSubtitle": "W3C Editor's Draft 26 August 2026"
+  "gitRevision": "72b0856bcbc1aa2d457ef42185a5134fa87ff253",
+  "publishISODate": "2026-08-29T00:00:00.000Z",
+  "generatedSubtitle": "W3C Editor's Draft 29 August 2026"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-ED"></head>
   <body class="h-entry" data-cite="dom accname wai-aria infra"><div class="head">
     <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
   </a></p>
     <h1 id="title" class="title">SVG Accessibility API Mappings</h1> 
-    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2026-08-26">26 August 2026</time></p>
+    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2026-08-29">29 August 2026</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
@@ -348,18 +348,18 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   </div>
     <section id="abstract" class="introductory"><h2>Abstract</h2>
       <p>
-        <abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings (<abbr title="Scalable Vector Graphics">SVG</abbr>-AAM) defines how <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agents</a> map Scalable Vector Graphics (<abbr title="Scalable Vector Graphics">SVG</abbr>) [<cite><a class="bibref" data-link-type="biblio" href="#bib-svg2" title="Scalable Vector Graphics (SVG) 2">SVG2</a></cite>] markup to platform
-        <a class="termref informative" data-lt="accessibility api" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessibility-api">accessibility application programming interfaces (<abbr title="Application Programming Interfaces">APIs</abbr>)</a>. It is intended for <abbr title="Scalable Vector Graphics">SVG</abbr> user
+        <abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings (<abbr title="Scalable Vector Graphics">SVG</abbr>-AAM) defines how <a data-link-type="dfn" class="respec-offending-element" title="Couldn't find a match for &quot;infra&quot;" id="respec-offender-couldn-t-find-a-match-for-infra">user agents</a> map Scalable Vector Graphics (<abbr title="Scalable Vector Graphics">SVG</abbr>) [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-svg2" title="Reference &quot;[SVG2]&quot; not found." id="respec-offender-reference-svg2-not-found">SVG2</a></cite>] markup to platform
+        <a class="termref informative respec-offending-element" data-lt="accessibility api" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria">accessibility application programming interfaces (<abbr title="Application Programming Interfaces">APIs</abbr>)</a>. It is intended for <abbr title="Scalable Vector Graphics">SVG</abbr> user
         agent developers responsible for <abbr title="Scalable Vector Graphics">SVG</abbr> accessibility in their user agent.
       </p>
       <p>
         This specification allows <abbr title="Scalable Vector Graphics">SVG</abbr> authors to create accessible rich internet applications, including charts, graphs, and other drawings. It does this by extending the
-        <cite><a href="http://www.w3.org/TR/core-aam-1.1/">Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings 1.1</a></cite> (CORE-AAM) [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam" title="Core Accessibility API Mappings 1.1">CORE-AAM</a></cite>] and the
-        <cite><a href="http://www.w3.org/TR/accname-1.1/">Accessible Name and Description: Computation and <abbr title="Application Programming Interfaces">API</abbr> Mappings 1.1</a></cite> (ACCNAME-AAM) [<cite><a class="bibref" data-link-type="biblio" href="#bib-accname-aam" title="Accessible Name and Description Computation 1.1">ACCNAME-AAM</a></cite>] specifications for user agents. It
-        leverages those core mappings and provides <abbr title="Scalable Vector Graphics">SVG</abbr>-specific guidance to define how the <abbr title="Scalable Vector Graphics">SVG</abbr> user agent must respond to keyboard focus and <a data-link-type="dfn" data-cite-href="https://www.w3.org/TR/wai-aria-1.3/#dfn-role" href="https://www.w3.org/TR/wai-aria-1.3/#dfn-role">role</a>, <a data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-state">state</a> and <a data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-property">property</a> attributes
+        <cite><a href="http://www.w3.org/TR/core-aam-1.1/">Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings 1.1</a></cite> (CORE-AAM) [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam" title="Reference &quot;[CORE-AAM]&quot; not found." id="respec-offender-reference-core-aam-not-found">CORE-AAM</a></cite>] and the
+        <cite><a href="http://www.w3.org/TR/accname-1.1/">Accessible Name and Description: Computation and <abbr title="Application Programming Interfaces">API</abbr> Mappings 1.1</a></cite> (ACCNAME-AAM) [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-accname-aam" title="Reference &quot;[ACCNAME-AAM]&quot; not found." id="respec-offender-reference-accname-aam-not-found">ACCNAME-AAM</a></cite>] specifications for user agents. It
+        leverages those core mappings and provides <abbr title="Scalable Vector Graphics">SVG</abbr>-specific guidance to define how the <abbr title="Scalable Vector Graphics">SVG</abbr> user agent must respond to keyboard focus and <a data-link-type="dfn" data-cite-href="https://www.w3.org/TR/wai-aria-1.3/#dfn-role" class="respec-offending-element" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-0">role</a>, <a data-link-type="dfn" class="respec-offending-element" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-1">state</a> and <a data-link-type="dfn" class="respec-offending-element" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-2">property</a> attributes
         provided in Web content via
         <cite><a href="http://www.w3.org/TR/wai-aria-1.1/"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr></a></cite>
-        [<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">WAI-ARIA</a></cite>]. The <abbr title="Scalable Vector Graphics">SVG</abbr>-AAM also adapts the ACCNAME-AAM to make use of standard <abbr title="Scalable Vector Graphics">SVG</abbr> features used to compute accessible names and description information exposed by platform accessibility
+        [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria" title="Reference &quot;[WAI-ARIA]&quot; not found." id="respec-offender-reference-wai-aria-not-found">WAI-ARIA</a></cite>]. The <abbr title="Scalable Vector Graphics">SVG</abbr>-AAM also adapts the ACCNAME-AAM to make use of standard <abbr title="Scalable Vector Graphics">SVG</abbr> features used to compute accessible names and description information exposed by platform accessibility
         <abbr title="Application Programming Interfaces">APIs</abbr>.
       </p>
       <p>
@@ -453,19 +453,19 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       <p>
         This specification defines how <abbr title="Scalable Vector Graphics">SVG</abbr> host language elements and content — with or without <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> roles, states, and properties
         applied — map to accessibility <abbr title="Application Programming Interfaces">APIs</abbr>. Sections give guidance on calculating text alternatives, mapping actions to
-        <a class="termref informative" data-lt="event" data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-event">events</a>, event processing, special document handling procedures, and error handling.
+        <a class="termref informative respec-offending-element" data-lt="event" data-link-type="dfn" title="Couldn't find a match for &quot;dom&quot;" id="respec-offender-couldn-t-find-a-match-for-dom">events</a>, event processing, special document handling procedures, and error handling.
       </p>
       <p>
         This introduction provides some background on why this specification exists, and how it relates to other <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> specifications. It includes a general overview of accessibility
-        <abbr title="Application Programming Interfaces">APIs</abbr> and the hierarchy of <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible objects</a> known as the
-        <a class="termref informative" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessibility-tree">accessibility tree</a>.
+        <abbr title="Application Programming Interfaces">APIs</abbr> and the hierarchy of <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-3">accessible objects</a> known as the
+        <a class="termref informative respec-offending-element" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-4">accessibility tree</a>.
       </p>
       <section id="intro_history"><div class="header-wrapper"><h3 id="x1-1-history-and-purpose"><bdi class="secno">1.1 </bdi>History and Purpose</h3><a class="self-link" href="#intro_history" aria-label="Permalink for Section 1.1"></a></div>
         
         <p>
           In traditional Graphical User Interface (<abbr title="graphical user interface">GUI</abbr>) applications, components of the User Interface (<abbr title="user interface">UI</abbr>) are displayed when needed and hidden when not needed based on user interactions.
-          <a class="termref informative" data-lt="Accessibility API" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessibility-api">Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a> are used to communicate
-          <a class="termref informative" data-lt="Semantics" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-semantics">semantics</a>
+          <a class="termref informative respec-offending-element" data-lt="Accessibility API" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-5">Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a> are used to communicate
+          <a class="termref informative respec-offending-element" data-lt="Semantics" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-6">semantics</a>
           about the user interface to
           <a class="specref" href="https://w3c.github.io/aria/#dfn-assistive-technologies">assistive technologies</a>
           used by people with disabilities.
@@ -478,27 +478,27 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         </p>
         <p>
           For web documents and applications, the essential semantic information is encapsulated within the Document Object Model (<abbr title="Document Object Model">DOM</abbr>). Assistive
-          technologies obtain this information from the <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agent</a> (web browser), which maps elements and attributes to the platform Accessibility
+          technologies obtain this information from the <a data-link-type="dfn" class="respec-offending-element" title="Couldn't find a match for &quot;infra&quot;" id="respec-offender-couldn-t-find-a-match-for-infra-0">user agent</a> (web browser), which maps elements and attributes to the platform Accessibility
           <abbr title="Application Programming Interface">API</abbr>.
         </p>
         <p>
-          In Scalable Vector Graphics (<abbr title="Scalable Vector Graphics">SVG</abbr>) documents, most <abbr title="Scalable Vector Graphics">SVG</abbr> <a class="termref informative" data-lt="Element" data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-element">elements</a>
+          In Scalable Vector Graphics (<abbr title="Scalable Vector Graphics">SVG</abbr>) documents, most <abbr title="Scalable Vector Graphics">SVG</abbr> <a class="termref informative respec-offending-element" data-lt="Element" data-link-type="dfn" title="Couldn't find a match for &quot;dom&quot;" id="respec-offender-couldn-t-find-a-match-for-dom-0">elements</a>
           do not provide semantic information of value to assistive technologies. Instead, they represent low-level vector graphics drawing directives. That element only has meaning to assistive
           technologies if the author provides alternative text, descriptions, or <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics.
         </p>
         <p>
-          Both version 1 [<cite><a class="bibref" data-link-type="biblio" href="#bib-svg1" title="Scalable Vector Graphics (SVG) 1.0 Specification">SVG1</a></cite>] and version 1.1 [<cite><a class="bibref" data-link-type="biblio" href="#bib-svg11" title="Scalable Vector Graphics (SVG) 1.1 (Second Edition)">SVG11</a></cite>] of the <abbr title="Scalable Vector Graphics">SVG</abbr> specifications included elements for defining <a data-link-type="dfn" data-cite-href="https://w3c.github.io/aria/accname/#dfn-accessible-name" href="https://w3c.github.io/aria/accname/#dfn-accessible-name">accessible names</a> and
-          <a data-lt="accessible description" data-link-type="dfn" data-cite-href="https://w3c.github.io/aria/accname/#dfn-accessible-description" href="https://w3c.github.io/aria/accname/#dfn-accessible-description">descriptions</a> (<code>&lt;title&gt;</code> and <code>&lt;desc&gt;</code>). However, prior to this specification, there was no normative guidance as to
+          Both version 1 [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-svg1" title="Reference &quot;[SVG1]&quot; not found." id="respec-offender-reference-svg1-not-found">SVG1</a></cite>] and version 1.1 [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-svg11" title="Reference &quot;[SVG11]&quot; not found." id="respec-offender-reference-svg11-not-found">SVG11</a></cite>] of the <abbr title="Scalable Vector Graphics">SVG</abbr> specifications included elements for defining <a data-link-type="dfn" data-cite-href="https://w3c.github.io/aria/accname/#dfn-accessible-name" class="respec-offending-element" title="Couldn't find a match for &quot;accname&quot;" id="respec-offender-couldn-t-find-a-match-for-accname">accessible names</a> and
+          <a data-lt="accessible description" data-link-type="dfn" data-cite-href="https://w3c.github.io/aria/accname/#dfn-accessible-description" class="respec-offending-element" title="Couldn't find a match for &quot;accname&quot;" id="respec-offender-couldn-t-find-a-match-for-accname-0">descriptions</a> (<code>&lt;title&gt;</code> and <code>&lt;desc&gt;</code>). However, prior to this specification, there was no normative guidance as to
           how user agents should expose this information to assistive technologies, or how to integrate it with host languages and validators that support <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr>. There was similarly no guidance on
           how user agents should make interactive <abbr title="Scalable Vector Graphics">SVG</abbr> <a href="https://w3c.github.io/aria/#dfn-keyboard-accessible" class="specref">keyboard accessible</a>.
         </p>
         <p>
-          <abbr title="Scalable Vector Graphics">SVG</abbr> 2 now incorporates keyboard navigation based on the established model from HTML 5. The <a class="termref informative" data-lt="user agent" data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agent</a> provides sequential focus navigation to
+          <abbr title="Scalable Vector Graphics">SVG</abbr> 2 now incorporates keyboard navigation based on the established model from HTML 5. The <a class="termref informative respec-offending-element" data-lt="user agent" data-link-type="dfn" title="Couldn't find a match for &quot;infra&quot;" id="respec-offender-couldn-t-find-a-match-for-infra-1">user agent</a> provides sequential focus navigation to
           <abbr title="Scalable Vector Graphics">SVG</abbr> elements that are interactive by default (links), or that the author has indicated may receive focus (through the use of
           <code>tabindex</code> attribute). Focus may also be set or removed programmatically by scripts, so that authors may implement more complex keyboard focus patterns.
         </p>
         <p>
-          <abbr title="Scalable Vector Graphics">SVG</abbr> closely aligns with the core <abbr title="Document Object Model">DOM</abbr> Standard [<cite><a class="bibref" data-link-type="biblio" href="#bib-dom" title="DOM Standard">DOM</a></cite>], supporting JavaScript manipulation of the graphic in interactive environments. Through the use of JavaScript,
+          <abbr title="Scalable Vector Graphics">SVG</abbr> closely aligns with the core <abbr title="Document Object Model">DOM</abbr> Standard [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-dom" title="Reference &quot;[DOM]&quot; not found." id="respec-offender-reference-dom-not-found">DOM</a></cite>], supporting JavaScript manipulation of the graphic in interactive environments. Through the use of JavaScript,
           <abbr title="cascading style sheets">CSS</abbr>, and related <abbr title="Application Programming Interfaces">APIs</abbr>, authors can make <abbr title="Scalable Vector Graphics">SVG</abbr> look and behave as an interactive application, to produce rich interactive charts and drawings.
         </p>
         <p>
@@ -526,28 +526,28 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         </p>
         <ul>
           <li>
-            <cite><a href="http://www.w3.org/TR/wai-aria-1.1/">Accessible Rich Internet Applications (<abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr>) 1.1</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">WAI-ARIA</a></cite>], a planned
-            <abbr title="World Wide Web Consortium">W3C</abbr> recommendation that extends the exising ARIA standard [<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-10" title="Accessible Rich Internet Applications (WAI-ARIA) 1.0">WAI-ARIA-10</a></cite>]. It defines the core roles, states, and properties.
+            <cite><a href="http://www.w3.org/TR/wai-aria-1.1/">Accessible Rich Internet Applications (<abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr>) 1.1</a></cite> [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria" title="Reference &quot;[WAI-ARIA]&quot; not found." id="respec-offender-reference-wai-aria-not-found-0">WAI-ARIA</a></cite>], a planned
+            <abbr title="World Wide Web Consortium">W3C</abbr> recommendation that extends the exising ARIA standard [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria-10" title="Reference &quot;[WAI-ARIA-10]&quot; not found." id="respec-offender-reference-wai-aria-10-not-found">WAI-ARIA-10</a></cite>]. It defines the core roles, states, and properties.
           </li>
           <li>
-            <cite><a href="http://www.w3.org/TR/graphics-aria-1.0/"><abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Graphics Module</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-graphics-aria" title="WAI-ARIA Graphics Module">GRAPHICS-ARIA</a></cite>], a planned <abbr title="World Wide Web Consortium">W3C</abbr> recommendation
+            <cite><a href="http://www.w3.org/TR/graphics-aria-1.0/"><abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Graphics Module</a></cite> [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-graphics-aria" title="Reference &quot;[GRAPHICS-ARIA]&quot; not found." id="respec-offender-reference-graphics-aria-not-found">GRAPHICS-ARIA</a></cite>], a planned <abbr title="World Wide Web Consortium">W3C</abbr> recommendation
             that defines graphics roles, states, and properties not included in
-            <cite><a href="http://www.w3.org/TR/wai-aria-1.1/">Accessible Rich Internet Applications (<abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr>) 1.1</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">WAI-ARIA</a></cite>].
+            <cite><a href="http://www.w3.org/TR/wai-aria-1.1/">Accessible Rich Internet Applications (<abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr>) 1.1</a></cite> [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria" title="Reference &quot;[WAI-ARIA]&quot; not found." id="respec-offender-reference-wai-aria-not-found-1">WAI-ARIA</a></cite>].
           </li>
           <li>
-            <cite><a href="http://www.w3.org/TR/core-aam-1.1/">Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings</a></cite> specification [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam" title="Core Accessibility API Mappings 1.1">CORE-AAM</a></cite>], which expresses how
+            <cite><a href="http://www.w3.org/TR/core-aam-1.1/">Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings</a></cite> specification [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam" title="Reference &quot;[CORE-AAM]&quot; not found." id="respec-offender-reference-core-aam-not-found-0">CORE-AAM</a></cite>], which expresses how
             <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> <a href="https://w3c.github.io/aria/#dfn-role" class="specref">roles</a>, <a href="https://w3c.github.io/aria/#dfn-state" class="specref">states</a>, and
             <a href="https://w3c.github.io/aria/#dfn-property" class="specref">properties</a> should be supported in user agents using platform accessibility <abbr title="Application Programming Interfaces">APIs</abbr>.
           </li>
           <li>
-            <cite><a href="http://www.w3.org/TR/graphics-aam-1.0/">Graphics Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings</a></cite>[<cite><a class="bibref" data-link-type="biblio" href="#bib-graphics-aam" title="Graphics Accessibility API Mappings">GRAPHICS-AAM</a></cite>], a planned <abbr title="World Wide Web Consortium">W3C</abbr> recommendation, which expresses how
-            <cite><a href="http://www.w3.org/TR/graphics-aria-1.0/"><abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Graphics Module</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-graphics-aria" title="WAI-ARIA Graphics Module">GRAPHICS-ARIA</a></cite>] <a href="https://w3c.github.io/aria/#dfn-role" class="specref">roles</a>,
+            <cite><a href="http://www.w3.org/TR/graphics-aam-1.0/">Graphics Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings</a></cite>[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-graphics-aam" title="Reference &quot;[GRAPHICS-AAM]&quot; not found." id="respec-offender-reference-graphics-aam-not-found">GRAPHICS-AAM</a></cite>], a planned <abbr title="World Wide Web Consortium">W3C</abbr> recommendation, which expresses how
+            <cite><a href="http://www.w3.org/TR/graphics-aria-1.0/"><abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Graphics Module</a></cite> [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-graphics-aria" title="Reference &quot;[GRAPHICS-ARIA]&quot; not found." id="respec-offender-reference-graphics-aria-not-found-0">GRAPHICS-ARIA</a></cite>] <a href="https://w3c.github.io/aria/#dfn-role" class="specref">roles</a>,
             <a href="https://w3c.github.io/aria/#dfn-state" class="specref">states</a>, and <a href="https://w3c.github.io/aria/#dfn-property" class="specref">properties</a> should be supported in user agents using platform accessibility
             <abbr title="Application Programming Interfaces">APIs</abbr>.
           </li>
 
           <li>
-            <cite><a href="http://www.w3.org/TR/accname-1.1/">Accessible Name and Description: Computation and <abbr title="Application Programming Interfaces">API</abbr> Mappings 1.1</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-accname-aam" title="Accessible Name and Description Computation 1.1">ACCNAME-AAM</a></cite>], which outlines the specific steps user
+            <cite><a href="http://www.w3.org/TR/accname-1.1/">Accessible Name and Description: Computation and <abbr title="Application Programming Interfaces">API</abbr> Mappings 1.1</a></cite> [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-accname-aam" title="Reference &quot;[ACCNAME-AAM]&quot; not found." id="respec-offender-reference-accname-aam-not-found-0">ACCNAME-AAM</a></cite>], which outlines the specific steps user
             agents should follow in order to identify accessible names (labels) and descriptions (alternative text) for elements that are exposed to assistive technologies.
           </li>
           <li>
@@ -560,7 +560,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
           <a href="https://w3c.github.io/aria/core-aam/" class="core-mapping">Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings</a>
           and
           <a href="https://w3c.github.io/aria/accname/" class="accname">Accessible Name and Description</a>
-          specifications ([<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam" title="Core Accessibility API Mappings 1.1">CORE-AAM</a></cite>] and [<cite><a class="bibref" data-link-type="biblio" href="#bib-accname-aam" title="Accessible Name and Description Computation 1.1">ACCNAME-AAM</a></cite>]) but defines changes in mappings due to features in the <abbr title="Scalable Vector Graphics">SVG</abbr> host language [<cite><a class="bibref" data-link-type="biblio" href="#bib-svg2" title="Scalable Vector Graphics (SVG) 2">SVG2</a></cite>]. Key areas of difference stem from the intrinsic host
+          specifications ([<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam" title="Reference &quot;[CORE-AAM]&quot; not found." id="respec-offender-reference-core-aam-not-found-1">CORE-AAM</a></cite>] and [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-accname-aam" title="Reference &quot;[ACCNAME-AAM]&quot; not found." id="respec-offender-reference-accname-aam-not-found-1">ACCNAME-AAM</a></cite>]) but defines changes in mappings due to features in the <abbr title="Scalable Vector Graphics">SVG</abbr> host language [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-svg2" title="Reference &quot;[SVG2]&quot; not found." id="respec-offender-reference-svg2-not-found-0">SVG2</a></cite>]. Key areas of difference stem from the intrinsic host
           language semantics of <abbr title="Scalable Vector Graphics">SVG</abbr>:
         </p>
         <ul>
@@ -575,12 +575,12 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <p>
           To provide access to <abbr title="graphical user interface">GUI</abbr> applications, software applications expose the necessary information needed by
           <a class="specref" href="https://w3c.github.io/aria/#dfn-assistive-technologies">assistive technologies</a> to interoperate with it through
-          <a class="termref informative" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessibility-api">accessibility <abbr title="Application Programming Interfaces">API</abbr>s</a>. The accessibility information exposed through the
-          <a class="termref informative" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessibility-api">accessibility <abbr title="Application Programming Interfaces">API</abbr>s</a> must be maintained throughout the applications lifecycle.
+          <a class="termref informative respec-offending-element" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-7">accessibility <abbr title="Application Programming Interfaces">API</abbr>s</a>. The accessibility information exposed through the
+          <a class="termref informative respec-offending-element" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-8">accessibility <abbr title="Application Programming Interfaces">API</abbr>s</a> must be maintained throughout the applications lifecycle.
         </p>
         <p>
-          In Web pages the Document Object Model (<abbr title="Document Object Model">DOM</abbr>) is used to represent the structure and <a href="https://w3c.github.io/aria/#dfn-state" class="specref">state</a> of the <a class="termref informative" data-lt="element" data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-element">elements</a> in
-          the document being rendered by a <a class="termref informative" data-lt="user agent" data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agent</a>. The elements of the document are organized into a hierarchy of nodes known as the
+          In Web pages the Document Object Model (<abbr title="Document Object Model">DOM</abbr>) is used to represent the structure and <a href="https://w3c.github.io/aria/#dfn-state" class="specref">state</a> of the <a class="termref informative respec-offending-element" data-lt="element" data-link-type="dfn" title="Couldn't find a match for &quot;dom&quot;" id="respec-offender-couldn-t-find-a-match-for-dom-1">elements</a> in
+          the document being rendered by a <a class="termref informative respec-offending-element" data-lt="user agent" data-link-type="dfn" title="Couldn't find a match for &quot;infra&quot;" id="respec-offender-couldn-t-find-a-match-for-infra-2">user agent</a>. The elements of the document are organized into a hierarchy of nodes known as the
           <abbr title="document object model">DOM</abbr> tree. User agents map <abbr title="Document Object Model">DOM</abbr> to accessibility
           <abbr title="Application Programming Interfaces">APIs</abbr>, in the same way desktop applications map <abbr title="user interface">UI</abbr> components. The information provided to the accessibility <abbr title="Application Programming Interfaces">API</abbr> is used to support
           assistive technologies, with the expectation that the information passed from the <abbr title="Document Object Model">DOM</abbr> matches the semantic intent of the author. The author may communicate this semantic intent by using
@@ -602,18 +602,18 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         </p>
         <ul>
           <li>
-            <cite><a href="https://msdn.microsoft.com/en-us/library/ms697707.aspx">Microsoft Active Accessibility 2.0</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-msaa" title="Microsoft Active Accessibility (MSAA)">MSAA</a></cite>] with
-            <cite><a href="https://wiki.linuxfoundation.org/accessibility/iaccessible2/start">IAccessible2 1.3</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-iaccessible2" title="IAccessible2">IAccessible2</a></cite>]
+            <cite><a href="https://msdn.microsoft.com/en-us/library/ms697707.aspx">Microsoft Active Accessibility 2.0</a></cite> [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-msaa" title="Reference &quot;[MSAA]&quot; not found." id="respec-offender-reference-msaa-not-found">MSAA</a></cite>] with
+            <cite><a href="https://wiki.linuxfoundation.org/accessibility/iaccessible2/start">IAccessible2 1.3</a></cite> [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-iaccessible2" title="Reference &quot;[IAccessible2]&quot; not found." id="respec-offender-reference-iaccessible2-not-found">IAccessible2</a></cite>]
           </li>
           <li>
-            <cite><a href="https://msdn.microsoft.com/en-us/library/ee684013%28VS.85%29.aspx">User Interface Automation</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-ui-automation" title="UI Automation">UI-AUTOMATION</a></cite>]
+            <cite><a href="https://msdn.microsoft.com/en-us/library/ee684013%28VS.85%29.aspx">User Interface Automation</a></cite> [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-ui-automation" title="Reference &quot;[UI-AUTOMATION]&quot; not found." id="respec-offender-reference-ui-automation-not-found">UI-AUTOMATION</a></cite>]
           </li>
           <li>
-            <cite><a href="https://developer.gnome.org/atk/2.10/">Linux Accessibility Toolkit 2.10.0</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-atk" title="ATK - Accessibility Toolkit">ATK</a></cite>] and
-            <cite><a href="https://gitlab.gnome.org/GNOME/at-spi2-core/">Assistive Technology - Service Provider Interface 2.1</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-at-spi" title="Assistive Technology Service Provider Interface">AT-SPI</a></cite>]
+            <cite><a href="https://developer.gnome.org/atk/2.10/">Linux Accessibility Toolkit 2.10.0</a></cite> [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-atk" title="Reference &quot;[ATK]&quot; not found." id="respec-offender-reference-atk-not-found">ATK</a></cite>] and
+            <cite><a href="https://gitlab.gnome.org/GNOME/at-spi2-core/">Assistive Technology - Service Provider Interface 2.1</a></cite> [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-at-spi" title="Reference &quot;[AT-SPI]&quot; not found." id="respec-offender-reference-at-spi-not-found">AT-SPI</a></cite>]
           </li>
           <li>
-            <cite><a href="https://developer.apple.com/documentation/appkit/accessibility/nsaccessibility">Mac OS X Accessibility Protocol Mac OS 10.10</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-axapi" title="The NSAccessibility Protocol for macOS">AXAPI</a></cite>]
+            <cite><a href="https://developer.apple.com/documentation/appkit/accessibility/nsaccessibility">Mac OS X Accessibility Protocol Mac OS 10.10</a></cite> [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-axapi" title="Reference &quot;[AXAPI]&quot; not found." id="respec-offender-reference-axapi-not-found">AXAPI</a></cite>]
           </li>
         </ul>
         <p>
@@ -624,21 +624,21 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       <section id="intro_treetypes"><div class="header-wrapper"><h3 id="x1-4-the-accessibility-tree-and-the-dom-tree"><bdi class="secno">1.4 </bdi>The Accessibility Tree and the <abbr title="Document Object Model">DOM</abbr> Tree</h3><a class="self-link" href="#intro_treetypes" aria-label="Permalink for Section 1.4"></a></div>
         
         <p>
-          The <a class="termref informative" data-lt="Accessibility Tree" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessibility-tree">accessibility tree</a> and the <abbr title="Document Object Model">DOM</abbr> tree are parallel structures. Roughly speaking, the
+          The <a class="termref informative respec-offending-element" data-lt="Accessibility Tree" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-9">accessibility tree</a> and the <abbr title="Document Object Model">DOM</abbr> tree are parallel structures. Roughly speaking, the
           accessibility tree is a subset of the flattened <abbr title="Document Object Model">DOM</abbr> tree, which is then augmented to include the user interface
-          <a class="specref" href="https://w3c.github.io/aria/#dfn-object">objects</a> of the <a class="termref informative" data-lt="user agent" data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agent</a>
+          <a class="specref" href="https://w3c.github.io/aria/#dfn-object">objects</a> of the <a class="termref informative respec-offending-element" data-lt="user agent" data-link-type="dfn" title="Couldn't find a match for &quot;infra&quot;" id="respec-offender-couldn-t-find-a-match-for-infra-3">user agent</a>
           as well as the objects of the document.
         </p>
         <p>
-          <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">Accessible objects</a> are created in the accessibility tree for every <abbr title="Document Object Model">DOM</abbr>
-          <a class="termref informative" data-lt="element" data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-element">element</a>
+          <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-10">Accessible objects</a> are created in the accessibility tree for every <abbr title="Document Object Model">DOM</abbr>
+          <a class="termref informative respec-offending-element" data-lt="element" data-link-type="dfn" title="Couldn't find a match for &quot;dom&quot;" id="respec-offender-couldn-t-find-a-match-for-dom-2">element</a>
           that should be exposed to an
           <a class="specref" href="https://w3c.github.io/aria/#dfn-assistive-technologies">assistive technology</a>. An element could be exposed because it may fire an accessibility
-          <a class="termref informative" data-lt="event" data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-event">event</a> or because it has a <a class="specref" href="https://w3c.github.io/aria/#dfn-property">property</a>, relationship or feature which needs to be exposed.
+          <a class="termref informative respec-offending-element" data-lt="event" data-link-type="dfn" title="Couldn't find a match for &quot;dom&quot;" id="respec-offender-couldn-t-find-a-match-for-dom-3">event</a> or because it has a <a class="specref" href="https://w3c.github.io/aria/#dfn-property">property</a>, relationship or feature which needs to be exposed.
         </p>
         <p>
           Generally, if a <abbr title="Document Object Model">DOM</abbr> element can be omitted from the accessibility tree without affecting meaning, it will be, for reasons of performance and simplicity. For example, a
-          <code>&lt;span&gt;</code> with just a style change and no <a class="termref informative" data-lt="semantics" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-semantics">semantics</a>
+          <code>&lt;span&gt;</code> with just a style change and no <a class="termref informative respec-offending-element" data-lt="semantics" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-11">semantics</a>
           may not get its own accessible object, but the style change will be exposed by other means.
         </p>
       </section>
@@ -647,7 +647,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         The key words <em class="rfc2119">MAY</em>, <em class="rfc2119">MUST</em>, <em class="rfc2119">MUST NOT</em>, <em class="rfc2119">OPTIONAL</em>, <em class="rfc2119">RECOMMENDED</em>, <em class="rfc2119">REQUIRED</em>, <em class="rfc2119">SHALL</em>, <em class="rfc2119">SHALL NOT</em>, <em class="rfc2119">SHOULD</em>, and <em class="rfc2119">SHOULD NOT</em> in this document
         are to be interpreted as described in
         <a href="https://www.rfc-editor.org/info/bcp14">BCP 14</a>
-        [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels">RFC2119</a></cite>] [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc8174" title="Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words">RFC8174</a></cite>]
+        [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-rfc2119" title="Reference &quot;[rfc2119]&quot; not found." id="respec-offender-reference-rfc2119-not-found">RFC2119</a></cite>] [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-rfc8174" title="Reference &quot;[RFC8174]&quot; not found." id="respec-offender-reference-rfc8174-not-found">RFC8174</a></cite>]
         when, and only when, they appear in all
         capitals, as shown here.
       </p>
@@ -657,9 +657,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         statement "This section is non-normative" applies to all its sub-sections, unless otherwise indicated. In addition, all text boxes labelled "Note" are informative.
       </p>
       <p>
-        Normative sections provide requirements that <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agents</a> must follow for an implementation to conform to this specification. The keywords <em class="rfc2119">MUST</em>, <em class="rfc2119">MUST NOT</em>, <em class="rfc2119">REQUIRED</em>, <em class="rfc2119">SHALL</em>, <em class="rfc2119">SHALL NOT</em>,
+        Normative sections provide requirements that <a data-link-type="dfn" class="respec-offending-element" title="Couldn't find a match for &quot;infra&quot;" id="respec-offender-couldn-t-find-a-match-for-infra-4">user agents</a> must follow for an implementation to conform to this specification. The keywords <em class="rfc2119">MUST</em>, <em class="rfc2119">MUST NOT</em>, <em class="rfc2119">REQUIRED</em>, <em class="rfc2119">SHALL</em>, <em class="rfc2119">SHALL NOT</em>,
         <em class="rfc2119">SHOULD</em>, <em class="rfc2119">RECOMMENDED</em>, <em class="rfc2119">MAY</em>, and <em class="rfc2119">OPTIONAL</em> in this document are to be interpreted as described in
-        <cite><a href="http://www.rfc-editor.org/rfc/rfc2119.txt">Keywords for use in RFCs to indicate requirement levels</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels">rfc2119</a></cite>]. RFC-2119 keywords are formatted in uppercase and
+        <cite><a href="http://www.rfc-editor.org/rfc/rfc2119.txt">Keywords for use in RFCs to indicate requirement levels</a></cite> [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-rfc2119" title="Reference &quot;[rfc2119]&quot; not found." id="respec-offender-reference-rfc2119-not-found-0">rfc2119</a></cite>]. RFC-2119 keywords are formatted in uppercase and
         contained in an element with <code>class="rfc2119"</code>. When the keywords shown above are used, but do not share this format, they do not convey formal information in the RFC 2119 sense,
         and are merely explanatory, i.e., informative. As much as possible, such usages are avoided in this specification.
       </p>
@@ -675,14 +675,14 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         other accessibile input devices use keyboard events to communicate with the user agent.
       </p>
       <p>
-        The Scalable Vector Graphics (<abbr title="Scalable Vector Graphics">SVG</abbr>) 1 [<cite><a class="bibref" data-link-type="biblio" href="#bib-svg1" title="Scalable Vector Graphics (SVG) 1.0 Specification">SVG1</a></cite>] and 1.1 [<cite><a class="bibref" data-link-type="biblio" href="#bib-svg11" title="Scalable Vector Graphics (SVG) 1.1 (Second Edition)">SVG11</a></cite>] specifications included only very limited keyboard support (access keys for animations). Many user agents implemented tabbed
-        focus for links, but there was no declarative or scripted means for authors to control this behavior. Scalable Vector Graphics (<abbr title="Scalable Vector Graphics">SVG</abbr>) 2 [<cite><a class="bibref" data-link-type="biblio" href="#bib-svg2" title="Scalable Vector Graphics (SVG) 2">SVG2</a></cite>] introduces keyboard navigation and focus control
+        The Scalable Vector Graphics (<abbr title="Scalable Vector Graphics">SVG</abbr>) 1 [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-svg1" title="Reference &quot;[SVG1]&quot; not found." id="respec-offender-reference-svg1-not-found-0">SVG1</a></cite>] and 1.1 [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-svg11" title="Reference &quot;[SVG11]&quot; not found." id="respec-offender-reference-svg11-not-found-0">SVG11</a></cite>] specifications included only very limited keyboard support (access keys for animations). Many user agents implemented tabbed
+        focus for links, but there was no declarative or scripted means for authors to control this behavior. Scalable Vector Graphics (<abbr title="Scalable Vector Graphics">SVG</abbr>) 2 [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-svg2" title="Reference &quot;[SVG2]&quot; not found." id="respec-offender-reference-svg2-not-found-1">SVG2</a></cite>] introduces keyboard navigation and focus control
         based on the HTML <code>tabindex</code> model.
       </p>
       <p>
         Conforming user agents <span class="rfc2119"><em class="rfc2119">MUST</em></span> conform to
         <a class="core-mapping" href="https://w3c.github.io/aria/core-aam/#keyboard-focus">Supporting Keyboard Navigation</a>
-        requirements in the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam" title="Core Accessibility API Mappings 1.1">CORE-AAM</a></cite>].
+        requirements in the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam" title="Reference &quot;[CORE-AAM]&quot; not found." id="respec-offender-reference-core-aam-not-found-2">CORE-AAM</a></cite>].
       </p>
 
       <div class="note" role="note" id="issue-container-generatedID-0"><div class="note-title marker" id="h-note-0"><span>Note</span></div><p class="">The <abbr title="Scalable Vector Graphics">SVG</abbr> Accessibility Task Force intends to develop more detailed guidelines for authors and user agents regarding navigation in graphical documents.</p></div>
@@ -690,7 +690,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <section id="mapping"><div class="header-wrapper"><h2 id="x4-mapping-wai-aria-to-accessibility-apis"><bdi class="secno">4. </bdi>Mapping <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></h2><a class="self-link" href="#mapping" aria-label="Permalink for Section 4."></a></div>
       
       <p>
-        <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> support was formally introduced to <abbr title="Scalable Vector Graphics">SVG</abbr> in Scalable Vector Graphics (<abbr title="Scalable Vector Graphics">SVG</abbr>) 2 [<cite><a class="bibref" data-link-type="biblio" href="#bib-svg2" title="Scalable Vector Graphics (SVG) 2">SVG2</a></cite>], which allows ARIA attributes to be used
+        <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> support was formally introduced to <abbr title="Scalable Vector Graphics">SVG</abbr> in Scalable Vector Graphics (<abbr title="Scalable Vector Graphics">SVG</abbr>) 2 [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-svg2" title="Reference &quot;[SVG2]&quot; not found." id="respec-offender-reference-svg2-not-found-2">SVG2</a></cite>], which allows ARIA attributes to be used
         in the default namespace. This section defines how <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics are exposed to assistive technologies through platform Accessibility
         <abbr title="Application Programming Interfaces">APIs</abbr> and how <abbr title="Scalable Vector Graphics">SVG</abbr> elements are mapped to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr> based on <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr>.
       </p>
@@ -699,7 +699,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         
         <p>
           <abbr title="Scalable Vector Graphics">SVG</abbr> user agents <strong class="rfc2119"><em class="rfc2119">MUST</em></strong> conform to <a class="core-mapping" href="https://w3c.github.io/aria/core-aam/#mapping_general">General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics</a> in the Core Accessibility
-          <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam" title="Core Accessibility API Mappings 1.1">CORE-AAM</a></cite>], with the additions described in the following sub-sections.
+          <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam" title="Reference &quot;[CORE-AAM]&quot; not found." id="respec-offender-reference-core-aam-not-found-3">CORE-AAM</a></cite>], with the additions described in the following sub-sections.
         </p>
 
         <section id="exclude_elements"><div class="header-wrapper"><h4 id="x4-1-1-excluding-elements-from-the-accessibility-tree"><bdi class="secno">4.1.1 </bdi>Excluding Elements from the Accessibility Tree</h4><a class="self-link" href="#exclude_elements" aria-label="Permalink for Section 4.1.1"></a></div>
@@ -707,7 +707,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
           <p>
             Certain elements in the <abbr title="Document Object Model">DOM</abbr> are not exposed via the
             <a class="specref" href="https://w3c.github.io/aria/#dfn-accessibility-api">accessibility <abbr title="Application Programming Interface">API</abbr></a>. The section <a class="core-mapping" href="https://w3c.github.io/aria/core-aam/#exclude_elements2">Excluding Elements from the Accessibility Tree</a>
-            of the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam" title="Core Accessibility API Mappings 1.1">CORE-AAM</a></cite>] outlines the general rules for excluding elements. One factor is whether host language semantics specify that the element should not be
+            of the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam" title="Reference &quot;[CORE-AAM]&quot; not found." id="respec-offender-reference-core-aam-not-found-4">CORE-AAM</a></cite>] outlines the general rules for excluding elements. One factor is whether host language semantics specify that the element should not be
             displayed.
           </p>
           <p>
@@ -727,7 +727,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               </li>
               <li>
                 If an ancestor of the element has a used role which has the characteristic "<a class="specref" href="https://w3c.github.io/aria/#childrenArePresentational">Children Presentational: True</a>" in the
-                <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> specifications [<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">WAI-ARIA</a></cite>], the child element should not be exposed. For example, the roles <a class="role-reference" href="https://w3c.github.io/aria/#button"><code>button</code></a> and
+                <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> specifications [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria" title="Reference &quot;[WAI-ARIA]&quot; not found." id="respec-offender-reference-wai-aria-not-found-2">WAI-ARIA</a></cite>], the child element should not be exposed. For example, the roles <a class="role-reference" href="https://w3c.github.io/aria/#button"><code>button</code></a> and
                 <a class="role-reference" href="https://w3c.github.io/aria/#img"><code>img</code></a>
                 exclude all child content from being directly included in the accessibility tree.
               </li>
@@ -737,13 +737,13 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               <a class="specref" href="https://w3c.github.io/aria/#conflict_resolution_presentation_none">an author-supplied or inherited role of <code>none</code> or <code>presentation</code> to be ignored as an error.</a>
               An element will not be excluded if it can currently receive focus based on user interaction.
             </p>
-            <p>Consult the <a class="core-mapping" href="https://w3c.github.io/aria/core-aam/#exclude_elements2">original document</a> ([<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam" title="Core Accessibility API Mappings 1.1">CORE-AAM</a></cite>]) for the normative text.</p>
+            <p>Consult the <a class="core-mapping" href="https://w3c.github.io/aria/core-aam/#exclude_elements2">original document</a> ([<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam" title="Reference &quot;[CORE-AAM]&quot; not found." id="respec-offender-reference-core-aam-not-found-5">CORE-AAM</a></cite>]) for the normative text.</p>
           </div></div>
 
           <p>
             Elements which are never directly rendered to screen, nor represented by an interactive region in a graphic, do not need a corresponding accessible object. User agents
-            <strong class="rfc2119"><em class="rfc2119">MUST NOT</em></strong> include any elements, or their descendant content, as an <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> in the
-            <a class="termref informative" data-lt="accessibility tree" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessibility-tree">accessibility tree</a> that are indicated as <code>no accessible object created</code> in the
+            <strong class="rfc2119"><em class="rfc2119">MUST NOT</em></strong> include any elements, or their descendant content, as an <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-12">accessible object</a> in the
+            <a class="termref informative respec-offending-element" data-lt="accessibility tree" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-13">accessibility tree</a> that are indicated as <code>no accessible object created</code> in the
             <a href="#mapping_role_table"><abbr title="Scalable Vector Graphics">SVG</abbr> Element Mapping Tables</a>. User agents <strong class="rfc2119"><em class="rfc2119">SHOULD</em></strong> also exclude any other element defined by past or future <abbr title="Scalable Vector Graphics">SVG</abbr>
             specifications or modules that specifically indicate the element is <a href="https://www.w3.org/TR/SVG2/render.html#TermNeverRenderedElement">never directly rendered</a>.
           </p>
@@ -753,7 +753,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <code>defs</code> or <code>pattern</code> element preclude that entire <abbr title="Document Object Model">DOM</abbr> subtree from being represented in the accessibility tree.
           </p>
           <p>
-            Elements that are excluded from the <a class="termref informative" data-lt="accessibility tree" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessibility-tree">accessibility tree</a> might still be used in the name and description computation of another element,
+            Elements that are excluded from the <a class="termref informative respec-offending-element" data-lt="accessibility tree" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-14">accessibility tree</a> might still be used in the name and description computation of another element,
             as defined in the <a href="#mapping_additional_nd">Name and Description</a> section. Non-rendered elements may also be used as the templates for rendered element instances created by a
             <code>use</code> element, as described in the section on <a href="#mapping_use_shadow_tree">Use-Element Shadow Trees</a>.
           </p>
@@ -762,7 +762,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <a href="#mapping_additional">Special Processing Requiring Additional Computation</a>.
           </p></div>
           <p>
-            In addition, <abbr title="Scalable Vector Graphics">SVG</abbr> 1.1 [<cite><a class="bibref" data-link-type="biblio" href="#bib-svg11" title="Scalable Vector Graphics (SVG) 1.1 (Second Edition)">SVG11</a></cite>] defines the conditional processing attributes
+            In addition, <abbr title="Scalable Vector Graphics">SVG</abbr> 1.1 [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-svg11" title="Reference &quot;[SVG11]&quot; not found." id="respec-offender-reference-svg11-not-found-1">SVG11</a></cite>] defines the conditional processing attributes
             <code>systemLanguage</code>, <code>requiredExtensions</code>, and <code>requiredFeatures</code>. These may be used individually or in combination with the <code>switch</code> element to
             prevent content from being rendered under certain conditions, or to select between alternate versions of content.
           </p>
@@ -774,7 +774,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 
           <p>
             The rendering of <abbr title="Scalable Vector Graphics">SVG</abbr> elements is also affected by <abbr title="cascading style sheets">CSS</abbr> styling properties, which may be specified using stylesheet rules, inline styles, presentation attributes, or animations. Regardless
-            of how the style property is specified, the effect depends on the final computed value determined by the <abbr title="cascading style sheets">CSS</abbr> cascade [<cite><a class="bibref" data-link-type="biblio" href="#bib-css-cascade-3" title="CSS Cascading and Inheritance Level 3">CSS-CASCADE-3</a></cite>]. User agents
+            of how the style property is specified, the effect depends on the final computed value determined by the <abbr title="cascading style sheets">CSS</abbr> cascade [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-css-cascade-3" title="Reference &quot;[CSS-CASCADE-3]&quot; not found." id="respec-offender-reference-css-cascade-3-not-found">CSS-CASCADE-3</a></cite>]. User agents
             <strong class="rfc2119"><em class="rfc2119">MUST NOT</em></strong> expose to accessibility <abbr title="Application Programming Interfaces">APIs</abbr> any element that is not rendered because its computed style includes a value of <code>none</code> for the
             <a href="https://svgwg.org/svg2-draft/render.html#VisibilityControl"><code>display</code></a> property.
           </p>
@@ -826,7 +826,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
           <p>
             An element that is currently positioned off-screen, or that is obscured by other elements, is not considered hidden. User agents should expose this state through other means, as described
             in the <a class="core-mapping" href="https://w3c.github.io/aria/core-aam/#statePropertyMappingGeneralRules">State and Property Mapping</a>
-            section of the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam" title="Core Accessibility API Mappings 1.1">CORE-AAM</a></cite>].
+            section of the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam" title="Reference &quot;[CORE-AAM]&quot; not found." id="respec-offender-reference-core-aam-not-found-6">CORE-AAM</a></cite>].
           </p>
 
           <div class="note" role="note" id="issue-container-generatedID-4"><div class="note-title marker" id="h-note-4"><span>Note</span></div><div class="">
@@ -947,7 +947,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <li>
               It meets any of the criteria listed in the section
               <a href="#include_elements">Including Elements in the Accessibility Tree</a>
-              of the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings specification [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam" title="Core Accessibility API Mappings 1.1">CORE-AAM</a></cite>].
+              of the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings specification [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam" title="Reference &quot;[CORE-AAM]&quot; not found." id="respec-offender-reference-core-aam-not-found-7">CORE-AAM</a></cite>].
             </li>
           </ul>
           <div class="note" role="note" id="issue-container-generatedID-6"><div class="note-title marker" id="h-note-5"><span>Note</span></div><div class="">
@@ -957,10 +957,10 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             </p>
             <ul>
               <li>Text elements</li>
-              <li>Elements that may fire an accessibility <abbr title="Application Program Interface">API</abbr> <a class="termref informative" data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-event">event</a></li>
+              <li>Elements that may fire an accessibility <abbr title="Application Program Interface">API</abbr> <a class="termref informative respec-offending-element" data-link-type="dfn" title="Couldn't find a match for &quot;dom&quot;" id="respec-offender-couldn-t-find-a-match-for-dom-4">event</a></li>
               <li>
-                Elements that are focusable, or have an ID <a class="termref informative" data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-attribute">attribute</a> and an ancestor with the
-                <a class="property-reference" href="https://w3c.github.io/aria/#aria-activedescendant"><code>aria-activedescendant</code></a> attribute that matches the implicit or explicit <a class="termref informative" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-semantics">semantics</a> of
+                Elements that are focusable, or have an ID <a class="termref informative respec-offending-element" data-link-type="dfn" title="Couldn't find a match for &quot;dom&quot;" id="respec-offender-couldn-t-find-a-match-for-dom-5">attribute</a> and an ancestor with the
+                <a class="property-reference" href="https://w3c.github.io/aria/#aria-activedescendant"><code>aria-activedescendant</code></a> attribute that matches the implicit or explicit <a class="termref informative respec-offending-element" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-15">semantics</a> of
                 the required context role. In either case, the element may receive focus and need to fire a<code> FOCUS </code>event.
               </li>
               <li>Elements that have a mappable role in the role attribute string (see <a class="core-mapping" href="https://w3c.github.io/aria/core-aam/#mapping_role">Role Mapping</a>).</li>
@@ -973,7 +973,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Elements that have an ID which is referenced by another element via a <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> relation (<a class="property-reference" href="https://w3c.github.io/aria/"><code>aria-controls</code></a>, <a class="property-reference" href="https://w3c.github.io/aria/#aria-describedby"><code>aria-describedby</code></a>, <a class="property-reference" href="https://w3c.github.io/aria/#aria-flowto"><code>aria-flowto</code></a>, <a class="property-reference" href="https://w3c.github.io/aria/#aria-labelledby"><code>aria-labelledby</code></a> or <a class="property-reference" href="https://w3c.github.io/aria/#aria-labelledby"><code>aria-owns</code></a>) and are not <a class="specref" href="https://w3c.github.io/aria/#dfn-hidden">hidden</a>.
               </li>
             </ul>
-            <p>The latest version of the source document [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam" title="Core Accessibility API Mappings 1.1">CORE-AAM</a></cite>] should be consulted for the normative text.</p>
+            <p>The latest version of the source document [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam" title="Reference &quot;[CORE-AAM]&quot; not found." id="respec-offender-reference-core-aam-not-found-8">CORE-AAM</a></cite>] should be consulted for the normative text.</p>
             <p>
               The exception for hidden elements means that <abbr title="Scalable Vector Graphics">SVG</abbr> metadata elements or other non-rendered content may be used in the accessible name and description of another element without themselves
               being included in the accessiblity tree. For example, current best practice for fallback browser support is to use <code>aria-labelledby</code> and <code>aria-describedby</code>
@@ -1013,7 +1013,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         
         <p>
           <abbr title="Scalable Vector Graphics">SVG</abbr> user agents <span class="rfc2119"><em class="rfc2119">MUST</em></span> conform to
-          <a class="core-mapping" href="https://w3c.github.io/aria/core-aam/#mapping_conflicts">Conflicts between native markup semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr></a> in the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam" title="Core Accessibility API Mappings 1.1">CORE-AAM</a></cite>] where the host language is
+          <a class="core-mapping" href="https://w3c.github.io/aria/core-aam/#mapping_conflicts">Conflicts between native markup semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr></a> in the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam" title="Reference &quot;[CORE-AAM]&quot; not found." id="respec-offender-reference-core-aam-not-found-9">CORE-AAM</a></cite>] where the host language is
           <abbr title="Scalable Vector Graphics">SVG</abbr> and the native semantics are as described in the <a href="#mapping_role_table"><abbr title="Scalable Vector Graphics">SVG</abbr> Element Mapping Tables</a>, the
           <a href="#mapping_state-property">State and Property Mapping</a> section, and the <a href="#mapping_additional">Special Processing Requiring Additional Computation</a> section.
         </p>
@@ -1031,7 +1031,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <p>
           <abbr title="Scalable Vector Graphics">SVG</abbr> user agents <span class="rfc2119"><em class="rfc2119">MUST</em></span> conform to
           <a class="core-mapping" href="https://w3c.github.io/aria/core-aam/#mapping_nodirect">Exposing attributes that do not directly map to accessibility <abbr title="application programming interface">API</abbr> properties</a> in
-          the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam" title="Core Accessibility API Mappings 1.1">CORE-AAM</a></cite>].
+          the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam" title="Reference &quot;[CORE-AAM]&quot; not found." id="respec-offender-reference-core-aam-not-found-10">CORE-AAM</a></cite>].
         </p>
       </section>
     </section>
@@ -1055,7 +1055,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         
         <p>
           <abbr title="Scalable Vector Graphics">SVG</abbr> user agents <span class="rfc2119"><em class="rfc2119">MUST</em></span> conform to the Role Mapping <a class="core-mapping" href="https://w3c.github.io/aria/core-aam/#mapping_general">General Rules</a> accessibility <abbr title="Application Programming Interfaces">API</abbr> computational requirements
-          in the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam" title="Core Accessibility API Mappings 1.1">CORE-AAM</a></cite>].
+          in the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam" title="Reference &quot;[CORE-AAM]&quot; not found." id="respec-offender-reference-core-aam-not-found-11">CORE-AAM</a></cite>].
         </p>
       </section>
 
@@ -1065,8 +1065,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
           This section defines how elements in SVG2 map to <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> roles and platform accessibility <abbr title="Application Programming Interfaces">APIs</abbr> based on their native host language semantics, including which <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> roles may be applied.
           This section refers directly to both the
           <a class="core-mapping" href="https://w3c.github.io/aria/core-aam/#mapping_role_table"><code>Role Mappings</code></a>
-          in the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam" title="Core Accessibility API Mappings 1.1">CORE-AAM</a></cite>] specification and the <a class="graphics-mapping" href="https://w3c.github.io/aria/graphics-aam/#mapping_role_table"><code>Role Mappings</code></a> in the Graphics Accessibility
-          <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref" data-link-type="biblio" href="#bib-graphics-aam" title="Graphics Accessibility API Mappings">GRAPHICS-AAM</a></cite>] specification, which define how <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> roles are mapped to platform accessibility <abbr title="Application Programming Interfaces">APIs</abbr>.
+          in the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam" title="Reference &quot;[CORE-AAM]&quot; not found." id="respec-offender-reference-core-aam-not-found-12">CORE-AAM</a></cite>] specification and the <a class="graphics-mapping" href="https://w3c.github.io/aria/graphics-aam/#mapping_role_table"><code>Role Mappings</code></a> in the Graphics Accessibility
+          <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-graphics-aam" title="Reference &quot;[GRAPHICS-AAM]&quot; not found." id="respec-offender-reference-graphics-aam-not-found-0">GRAPHICS-AAM</a></cite>] specification, which define how <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> roles are mapped to platform accessibility <abbr title="Application Programming Interfaces">APIs</abbr>.
         </p>
         <section id="a"><div class="header-wrapper"><h4 id="role-map-a"><bdi class="secno">5.2.1 </bdi><code>a</code></h4><a class="self-link" href="#role-map-a" aria-label="Permalink for Section 5.2.1"></a></div>
         <table class="data" aria-labelledby="role-map-a">
@@ -1110,7 +1110,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-16">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1132,7 +1132,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-17">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1154,7 +1154,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-18">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1178,7 +1178,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               </th>
               <td>
                 <a class="graphics-role-mapping" href="https://w3c.github.io/aria/graphics-aam/#role-map-graphics-symbol"><code>graphics-symbol</code></a> role mapping if the element meets the criteria for
-                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created
+                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-19">accessible object</a> created
               </td>
             </tr>
             <tr>
@@ -1204,7 +1204,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created, for this element or any child content</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-20">accessible object</a> created, for this element or any child content</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1226,7 +1226,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created, for this element or any child content</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-21">accessible object</a> created, for this element or any child content</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1249,7 +1249,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
               <td>
-                no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created, for this element or any child content; see
+                no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-22">accessible object</a> created, for this element or any child content; see
                 <a href="#mapping_additional_nd">Name and Description</a> mapping
               </td>
             </tr>
@@ -1275,7 +1275,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               </th>
               <td>
                 <a class="graphics-role-mapping" href="https://w3c.github.io/aria/graphics-aam/#role-map-graphics-symbol"><code>graphics-symbol</code></a> role mapping if the element meets the criteria for
-                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created
+                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-23">accessible object</a> created
               </td>
             </tr>
             <tr>
@@ -1301,7 +1301,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-24">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1323,7 +1323,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-25">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1345,7 +1345,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-26">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1367,7 +1367,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-27">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1389,7 +1389,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-28">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1411,7 +1411,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-29">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1433,7 +1433,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-30">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1455,7 +1455,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-31">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1477,7 +1477,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-32">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1499,7 +1499,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-33">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1521,7 +1521,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-34">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1543,7 +1543,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-35">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1565,7 +1565,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-36">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1587,7 +1587,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-37">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1609,7 +1609,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-38">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1631,7 +1631,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-39">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1653,7 +1653,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-40">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1675,7 +1675,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-41">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1697,7 +1697,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-42">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1719,7 +1719,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-43">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1741,7 +1741,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-44">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1763,7 +1763,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-45">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1785,7 +1785,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-46">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1807,7 +1807,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-47">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1829,7 +1829,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-48">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1851,7 +1851,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-49">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -1875,7 +1875,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               </th>
               <td>
                 <a class="core-mapping" href="https://w3c.github.io/aria/core-aam/#role-map-group"><code title="attr-core-role-map-group">group</code></a> role mapping if the element meets the criteria for
-                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created
+                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-50">accessible object</a> created
               </td>
             </tr>
             <tr>
@@ -1903,7 +1903,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               </th>
               <td>
                 <a class="core-mapping" href="https://w3c.github.io/aria/core-aam/#role-map-group"><code title="attr-core-role-map-group">group</code></a> role mapping if the element meets the criteria for
-                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created
+                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-51">accessible object</a> created
               </td>
             </tr>
             <tr>
@@ -1931,7 +1931,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               </th>
               <td>
                 <a class="core-mapping" href="https://w3c.github.io/aria/core-aam/#role-map-img"><code title="attr-aria-role-img">img</code></a> role mapping if the element meets the criteria for
-                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created
+                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-52">accessible object</a> created
               </td>
             </tr>
             <tr>
@@ -1959,7 +1959,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               </th>
               <td>
                 <a class="graphics-role-mapping" href="https://w3c.github.io/aria/graphics-aam/#role-map-graphics-symbol"><code>graphics-symbol</code></a> role mapping if the element meets the criteria for
-                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created
+                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-53">accessible object</a> created
               </td>
             </tr>
             <tr>
@@ -1985,7 +1985,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-54">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -2007,7 +2007,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-55">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -2029,7 +2029,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-56">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -2051,7 +2051,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created, for this element or any child content</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-57">accessible object</a> created, for this element or any child content</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -2073,7 +2073,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-58">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -2097,7 +2097,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               </th>
               <td>
                 <a class="graphics-role-mapping" href="https://w3c.github.io/aria/graphics-aam/#role-map-graphics-symbol"><code>graphics-symbol</code></a> role mapping if the element meets the criteria for
-                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created
+                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-59">accessible object</a> created
               </td>
             </tr>
             <tr>
@@ -2123,7 +2123,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created, for this element or any child content</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-60">accessible object</a> created, for this element or any child content</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -2147,7 +2147,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               </th>
               <td>
                 <a class="graphics-role-mapping" href="https://w3c.github.io/aria/graphics-aam/#role-map-graphics-symbol"><code>graphics-symbol</code></a> role mapping if the element meets the criteria for
-                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created
+                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-61">accessible object</a> created
               </td>
             </tr>
             <tr>
@@ -2175,7 +2175,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               </th>
               <td>
                 <a class="graphics-role-mapping" href="https://w3c.github.io/aria/graphics-aam/#role-map-graphics-symbol"><code>graphics-symbol</code></a> role mapping if the element meets the criteria for
-                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created
+                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-62">accessible object</a> created
               </td>
             </tr>
             <tr>
@@ -2201,7 +2201,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-63">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -2225,7 +2225,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               </th>
               <td>
                 <a class="graphics-role-mapping" href="https://w3c.github.io/aria/graphics-aam/#role-map-graphics-symbol"><code>graphics-symbol</code></a> role mapping if the element meets the criteria for
-                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created
+                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-64">accessible object</a> created
               </td>
             </tr>
             <tr>
@@ -2251,7 +2251,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-65">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -2273,7 +2273,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-66">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -2295,7 +2295,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-67">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -2317,7 +2317,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-68">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -2366,7 +2366,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-69">accessible object</a> created</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -2390,7 +2390,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               </th>
               <td>
                 <a class="graphics-role-mapping" href="https://w3c.github.io/aria/graphics-aam/#role-map-graphics-object"><code>graphics-object</code></a> role mapping if the element meets the criteria for
-                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created
+                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-70">accessible object</a> created
                 <div class="note" role="note" id="issue-container-generatedID-8"><div class="note-title marker" id="h-note-7"><span>Note</span></div><p class="">
                   A <code>symbol</code> element is not directly rendered, and therefore not directly exposed in the accessibility tree. However, the role (default or author-supplied) for the element
                   will be used for the rendered instance of the symbol in the use-element shadow tree. Either the <code>symbol</code> or the <code>use</code> element, or both, may have an associated
@@ -2456,7 +2456,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 </dl>
                 <div class="note" role="note" id="issue-container-generatedID-9"><div class="note-title marker" id="h-note-8"><span>Note</span></div><p class="">
                   The platform mappings given above are similar to those recommended for <a class="html-mapping" href="https://w3c.github.io/aria/html-aam/#el-p">the HTML p element</a>
-                  in the HTML Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings specification [<cite><a class="bibref" data-link-type="biblio" href="#bib-html-aam" title="HTML Accessibility API Mappings 1.0">HTML-AAM</a></cite>]. There is currently no <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role available that defines a distinct text block. However, such roles (denoting
+                  in the HTML Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings specification [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-html-aam" title="Reference &quot;[HTML-AAM]&quot; not found." id="respec-offender-reference-html-aam-not-found">HTML-AAM</a></cite>]. There is currently no <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role available that defines a distinct text block. However, such roles (denoting
                   paragraphs or distinct text regions) exist in many platform accessibility <abbr title="Application Programming Interfaces">APIs</abbr> and are therefore used instead of a generic group role.
                 </p></div>
               </td>
@@ -2486,7 +2486,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               </th>
               <td>
                 <a class="core-mapping" href="https://w3c.github.io/aria/core-aam/#role-map-group"><code title="attr-aria-role-group">group</code></a> role mapping if the element meets the criteria for
-                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created, but changes in
+                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-71">accessible object</a> created, but changes in
                 text styling <em class="rfc2119">SHOULD</em> be exposed through properties of the parent text element where supported
                 <div class="issue" id="issue-container-generatedID-10"><div class="issue-title marker" id="h-issue-0"><span>Issue</span></div><p class="">The role mappings for <code>textPath</code> and <code>tspan</code> are <a href="#textpath-tspan-mappings-issue">an open issue</a>.</p></div>
               </td>
@@ -2514,7 +2514,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Default Platform
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
-              <td>no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created; see <a href="#mapping_additional_nd">Name and Description</a> mapping</td>
+              <td>no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-72">accessible object</a> created; see <a href="#mapping_additional_nd">Name and Description</a> mapping</td>
             </tr>
             <tr>
               <th>Allowed <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Roles and Platform <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings</th>
@@ -2538,7 +2538,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               </th>
               <td>
                 <a class="core-mapping" href="https://w3c.github.io/aria/core-aam/#role-map-group"><code title="attr-aria-role-group">group</code></a> role mapping if the element meets the criteria for
-                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created, but changes in
+                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-73">accessible object</a> created, but changes in
                 text styling <em class="rfc2119">SHOULD</em> be exposed through properties of the parent text element where supported
                 <div class="issue" id="issue-container-generatedID-11"><div class="issue-title marker" id="h-issue-1"><span>Issue</span></div><p class="">The role mappings for <code>textPath</code> and <code>tspan</code> are <a href="#textpath-tspan-mappings-issue">an open issue</a>.</p></div>
               </td>
@@ -2568,7 +2568,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               </th>
               <td>
                 <a class="graphics-role-mapping" href="https://w3c.github.io/aria/graphics-aam/#  "><code>graphics-object</code></a> role mapping if the element meets the criteria for
-                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created
+                <a href="#include_elements">Including Elements in the Accessibility Tree</a>; otherwise, no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-74">accessible object</a> created
                 <div class="note" role="note" id="issue-container-generatedID-12"><div class="note-title marker" id="h-note-9"><span>Note</span></div><p class="">Note that the re-used graphics in the <code>use</code> element's shadow tree may still be included in the accessibility tree, even if the host element is not.</p></div>
                 <div class="note" id="issue-container-generatedID-13"><div class="ednote-title marker" id="h-ednote-0"><span>Editor's note</span></div><div class="">
                   <p>
@@ -2603,7 +2603,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Role Mappings
               </th>
               <td>
-                no <a class="termref informative" data-lt="accessible object" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessible-object">accessible object</a> created; see the section <a href="#mapping_view"><abbr title="Scalable Vector Graphics">SVG</abbr> views</a>
+                no <a class="termref informative respec-offending-element" data-lt="accessible object" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-75">accessible object</a> created; see the section <a href="#mapping_view"><abbr title="Scalable Vector Graphics">SVG</abbr> views</a>
                 for special processing requirements
               </td>
             </tr>
@@ -2633,16 +2633,16 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <section id="mapping_state-property"><div class="header-wrapper"><h2 id="x6-state-and-property-mapping"><bdi class="secno">6. </bdi>State and Property Mapping</h2><a class="self-link" href="#mapping_state-property" aria-label="Permalink for Section 6."></a></div>
       
       <p>
-        This section describes how to expose <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> <a class="termref informative" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-state">states</a> and
+        This section describes how to expose <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> <a class="termref informative respec-offending-element" data-link-type="dfn" title="Couldn't find a match for &quot;wai-aria&quot;" id="respec-offender-couldn-t-find-a-match-for-wai-aria-76">states</a> and
         <a class="specref" href="https://w3c.github.io/aria/#dfn-property">properties</a>. <abbr title="Scalable Vector Graphics">SVG</abbr> user agents <span class="rfc2119"><em class="rfc2119">MUST</em></span> conform to the
-        <a href="https://w3c.github.io/aria/core-aam/#mapping_state-property" class="core-mapping">State and Property Mapping</a> accessibility <abbr title="Application Programming Interfaces">API</abbr> computational requirements in the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam" title="Core Accessibility API Mappings 1.1">CORE-AAM</a></cite>].
+        <a href="https://w3c.github.io/aria/core-aam/#mapping_state-property" class="core-mapping">State and Property Mapping</a> accessibility <abbr title="Application Programming Interfaces">API</abbr> computational requirements in the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam" title="Reference &quot;[CORE-AAM]&quot; not found." id="respec-offender-reference-core-aam-not-found-13">CORE-AAM</a></cite>].
       </p>
       <p>In addition, the following attributes on <abbr title="Scalable Vector Graphics">SVG</abbr> elements require special processing:</p>
       <ul>
         <li>
           <code>tabindex</code>
           on a rendered element (whether visible or not) is interpreted as defined in the
-          <a class="html-mapping" href="https://w3c.github.io/aria/html-aam/#html-attribute-state-and-property-mappings">HTML Attribute State and Property Mappings</a> [<cite><a class="bibref" data-link-type="biblio" href="#bib-html-aam" title="HTML Accessibility API Mappings 1.0">HTML-AAM</a></cite>].
+          <a class="html-mapping" href="https://w3c.github.io/aria/html-aam/#html-attribute-state-and-property-mappings">HTML Attribute State and Property Mappings</a> [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-html-aam" title="Reference &quot;[HTML-AAM]&quot; not found." id="respec-offender-reference-html-aam-not-found-0">HTML-AAM</a></cite>].
         </li>
         <li>
           <code>viewTarget</code>
@@ -2656,7 +2656,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       </ul>
       <p>
         The <code>xlink</code> prefix is used here to refer to the XLink namespace, <code>http://www.w3.org/1999/xlink</code>. Attributes of the given names in that namespace should be processed as
-        described here, regardless of how the namespace is applied in markup or via script. XLink-namespaced attributes are deprecated in <abbr title="Scalable Vector Graphics">SVG</abbr> 2 [<cite><a class="bibref" data-link-type="biblio" href="#bib-svg2" title="Scalable Vector Graphics (SVG) 2">SVG2</a></cite>], but user agents are still expected to process
+        described here, regardless of how the namespace is applied in markup or via script. XLink-namespaced attributes are deprecated in <abbr title="Scalable Vector Graphics">SVG</abbr> 2 [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-svg2" title="Reference &quot;[SVG2]&quot; not found." id="respec-offender-reference-svg2-not-found-3">SVG2</a></cite>], but user agents are still expected to process
         them, to maintain backwards compatibility. Nonetheless, <abbr title="Scalable Vector Graphics">SVG</abbr> 2 <a href="https://svgwg.org/svg2-draft/linking.html#XLinkRefAttrs">requires that</a> the <code>href</code> attribute in the default
         namespace takes precedence over the XLink equivalent if both are set on a given element. In that case, the XLink version is not valid for the purpose of the name and description computation.
       </p>
@@ -2672,8 +2672,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       <section id="mapping_additional_nd"><div class="header-wrapper"><h3 id="x7-1-name-and-description"><bdi class="secno">7.1 </bdi>Name and Description</h3><a class="self-link" href="#mapping_additional_nd" aria-label="Permalink for Section 7.1"></a></div>
         
         <p>
-          When computing an <a class="termref informative" data-link-type="dfn" data-cite-href="https://w3c.github.io/aria/accname/#dfn-accessible-name" href="https://w3c.github.io/aria/accname/#dfn-accessible-name">accessible name</a> or <a class="termref informative" data-link-type="dfn" data-cite-href="https://w3c.github.io/aria/accname/#dfn-accessible-description" href="https://w3c.github.io/aria/accname/#dfn-accessible-description">accessible description</a>, <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agents</a> <em class="rfc2119">MUST</em> conform to the section titled
-          <a class="accname" href="https://w3c.github.io/aria/accname/#mapping_additional_nd_te">Text Alternative Computation</a> of the Accessible Name and Description specification [<cite><a class="bibref" data-link-type="biblio" href="#bib-accname-aam" title="Accessible Name and Description Computation 1.1">ACCNAME-AAM</a></cite>], with the following modifications
+          When computing an <a class="termref informative respec-offending-element" data-link-type="dfn" data-cite-href="https://w3c.github.io/aria/accname/#dfn-accessible-name" title="Couldn't find a match for &quot;accname&quot;" id="respec-offender-couldn-t-find-a-match-for-accname-1">accessible name</a> or <a class="termref informative respec-offending-element" data-link-type="dfn" data-cite-href="https://w3c.github.io/aria/accname/#dfn-accessible-description" title="Couldn't find a match for &quot;accname&quot;" id="respec-offender-couldn-t-find-a-match-for-accname-2">accessible description</a>, <a data-link-type="dfn" class="respec-offending-element" title="Couldn't find a match for &quot;infra&quot;" id="respec-offender-couldn-t-find-a-match-for-infra-5">user agents</a> <em class="rfc2119">MUST</em> conform to the section titled
+          <a class="accname" href="https://w3c.github.io/aria/accname/#mapping_additional_nd_te">Text Alternative Computation</a> of the Accessible Name and Description specification [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-accname-aam" title="Reference &quot;[ACCNAME-AAM]&quot; not found." id="respec-offender-reference-accname-aam-not-found-2">ACCNAME-AAM</a></cite>], with the following modifications
           for the <abbr title="Scalable Vector Graphics">SVG</abbr> host language:
         </p>
         <ol>
@@ -2764,7 +2764,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <p>
           <abbr title="Scalable Vector Graphics">SVG</abbr> user agents <span class="rfc2119"><em class="rfc2119">MUST</em></span> conform to the
           <a href="https://w3c.github.io/aria/core-aam/#mapping_additional_widget-value" class="core-mapping">Widget Values</a>
-          accessibility <abbr title="Application Programming Interfaces">API</abbr> computational requirements in the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam" title="Core Accessibility API Mappings 1.1">CORE-AAM</a></cite>].
+          accessibility <abbr title="Application Programming Interfaces">API</abbr> computational requirements in the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam" title="Reference &quot;[CORE-AAM]&quot; not found." id="respec-offender-reference-core-aam-not-found-14">CORE-AAM</a></cite>].
         </p>
       </section>
 
@@ -2773,7 +2773,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <p>
           <abbr title="Scalable Vector Graphics">SVG</abbr> user agents <span class="rfc2119"><em class="rfc2119">MUST</em></span> conform to the
           <a href="https://w3c.github.io/aria/core-aam/#mapping_additional_relations" class="core-mapping">Relations</a>
-          accessibility <abbr title="Application Programming Interfaces">API</abbr> computational requirements in the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam" title="Core Accessibility API Mappings 1.1">CORE-AAM</a></cite>].
+          accessibility <abbr title="Application Programming Interfaces">API</abbr> computational requirements in the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam" title="Reference &quot;[CORE-AAM]&quot; not found." id="respec-offender-reference-core-aam-not-found-15">CORE-AAM</a></cite>].
         </p>
 
         <div class="issue" id="issue-container-generatedID-15"><div class="issue-title marker" id="h-issue-3"><span>Issue</span></div><div class="">
@@ -2793,7 +2793,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <p>
           <abbr title="Scalable Vector Graphics">SVG</abbr> user agents <span class="rfc2119"><em class="rfc2119">MUST</em></span> conform to the
           <a href="https://w3c.github.io/aria/core-aam/#mapping_additional_position" class="core-mapping">Group Position</a>
-          accessibility <abbr title="Application Programming Interfaces">API</abbr> computational requirements in the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam" title="Core Accessibility API Mappings 1.1">CORE-AAM</a></cite>].
+          accessibility <abbr title="Application Programming Interfaces">API</abbr> computational requirements in the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam" title="Reference &quot;[CORE-AAM]&quot; not found." id="respec-offender-reference-core-aam-not-found-16">CORE-AAM</a></cite>].
         </p>
       </section>
 
@@ -2804,10 +2804,10 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
           This specification uses the terms
           <a href="https://dom.spec.whatwg.org/#concept-shadow-tree">shadow tree</a>
           and <a href="https://dom.spec.whatwg.org/#concept-documentfragment-host">host</a>
-          as defined by the <abbr title="Document Object Model">DOM</abbr> standard [<cite><a class="bibref" data-link-type="biblio" href="#bib-dom" title="DOM Standard">DOM</a></cite>], and the terms
+          as defined by the <abbr title="Document Object Model">DOM</abbr> standard [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-dom" title="Reference &quot;[DOM]&quot; not found." id="respec-offender-reference-dom-not-found-0">DOM</a></cite>], and the terms
           <a href="https://www.w3.org/TR/SVG2/struct.html#TermUseElementShadowTree">use-element shadow tree</a>
           and <a href="https://www.w3.org/TR/SVG2/struct.html#TermElementInstance">element instance</a>
-          as defined by <abbr title="Scalable Vector Graphics">SVG</abbr> 2 [<cite><a class="bibref" data-link-type="biblio" href="#bib-svg2" title="Scalable Vector Graphics (SVG) 2">SVG2</a></cite>].
+          as defined by <abbr title="Scalable Vector Graphics">SVG</abbr> 2 [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-svg2" title="Reference &quot;[SVG2]&quot; not found." id="respec-offender-reference-svg2-not-found-4">SVG2</a></cite>].
         </p>
 
         <p>
@@ -2915,7 +2915,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <p>
           If an animated change affects whether an element is rendered, or change whether it is visible in a way that would cause it to be excluded from the accessibility tree, user agents
           <span class="rfc2119"><em class="rfc2119">SHOULD</em></span> expose the change according to the guidelines in the
-          <a class="core-mapping" href="https://w3c.github.io/aria/core-aam/#mapping_events_visibility">Changes to document content or node visibility</a> section of the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam" title="Core Accessibility API Mappings 1.1">CORE-AAM</a></cite>].
+          <a class="core-mapping" href="https://w3c.github.io/aria/core-aam/#mapping_events_visibility">Changes to document content or node visibility</a> section of the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam" title="Reference &quot;[CORE-AAM]&quot; not found." id="respec-offender-reference-core-aam-not-found-17">CORE-AAM</a></cite>].
         </p>
       </section>
     </section>
@@ -2925,17 +2925,17 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       <p>
         <abbr title="Scalable Vector Graphics">SVG</abbr> user agents <span class="rfc2119"><em class="rfc2119">MUST</em></span> conform to the
         <a href="https://w3c.github.io/aria/core-aam/#mapping_actions" class="core-mapping">Actions</a>
-        accessibility <abbr title="Application Programming Interfaces">API</abbr> computational requirements in the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam" title="Core Accessibility API Mappings 1.1">CORE-AAM</a></cite>].
+        accessibility <abbr title="Application Programming Interfaces">API</abbr> computational requirements in the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam" title="Reference &quot;[CORE-AAM]&quot; not found." id="respec-offender-reference-core-aam-not-found-18">CORE-AAM</a></cite>].
       </p>
     </section>
 
     <section id="mapping_events"><div class="header-wrapper"><h2 id="x9-events"><bdi class="secno">9. </bdi>Events</h2><a class="self-link" href="#mapping_events" aria-label="Permalink for Section 9."></a></div>
       
       <p>
-        <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agents</a> fire <a href="https://w3c.github.io/aria/#dfn-event" class="specref">events</a> for user actions,
+        <a data-link-type="dfn" class="respec-offending-element" title="Couldn't find a match for &quot;infra&quot;" id="respec-offender-couldn-t-find-a-match-for-infra-6">user agents</a> fire <a href="https://w3c.github.io/aria/#dfn-event" class="specref">events</a> for user actions,
         <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr>
         <a href="https://w3c.github.io/aria/#dfn-state" class="specref">state</a> changes, changes to document content or node visibility, changes in selection, and operation of menus. Conforming user agents
-        <span class="rfc2119"><em class="rfc2119">MUST</em></span> support the [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam" title="Core Accessibility API Mappings 1.1">CORE-AAM</a></cite>] <a class="core-mapping" href="https://w3c.github.io/aria/core-aam/#mapping_events">Events</a> mappings.
+        <span class="rfc2119"><em class="rfc2119">MUST</em></span> support the [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam" title="Reference &quot;[CORE-AAM]&quot; not found." id="respec-offender-reference-core-aam-not-found-19">CORE-AAM</a></cite>] <a class="core-mapping" href="https://w3c.github.io/aria/core-aam/#mapping_events">Events</a> mappings.
       </p>
     </section>
 
@@ -2944,15 +2944,15 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       <p>
         <abbr title="Scalable Vector Graphics">SVG</abbr> user agents <span class="rfc2119"><em class="rfc2119">MUST</em></span> conform to the
         <a href="https://w3c.github.io/aria/core-aam/#document-handling" class="core-mapping">Special Document Handling Procedures</a>
-        in the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam" title="Core Accessibility API Mappings 1.1">CORE-AAM</a></cite>].
+        in the Core Accessibility <abbr title="Application Programming Interfaces">API</abbr> Mappings [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-core-aam" title="Reference &quot;[CORE-AAM]&quot; not found." id="respec-offender-reference-core-aam-not-found-20">CORE-AAM</a></cite>].
       </p>
     </section>
 
     <section id="security-privacy"><div class="header-wrapper"><h2 id="x11-security-and-privacy-considerations"><bdi class="secno">11. </bdi>Security and Privacy Considerations</h2><a class="self-link" href="#security-privacy" aria-label="Permalink for Section 11."></a></div>
       
       <p>
-        Implementation of this specification is not expected to add any new security or privacy considerations to the web platform, relative to implementation of <abbr title="Scalable Vector Graphics">SVG</abbr> ([<cite><a class="bibref" data-link-type="biblio" href="#bib-svg2" title="Scalable Vector Graphics (SVG) 2">SVG2</a></cite>]) and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr>
-        ([<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">WAI-ARIA</a></cite>]) separately.
+        Implementation of this specification is not expected to add any new security or privacy considerations to the web platform, relative to implementation of <abbr title="Scalable Vector Graphics">SVG</abbr> ([<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-svg2" title="Reference &quot;[SVG2]&quot; not found." id="respec-offender-reference-svg2-not-found-5">SVG2</a></cite>]) and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr>
+        ([<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-wai-aria" title="Reference &quot;[WAI-ARIA]&quot; not found." id="respec-offender-reference-wai-aria-not-found-3">WAI-ARIA</a></cite>]) separately.
       </p>
       <div class="note" id="issue-container-generatedID-17"><div class="ednote-title marker" id="h-ednote-1"><span>Editor's note</span></div><p class="">
         If you believe there is a potential new security or privacy risk created by this specification, please <a href="https://github.com/w3c/svg-aam/issues">raise an issue</a>
@@ -3012,52 +3012,52 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 <section id="references" class="appendix"><div class="header-wrapper"><h2 id="b-references"><bdi class="secno">B. </bdi>References</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix B."></a></div><section id="normative-references"><div class="header-wrapper"><h3 id="b-1-normative-references"><bdi class="secno">B.1 </bdi>Normative references</h3><a class="self-link" href="#normative-references" aria-label="Permalink for Appendix B.1"></a></div>
     
     <dl class="bibliography"><dt id="bib-accname-aam">[ACCNAME-AAM]</dt><dd>
-      <a href="https://www.w3.org/TR/accname-1.1/"><cite>Accessible Name and Description Computation 1.1</cite></a>. Joanmarie Diggs; Bryan Garaventa; Michael Cooper.  W3C. 18 December 2018. W3C Recommendation. URL: <a href="https://www.w3.org/TR/accname-1.1/">https://www.w3.org/TR/accname-1.1/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-core-aam">[CORE-AAM]</dt><dd>
-      <a href="https://www.w3.org/TR/core-aam-1.1/"><cite>Core Accessibility API Mappings 1.1</cite></a>. Joanmarie Diggs; Joseph Scheuhammer; Richard Schwerdtfeger; Michael Cooper; Andi Snow-Weaver; Aaron Leventhal.  W3C. 14 December 2017. W3C Recommendation. URL: <a href="https://www.w3.org/TR/core-aam-1.1/">https://www.w3.org/TR/core-aam-1.1/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-css-cascade-3">[CSS-CASCADE-3]</dt><dd>
-      <a href="https://www.w3.org/TR/css-cascade-3/"><cite>CSS Cascading and Inheritance Level 3</cite></a>. Elika Etemad; Tab Atkins Jr. W3C. 11 February 2021. W3C Recommendation. URL: <a href="https://www.w3.org/TR/css-cascade-3/">https://www.w3.org/TR/css-cascade-3/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-dom">[DOM]</dt><dd>
-      <a href="https://dom.spec.whatwg.org/"><cite>DOM Standard</cite></a>. Anne van Kesteren.  WHATWG. Living Standard. URL: <a href="https://dom.spec.whatwg.org/">https://dom.spec.whatwg.org/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-graphics-aam">[GRAPHICS-AAM]</dt><dd>
-      <a href="https://www.w3.org/TR/graphics-aam-1.0/"><cite>Graphics Accessibility API Mappings</cite></a>. Amelia Bellamy-Royds; Joanmarie Diggs; Michael Cooper.  W3C. 2 October 2018. W3C Recommendation. URL: <a href="https://www.w3.org/TR/graphics-aam-1.0/">https://www.w3.org/TR/graphics-aam-1.0/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-html-aam">[HTML-AAM]</dt><dd>
-      <a href="https://www.w3.org/TR/html-aam-1.0/"><cite>HTML Accessibility API Mappings 1.0</cite></a>. Scott O'Hara; Rahim Abdi.  W3C. 5 August 2026. W3C Working Draft. URL: <a href="https://www.w3.org/TR/html-aam-1.0/">https://www.w3.org/TR/html-aam-1.0/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-infra">[infra]</dt><dd>
-      <a href="https://infra.spec.whatwg.org/"><cite>Infra Standard</cite></a>. Anne van Kesteren; Domenic Denicola.  WHATWG. Living Standard. URL: <a href="https://infra.spec.whatwg.org/">https://infra.spec.whatwg.org/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-rfc2119">[rfc2119]</dt><dd>
-      <a href="https://www.rfc-editor.org/info/rfc2119/"><cite>Key words for use in RFCs to Indicate Requirement Levels</cite></a>. S. Bradner.  IETF. March 1997. Best Current Practice. URL: <a href="https://www.rfc-editor.org/info/rfc2119/">https://www.rfc-editor.org/info/rfc2119/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-rfc8174">[RFC8174]</dt><dd>
-      <a href="https://www.rfc-editor.org/info/rfc8174/"><cite>Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words</cite></a>. B. Leiba.  IETF. May 2017. Best Current Practice. URL: <a href="https://www.rfc-editor.org/info/rfc8174/">https://www.rfc-editor.org/info/rfc8174/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-svg1">[SVG1]</dt><dd>
-      <a href="https://www.w3.org/TR/SVG/"><cite>Scalable Vector Graphics (SVG) 1.0 Specification</cite></a>. Jon Ferraiolo.  W3C. 4 September 2001. W3C Recommendation. URL: <a href="https://www.w3.org/TR/SVG/">https://www.w3.org/TR/SVG/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-svg11">[SVG11]</dt><dd>
-      <a href="https://www.w3.org/TR/SVG11/"><cite>Scalable Vector Graphics (SVG) 1.1 (Second Edition)</cite></a>. Erik Dahlström; Patrick Dengler; Anthony Grasso; Chris Lilley; Cameron McCormack; Doug Schepers; Jonathan Watt; Jon Ferraiolo; Jun Fujisawa; Dean Jackson et al.  W3C. 16 August 2011. W3C Recommendation. URL: <a href="https://www.w3.org/TR/SVG11/">https://www.w3.org/TR/SVG11/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-svg2">[SVG2]</dt><dd>
-      <a href="https://www.w3.org/TR/SVG2/"><cite>Scalable Vector Graphics (SVG) 2</cite></a>. Amelia Bellamy-Royds; Bogdan Brinza; Chris Lilley; Dirk Schulze; David Storey; Eric Willigers.  W3C. 4 October 2018. W3C Candidate Recommendation. URL: <a href="https://www.w3.org/TR/SVG2/">https://www.w3.org/TR/SVG2/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-wai-aria">[WAI-ARIA]</dt><dd>
-      <a href="https://www.w3.org/TR/wai-aria-1.1/"><cite>Accessible Rich Internet Applications (WAI-ARIA) 1.1</cite></a>. Joanmarie Diggs; Shane McCarron; Michael Cooper; Richard Schwerdtfeger; James Craig.  W3C. 14 December 2017. W3C Recommendation. URL: <a href="https://www.w3.org/TR/wai-aria-1.1/">https://www.w3.org/TR/wai-aria-1.1/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd></dl>
   </section><section id="informative-references"><div class="header-wrapper"><h3 id="b-2-informative-references"><bdi class="secno">B.2 </bdi>Informative references</h3><a class="self-link" href="#informative-references" aria-label="Permalink for Appendix B.2"></a></div>
     
     <dl class="bibliography"><dt id="bib-accname">[accname]</dt><dd>
-      <a href="https://www.w3.org/TR/accname-1.1/"><cite>Accessible Name and Description Computation 1.1</cite></a>. Joanmarie Diggs; Bryan Garaventa; Michael Cooper.  W3C. 18 December 2018. W3C Recommendation. URL: <a href="https://www.w3.org/TR/accname-1.1/">https://www.w3.org/TR/accname-1.1/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-at-spi">[AT-SPI]</dt><dd>
-      <a href="https://gnome.pages.gitlab.gnome.org/at-spi2-core/libatspi/"><cite>Assistive Technology Service Provider Interface</cite></a>.  The GNOME Project. URL: <a href="https://gnome.pages.gitlab.gnome.org/at-spi2-core/libatspi/">https://gnome.pages.gitlab.gnome.org/at-spi2-core/libatspi/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-atk">[ATK]</dt><dd>
-      <a href="https://developer.gnome.org/atk/stable/"><cite>ATK - Accessibility Toolkit</cite></a>.  The GNOME Project. URL: <a href="https://developer.gnome.org/atk/stable/">https://developer.gnome.org/atk/stable/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-axapi">[AXAPI]</dt><dd>
-      <a href="https://developer.apple.com/documentation/appkit/nsaccessibility"><cite>The NSAccessibility Protocol for macOS</cite></a>.  Apple, Inc. URL: <a href="https://developer.apple.com/documentation/appkit/nsaccessibility">https://developer.apple.com/documentation/appkit/nsaccessibility</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-graphics-aria">[GRAPHICS-ARIA]</dt><dd>
-      <a href="https://www.w3.org/TR/graphics-aria-1.0/"><cite>WAI-ARIA Graphics Module</cite></a>. Amelia Bellamy-Royds; Joanmarie Diggs; Michael Cooper.  W3C. 2 October 2018. W3C Recommendation. URL: <a href="https://www.w3.org/TR/graphics-aria-1.0/">https://www.w3.org/TR/graphics-aria-1.0/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-iaccessible2">[IAccessible2]</dt><dd>
-      <a href="https://wiki.linuxfoundation.org/accessibility/iaccessible2/"><cite>IAccessible2</cite></a>.  Linux Foundation. URL: <a href="https://wiki.linuxfoundation.org/accessibility/iaccessible2/">https://wiki.linuxfoundation.org/accessibility/iaccessible2/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-msaa">[MSAA]</dt><dd>
-      <a href="https://docs.microsoft.com/en-us/windows/win32/winauto/microsoft-active-accessibility"><cite>Microsoft Active Accessibility (MSAA)</cite></a>.  Microsoft Corporation. URL: <a href="https://docs.microsoft.com/en-us/windows/win32/winauto/microsoft-active-accessibility">https://docs.microsoft.com/en-us/windows/win32/winauto/microsoft-active-accessibility</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-ui-automation">[UI-AUTOMATION]</dt><dd>
-      <a href="https://docs.microsoft.com/en-us/windows/win32/winauto/ui-automation-specification"><cite>UI Automation</cite></a>.  Microsoft Corporation. URL: <a href="https://docs.microsoft.com/en-us/windows/win32/winauto/ui-automation-specification">https://docs.microsoft.com/en-us/windows/win32/winauto/ui-automation-specification</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-wai-aria-10">[WAI-ARIA-10]</dt><dd>
-      <a href="https://www.w3.org/TR/wai-aria/"><cite>Accessible Rich Internet Applications (WAI-ARIA) 1.0</cite></a>. James Craig; Michael Cooper et al.  W3C. 20 March 2014. W3C Recommendation. URL: <a href="https://www.w3.org/TR/wai-aria/">https://www.w3.org/TR/wai-aria/</a>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd></dl>
   </section></section><p role="navigation" id="back-to-top">
     <a href="#title"><abbr title="Back to Top">↑</abbr></a>
