@@ -394,8 +394,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "aliasOf": "WAI-ARIA-1.1"
     }
   },
-  "publishISODate": "2026-09-02T00:00:00.000Z",
-  "generatedSubtitle": "W3C Editor's Draft 02 September 2026"
+  "publishISODate": "2026-09-24T00:00:00.000Z",
+  "generatedSubtitle": "W3C Editor's Draft 24 September 2026"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-ED">
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/dark.css" media="(prefers-color-scheme: dark)"></head>
@@ -403,7 +403,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
   </a></p>
     <h1 id="title" class="title">Accessible Rich Internet Applications (WAI-ARIA) 1.3</h1> 
-    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2026-09-02">02 September 2026</time></p>
+    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2026-09-24">24 September 2026</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
@@ -882,7 +882,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               commonly known as notifications.
             </p>
           </dd>
-          <dt><dfn data-noexport="" id="dfn-expose" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn" class="respec-offending-element" title="Found definition for &quot;Expose&quot;, but nothing links to it. This is usually a spec bug!">Expose</dfn></dt>
+          <dt><dfn data-local-lt="exposed|exposes" data-noexport="" id="dfn-expose" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Expose</dfn></dt>
           
           <dd>
             <p>Translated to platform-specific <a class="termref informative internalDFN" href="#dfn-accessibility-api" data-link-type="dfn" id="ref-for-dfn-accessibility-api-7">accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a> as defined in the <a href="https://w3c.github.io/aria/core-aam/" class="core-mapping">Core Accessibility <abbr title="Application Programming Interface">API</abbr> Mappings</a>.</p>
@@ -1033,11 +1033,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               <a class="specref" href="https://w3c.github.io/aria/#statevsprop">clarification of states versus properties</a>.
             </p>
           </dd>
-          <dt><dfn data-noexport="" id="dfn-target-element" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn" class="respec-offending-element" title="Found definition for &quot;Target Element&quot;, but nothing links to it. This is usually a spec bug!">Target Element</dfn></dt>
+          <dt><dfn data-lt="target|Target Element" data-noexport="" id="dfn-target" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Target Element</dfn></dt>
           <dd>
             <p>
-              An element specified in a <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> relation. For example, in <code> &lt;div aria-controls=”elem1”&gt;</code>, where
-              <code>“elem1”</code> is the ID for the target element.
+              An element specified in a <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> relation. For example, given <code> &lt;div aria-controls=”elem1”&gt;</code>, the element
+              with ID <code>“elem1”</code> is the target element.
             </p>
           </dd>
           <dt><dfn data-lt="unicode braille|Unicode Braille Patterns" data-noexport="" id="dfn-unicode-braille" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Unicode Braille Patterns</dfn></dt>
@@ -1092,7 +1092,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <p>
           A conforming <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agent</a> which implements a document object model that does not conform to the <abbr title="World Wide Web Consortium">W3C</abbr> <abbr title="Document Object Model">DOM</abbr> specification <em class="rfc2119">MUST</em> include the <a href="#attr-role" class="internalDFN" data-link-type="dfn" id="ref-for-attr-role-2"><code>role</code> attribute</a> and its
           <a href="#roles_categorization"><abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role values</a>, as well as the <a href="#states_and_properties"><abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> States and Properties</a> in the <abbr title="Document Object Model">DOM</abbr> as specified by the author, even
-          though processing might affect how the elements are exposed to accessibility <abbr title="Application Programming Interfaces">APIs</abbr>. Doing so ensures that each <a href="#attr-role" class="internalDFN" data-link-type="dfn" id="ref-for-attr-role-3"><code>role</code> attribute</a> and all
+          though processing might affect how the elements are <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-1">exposed</a> to accessibility <abbr title="Application Programming Interfaces">APIs</abbr>. Doing so ensures that each <a href="#attr-role" class="internalDFN" data-link-type="dfn" id="ref-for-attr-role-3"><code>role</code> attribute</a> and all
           <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> states and properties, including their values, are in the document in an unmodified form so other tools, such as assistive
           technologies, can access them. A conforming <abbr title="World Wide Web Consortium">W3C</abbr> <abbr title="Document Object Model">DOM</abbr> meets this criterion.
         </p>
@@ -1325,7 +1325,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                   semantics determine the focusable state.
                 </li>
                 <li>
-                  Focused, whenever the element is the target of the <a href="https://w3c.github.io/aria/#aria-activedescendant" class="property-reference"><code>aria-activedescendant</code></a> attribute and the element with the <a href="https://w3c.github.io/aria/#aria-activedescendant" class="property-reference"><code>aria-activedescendant</code></a> attribute has
+                  Focused, whenever the element is the <a href="#dfn-target" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-target-1">target</a> of the <a href="https://w3c.github.io/aria/#aria-activedescendant" class="property-reference"><code>aria-activedescendant</code></a> attribute and the element with the <a href="https://w3c.github.io/aria/#aria-activedescendant" class="property-reference"><code>aria-activedescendant</code></a> attribute has
                   <abbr title="Document Object Model">DOM</abbr> focus.
                 </li>
               </ol>
@@ -1454,7 +1454,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
           <p>
             <a href="#dfn-state" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-state-13">States</a> and <a data-link-type="dfn|abstract-op" href="#dfn-property" class="internalDFN" id="ref-for-dfn-property-11">properties</a> specifically applicable to the <a href="#dfn-role" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-role-17">role</a> and child roles. Authors <em class="rfc2119">MAY</em> provide <span>values</span> for supported states and properties, but need not
             in cases where default values are sufficient. <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agents</a> <em class="rfc2119">MUST</em> map all supported states and properties for the role to an accessibility <abbr title="Application Programming Interface">API</abbr>. If the state or property is undefined and
-            it has a default value for the role, <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agents</a> <em class="rfc2119">SHOULD</em> expose the default value.
+            it has a default value for the role, <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agents</a> <em class="rfc2119">SHOULD</em> <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-2">expose</a> the default value.
           </p>
           <div class="note" role="note" id="issue-container-generatedID-2"><div class="note-title marker" id="h-note-2"><span>Note</span></div><p class="">A host language attribute with the appropriate <a href="#implicit_semantics">implicit <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantic</a> fulfills this requirement.</p></div>
         </section>
@@ -1593,7 +1593,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <section id="childrenArePresentational"><div class="header-wrapper"><h4 id="x5-2-9-children-presentational"><bdi class="secno">5.2.9 </bdi>Children Presentational</h4><a class="self-link" href="#childrenArePresentational" aria-label="Permalink for Section 5.2.9"></a></div>
           
           <p>
-            Indicates whether <abbr title="Document Object Model">DOM</abbr> descendants are presentational. <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agents</a> <em class="rfc2119">SHOULD NOT</em> expose descendants of this <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-element">element</a> through the platform
+            Indicates whether <abbr title="Document Object Model">DOM</abbr> descendants are presentational. <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agents</a> <em class="rfc2119">SHOULD NOT</em> <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-3">expose</a> descendants of this <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-element">element</a> through the platform
             <a href="#dfn-accessibility-api" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessibility-api-14">accessibility <abbr title="Application Programming Interface">API</abbr></a>. If <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agents</a> do not hide the descendant nodes, some information might be read twice.
           </p>
           <p>Authors <em class="rfc2119">MUST NOT</em> specify <a href="https://w3c.github.io/aria/#aria-owns" class="property-reference"><code>aria-owns</code></a> on an element which has Presentational Children.</p>
@@ -3199,7 +3199,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <p>
               While the <code>columnheader</code> role can be used in both interactive grids and non-interactive tables, the use of <a href="https://w3c.github.io/aria/#aria-readonly" class="property-reference"><code>aria-readonly</code></a> and <a href="https://w3c.github.io/aria/#aria-required" class="property-reference"><code>aria-required</code></a> is only
               applicable to interactive elements. Therefore, authors <em class="rfc2119">SHOULD NOT</em> use <a href="https://w3c.github.io/aria/#aria-required" class="property-reference"><code>aria-required</code></a> or <a href="https://w3c.github.io/aria/#aria-readonly" class="property-reference"><code>aria-readonly</code></a> in a <code>columnheader</code> that descends from a
-              <a href="https://w3c.github.io/aria/#table" class="role-reference"><code>table</code></a>, and user agents <em class="rfc2119">SHOULD NOT</em> expose either property to <a href="#assistive-technology" class="internalDFN" data-link-type="dfn" id="ref-for-assistive-technology-21">assistive technologies</a> unless the <code>columnheader</code> descends from a <a href="https://w3c.github.io/aria/#grid" class="role-reference"><code>grid</code></a>.
+              <a href="https://w3c.github.io/aria/#table" class="role-reference"><code>table</code></a>, and user agents <em class="rfc2119">SHOULD NOT</em> <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-4">expose</a> either property to <a href="#assistive-technology" class="internalDFN" data-link-type="dfn" id="ref-for-assistive-technology-21">assistive technologies</a> unless the <code>columnheader</code> descends from a <a href="https://w3c.github.io/aria/#grid" class="role-reference"><code>grid</code></a>.
             </p>
             <div class="note" role="note" id="issue-container-generatedID-12"><div class="note-title marker" id="h-note-12"><span>Note</span></div><p class="">
               Because cells are organized into rows, there is not a single container element for the column. The column is the set of <a href="https://w3c.github.io/aria/#gridcell" class="role-reference"><code>gridcell</code></a> elements in a particular position within
@@ -3345,7 +3345,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               popup while focus remains on the <code>combobox</code> element.
             </p>
             <p>
-              User agents <em class="rfc2119">MUST</em> expose the value of elements with role <code>combobox</code> to <a href="#assistive-technology" class="internalDFN" data-link-type="dfn" id="ref-for-assistive-technology-22">assistive technologies</a>. The value of a <code>combobox</code> is represented by one of the
+              User agents <em class="rfc2119">MUST</em> <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-5">expose</a> the value of elements with role <code>combobox</code> to <a href="#assistive-technology" class="internalDFN" data-link-type="dfn" id="ref-for-assistive-technology-22">assistive technologies</a>. The value of a <code>combobox</code> is represented by one of the
               following:
             </p>
             <ul>
@@ -3589,7 +3589,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               <li>
                 Otherwise, if the comment relates to other content in the page:
                 <ul>
-                  <li>Provide <a href="https://w3c.github.io/aria/#aria-details" class="property-reference"><code>aria-details</code></a> on the element containing the commented content with a value refering to the element with role <code>comment</code>.</li>
+                  <li>Provide <a href="https://w3c.github.io/aria/#aria-details" class="property-reference"><code>aria-details</code></a> on the element containing the commented content with a value referring to the element with role <code>comment</code>.</li>
                   <li>
                     If there are multiple comments related to the same commented content, either provide a value for <a href="https://w3c.github.io/aria/#aria-details" class="property-reference"><code>aria-details</code></a> on the commented content that refers to each individual
                     comment, or use <a href="https://w3c.github.io/aria/#aria-details" class="property-reference"><code>aria-details</code></a> to refer to a parent container of the comments. If <a href="https://w3c.github.io/aria/#aria-details" class="property-reference"><code>aria-details</code></a> refers to an element containing comments rather than
@@ -3600,7 +3600,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             </ol>
             <p>
               If the author has not explicitly declared <a href="https://w3c.github.io/aria/#aria-level" class="property-reference"><code>aria-level</code></a>, <a href="https://w3c.github.io/aria/#aria-posinset" class="property-reference"><code>aria-posinset</code></a>, or <a href="https://w3c.github.io/aria/#aria-setsize" class="property-reference"><code>aria-setsize</code></a> for a <code>comment</code> element, user agents <em class="rfc2119">MUST</em>
-              automatically compute the missing values and expose them to assistive technologies.
+              automatically compute the missing values and <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-6">expose</a> them to assistive technologies.
             </p>
           </div>
           <table class="def">
@@ -4138,7 +4138,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   </div>
               <p>
                 In the following example, the first text field will receive initial focus when the dialog is rendered. As this means focus will be set "after" the preceding content that provides
-                instructions for the form fields, an <code>aria-describedby</code> attribute is used to expose this content as a description for the <code>dialog</code>.
+                instructions for the form fields, an <code>aria-describedby</code> attribute is used to <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-7">expose</a> this content as a description for the <code>dialog</code>.
               </p>
               <div class="example" id="example-14-0">
         <div class="marker">
@@ -4233,9 +4233,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
           <div class="role-description">
             <p>[Deprecated in <abbr title="Accessible Rich Internet Applications">ARIA</abbr> 1.2] A list of references to members of a group, such as a static table of contents.</p>
             <div class="note" role="note" id="issue-container-generatedID-21"><div class="note-title marker" id="h-note-19"><span>Note</span></div><p class="">
-              As exposed by accessibility <abbr title="Application Programming Interfaces">APIs</abbr>, the <code>directory</code> <a href="#dfn-role" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-role-37">role</a> is essentially equivalent to the <code>list</code> <a href="#dfn-role" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-role-38">role</a>. So, using <code>directory</code> does not provide
-              any additional benefits to assistive technology users. Authors are advised to treat <code>directory</code> as deprecated and to use <code>list</code>, or a host language's equivalent
-              semantics instead.
+              As <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-8">exposed</a> by accessibility <abbr title="Application Programming Interfaces">APIs</abbr>, the <code>directory</code> <a href="#dfn-role" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-role-37">role</a> is essentially equivalent to the <code>list</code> <a href="#dfn-role" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-role-38">role</a>. So, using <code>directory</code> does not
+              provide any additional benefits to assistive technology users. Authors are advised to treat <code>directory</code> as deprecated and to use <code>list</code>, or a host language's
+              equivalent semantics instead.
             </p></div>
             <p>
               A <code>directory</code> is a static table of contents, whether linked or unlinked. This includes tables of contents built with lists, including nested lists. Dynamic tables of contents,
@@ -4521,7 +4521,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <p>
               In addition to providing a brief label, authors <em class="rfc2119">MAY</em> apply <a href="https://w3c.github.io/aria/#aria-describedby" class="property-reference"><code>aria-describedby</code></a> to <a href="https://w3c.github.io/aria/#article" class="role-reference"><code>article</code></a> elements in a <code>feed</code> to suggest to screen readers which
               elements to speak after the label when users navigate by <a href="https://w3c.github.io/aria/#article" class="role-reference"><code>article</code></a>. Screen readers <em class="rfc2119">MAY</em> provide users with a way to quickly scan <code>feed</code> content by speaking both the
-              label and <a class="informative" data-link-type="dfn" data-cite-href="https://w3c.github.io/aria/accname/#dfn-accessible-description" href="https://w3c.github.io/aria/accname/#dfn-accessible-description">accessible description</a> when navigating by <a href="https://w3c.github.io/aria/#article" class="role-reference"><code>article</code></a>, enabling the user to ignore repetitive or less important elements, such as embedded
+              label and <a class="informative" data-link-type="dfn" href="https://www.w3.org/TR/accname-1.2/#dfn-accessible-description">accessible description</a> when navigating by <a href="https://w3c.github.io/aria/#article" class="role-reference"><code>article</code></a>, enabling the user to ignore repetitive or less important elements, such as embedded
               interaction widgets, that the author has left out of the description.
             </p>
             <p>
@@ -4794,8 +4794,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               as <a href="https://w3c.github.io/aria/#aria-live" class="property-reference"><code>aria-live</code></a> attributes.
             </p>
             <p>
-              However, unlike elements with role <code>presentation</code>, user agents expose <code>generic</code> elements in <a href="#dfn-accessibility-api" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessibility-api-16">accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a> when permitted accessibility attributes have
-              been specified. User agents <em class="rfc2119">MAY</em> otherwise ignore <code>generic</code> elements if such permitted attributes have not been specified.
+              However, unlike elements with role <code>presentation</code>, user agents <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-9">expose</a> <code>generic</code> elements in <a href="#dfn-accessibility-api" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessibility-api-16">accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a> when permitted accessibility attributes
+              have been specified. User agents <em class="rfc2119">MAY</em> otherwise ignore <code>generic</code> elements if such permitted attributes have not been specified.
             </p>
           </div>
           <table class="def">
@@ -4922,8 +4922,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             
             <p>
               If <a href="https://w3c.github.io/aria/#aria-readonly" class="property-reference"><code>aria-readonly</code></a> is set on an element with role <code>grid</code>, <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agents</a> <em class="rfc2119">MUST</em> propagate the value to all <a href="https://w3c.github.io/aria/#gridcell" class="role-reference"><code>gridcell</code></a> elements that are
-              <a href="#dfn-accessibility-descendant" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessibility-descendant-8">accessibility descendants</a> of that <code>grid</code> and expose the value in the accessibility <abbr title="Application Programming Interface">API</abbr>. An author <em class="rfc2119">MAY</em> override the propagated value of <a href="https://w3c.github.io/aria/#aria-readonly" class="property-reference"><code>aria-readonly</code></a> for an
-              individual <a href="https://w3c.github.io/aria/#gridcell" class="role-reference"><code>gridcell</code></a> element.
+              <a href="#dfn-accessibility-descendant" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessibility-descendant-8">accessibility descendants</a> of that <code>grid</code> and <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-10">expose</a> the value in the accessibility <abbr title="Application Programming Interface">API</abbr>. An author <em class="rfc2119">MAY</em> override the propagated value of
+              <a href="https://w3c.github.io/aria/#aria-readonly" class="property-reference"><code>aria-readonly</code></a> for an individual <a href="https://w3c.github.io/aria/#gridcell" class="role-reference"><code>gridcell</code></a> element.
             </p>
             <p>
               In a <code>grid</code> that provides cell content editing functions, if the content of a focusable <a href="https://w3c.github.io/aria/#gridcell" class="role-reference"><code>gridcell</code></a> element is not editable, authors <em class="rfc2119">MAY</em> set
@@ -5373,7 +5373,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <p>
               An <code>img</code> can contain captions and descriptive text, as well as multiple image files that when viewed together give the impression of a single image. An
               <code>img</code> represents a single graphic within a document, whether or not it is formed by a collection of drawing <a href="#dfn-object" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-object-13">objects</a>. In order for an element with a <a href="#dfn-role" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-role-44">role</a> of
-              <code>img</code> to be <a href="#dfn-perceivable" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-perceivable-4">perceivable</a>, authors <em class="rfc2119">MUST</em> provide the element with an <a class="informative" data-link-type="dfn" data-cite-href="https://w3c.github.io/aria/accname/#dfn-accessible-name" href="https://w3c.github.io/aria/accname/#dfn-accessible-name">accessible name</a>. This can be done using the <a href="https://w3c.github.io/aria/#aria-label" class="property-reference"><code>aria-label</code></a> or
+              <code>img</code> to be <a href="#dfn-perceivable" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-perceivable-4">perceivable</a>, authors <em class="rfc2119">MUST</em> provide the element with an <a class="informative" data-link-type="dfn" href="https://www.w3.org/TR/accname-1.2/#dfn-accessible-name">accessible name</a>. This can be done using the <a href="https://w3c.github.io/aria/#aria-label" class="property-reference"><code>aria-label</code></a> or
               <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference"><code>aria-labelledby</code></a> attribute.
             </p>
             <div class="note" role="note" id="role-image-note-image"><div class="note-title marker" id="h-note-20"><span>Note</span></div><div class="">
@@ -7375,8 +7375,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               <li>A layout table and/or any of its associated rows, cells, etc.</li>
             </ul>
             <p>
-              For any element with a role of <a href="https://w3c.github.io/aria/#none" class="role-reference"><code>none</code></a>/<a href="https://w3c.github.io/aria/#presentation" class="role-reference"><code>presentation</code></a> and which is not <a href="#dfn-focusable" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-focusable-10">focusable</a>, the user agent <em class="rfc2119">MUST NOT</em> expose the implicit native semantics of the element
-              (the role and its states and properties) to accessibility <abbr title="Application Programming Interfaces">APIs</abbr>. However, the user agent <em class="rfc2119">MUST</em> expose content and descendant
+              For any element with a role of <a href="https://w3c.github.io/aria/#none" class="role-reference"><code>none</code></a>/<a href="https://w3c.github.io/aria/#presentation" class="role-reference"><code>presentation</code></a> and which is not <a href="#dfn-focusable" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-focusable-10">focusable</a>, the user agent <em class="rfc2119">MUST NOT</em> <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-11">expose</a> the implicit native semantics of the
+              element (the role and its states and properties) to accessibility <abbr title="Application Programming Interfaces">APIs</abbr>. However, the user agent <em class="rfc2119">MUST</em> expose content and descendant
               elements that do not have an explicit or inherited role of <a href="https://w3c.github.io/aria/#none" class="role-reference"><code>none</code></a>/<a href="https://w3c.github.io/aria/#presentation" class="role-reference"><code>presentation</code></a>. Thus, the <a href="https://w3c.github.io/aria/#none" class="role-reference"><code>none</code></a>/<a href="https://w3c.github.io/aria/#presentation" class="role-reference"><code>presentation</code></a> role causes a given element
               to be treated as having no role or to be removed from the <a href="#dfn-accessibility-tree" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessibility-tree-3">accessibility tree</a>, but does not cause the content contained within the element to be removed from the accessibility
               tree.
@@ -8505,7 +8505,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               While the row role can be used in a <a href="https://w3c.github.io/aria/#table" class="role-reference"><code>table</code></a>, <a href="https://w3c.github.io/aria/#grid" class="role-reference"><code>grid</code></a>, or <a href="https://w3c.github.io/aria/#treegrid" class="role-reference"><code>treegrid</code></a>, the semantics of <a href="https://w3c.github.io/aria/#aria-expanded" class="state-reference"><code>aria-expanded</code></a>, <a href="https://w3c.github.io/aria/#aria-posinset" class="property-reference"><code>aria-posinset</code></a>,
               <a href="https://w3c.github.io/aria/#aria-setsize" class="property-reference"><code>aria-setsize</code></a>, and <a href="https://w3c.github.io/aria/#aria-level" class="property-reference"><code>aria-level</code></a> are only applicable to the hierarchical structure of an interactive tree grid. Therefore, authors <em class="rfc2119">MUST NOT</em> apply
               <a href="https://w3c.github.io/aria/#aria-expanded" class="state-reference"><code>aria-expanded</code></a>, <a href="https://w3c.github.io/aria/#aria-posinset" class="property-reference"><code>aria-posinset</code></a>, <a href="https://w3c.github.io/aria/#aria-setsize" class="property-reference"><code>aria-setsize</code></a>, and <a href="https://w3c.github.io/aria/#aria-level" class="property-reference"><code>aria-level</code></a> to a <a href="https://w3c.github.io/aria/#row" class="role-reference"><code>row</code></a> that descends from a <a href="https://w3c.github.io/aria/#table" class="role-reference"><code>table</code></a> or
-              <a href="https://w3c.github.io/aria/#grid" class="role-reference"><code>grid</code></a>, and user agents <em class="rfc2119">SHOULD NOT</em> expose any of these four properties to assistive technologies unless the <a href="https://w3c.github.io/aria/#row" class="role-reference"><code>row</code></a> descends from a <a href="https://w3c.github.io/aria/#treegrid" class="role-reference"><code>treegrid</code></a>.
+              <a href="https://w3c.github.io/aria/#grid" class="role-reference"><code>grid</code></a>, and user agents <em class="rfc2119">SHOULD NOT</em> <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-12">expose</a> any of these four properties to assistive technologies unless the <a href="https://w3c.github.io/aria/#row" class="role-reference"><code>row</code></a> descends from a <a href="https://w3c.github.io/aria/#treegrid" class="role-reference"><code>treegrid</code></a>.
             </p>
             <p>
               Authors <em class="rfc2119">MUST</em> ensure <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-element">elements</a> with <a href="#dfn-role" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-role-68">role</a> <code>row</code> are <a href="#dfn-accessibility-child" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessibility-child-34">accessibility children</a> of an element with the role <a href="https://w3c.github.io/aria/#table" class="role-reference"><code>table</code></a>, <a href="https://w3c.github.io/aria/#grid" class="role-reference"><code>grid</code></a>,
@@ -8744,8 +8744,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <p>
               While the <code>rowheader</code> role can be used in both interactive grids and non-interactive tables, the use of <a href="https://w3c.github.io/aria/#aria-expanded" class="state-reference"><code>aria-expanded</code></a>, <a href="https://w3c.github.io/aria/#aria-readonly" class="property-reference"><code>aria-readonly</code></a>, and
               <a href="https://w3c.github.io/aria/#aria-required" class="property-reference"><code>aria-required</code></a> is only applicable to interactive elements. Therefore, authors <em class="rfc2119">SHOULD NOT</em> use <a href="https://w3c.github.io/aria/#aria-expanded" class="state-reference"><code>aria-expanded</code></a>, <a href="https://w3c.github.io/aria/#aria-readonly" class="property-reference"><code>aria-readonly</code></a>, or
-              <a href="https://w3c.github.io/aria/#aria-required" class="property-reference"><code>aria-required</code></a> in a <code>rowheader</code> that descends from a <a href="https://w3c.github.io/aria/#table" class="role-reference"><code>table</code></a>, and user agents <em class="rfc2119">SHOULD NOT</em> expose these properties to <a href="#assistive-technology" class="internalDFN" data-link-type="dfn" id="ref-for-assistive-technology-42">assistive technologies</a> unless
-              the <code>rowheader</code> descends from a <a href="https://w3c.github.io/aria/#grid" class="role-reference"><code>grid</code></a> or <a href="https://w3c.github.io/aria/#treegrid" class="role-reference"><code>treegrid</code></a>.
+              <a href="https://w3c.github.io/aria/#aria-required" class="property-reference"><code>aria-required</code></a> in a <code>rowheader</code> that descends from a <a href="https://w3c.github.io/aria/#table" class="role-reference"><code>table</code></a>, and user agents <em class="rfc2119">SHOULD NOT</em> <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-13">expose</a> these properties to
+              <a href="#assistive-technology" class="internalDFN" data-link-type="dfn" id="ref-for-assistive-technology-42">assistive technologies</a> unless the <code>rowheader</code> descends from a <a href="https://w3c.github.io/aria/#grid" class="role-reference"><code>grid</code></a> or <a href="https://w3c.github.io/aria/#treegrid" class="role-reference"><code>treegrid</code></a>.
             </p>
             <div class="note" role="note" id="issue-container-generatedID-34"><div class="note-title marker" id="h-note-34"><span>Note</span><span class="issue-label">: Usage of aria-disabled</span></div><p class="">
               While <a href="https://w3c.github.io/aria/#aria-disabled" class="state-reference"><code>aria-disabled</code></a> is currently supported on <a href="https://w3c.github.io/aria/#rowheader" class="role-reference"><code>rowheader</code></a>, in a future version the working group plans to prohibit its use on elements with role
@@ -11108,7 +11108,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               field.
             </p>
             <p>
-              Authors <em class="rfc2119">MUST</em> limit the children of a textbox to non-interactive, entirely presentational elements such as icons used to visually convey information that is already exposed in an
+              Authors <em class="rfc2119">MUST</em> limit the children of a textbox to non-interactive, entirely presentational elements such as icons used to visually convey information that is already <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-14">exposed</a> in an
               accessible manner. Examples include:
             </p>
             <ul>
@@ -11669,8 +11669,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             
             <p>
               If <a href="https://w3c.github.io/aria/#aria-readonly" class="property-reference"><code>aria-readonly</code></a> is set on an <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-element">element</a> with <a href="#dfn-role" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-role-78">role</a> <code>treegrid</code>, <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agents</a> <em class="rfc2119">MUST</em> propagate the value to all <a href="https://w3c.github.io/aria/#gridcell" class="role-reference"><code>gridcell</code></a> elements that are
-              <a href="#dfn-accessibility-descendant" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessibility-descendant-13">accessibility descendants</a> of the <code>treegrid</code> and expose the value in the accessibility <abbr title="Application Programming Interface">API</abbr>. An author <em class="rfc2119">MAY</em> override the propagated value of <a href="https://w3c.github.io/aria/#aria-readonly" class="property-reference"><code>aria-readonly</code></a> for
-              an individual <a href="https://w3c.github.io/aria/#gridcell" class="role-reference"><code>gridcell</code></a> element.
+              <a href="#dfn-accessibility-descendant" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessibility-descendant-13">accessibility descendants</a> of the <code>treegrid</code> and <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-15">expose</a> the value in the accessibility <abbr title="Application Programming Interface">API</abbr>. An author <em class="rfc2119">MAY</em> override the propagated value of
+              <a href="https://w3c.github.io/aria/#aria-readonly" class="property-reference"><code>aria-readonly</code></a> for an individual <a href="https://w3c.github.io/aria/#gridcell" class="role-reference"><code>gridcell</code></a> element.
             </p>
             <p>
               When the <a href="https://w3c.github.io/aria/#aria-readonly" class="property-reference"><code>aria-readonly</code></a> attribute is applied to a <a href="#dfn-focusable" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-focusable-12">focusable</a> <a href="https://w3c.github.io/aria/#gridcell" class="role-reference"><code>gridcell</code></a>, it indicates whether the content contained in the <a href="https://w3c.github.io/aria/#gridcell" class="role-reference"><code>gridcell</code></a> is editable.
@@ -12182,8 +12182,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <section id="os-aapi-attribute-mapping"><div class="header-wrapper"><h4 id="x6-3-3-operating-system-accessibility-api-mapping-of-multi-value-aria-attributes"><bdi class="secno">6.3.3 </bdi>Operating System Accessibility <abbr title="Application Programming Interface">API</abbr> mapping of multi-value <abbr title="Accessible Rich Internet Applications">ARIA</abbr> attributes</h4><a class="self-link" href="#os-aapi-attribute-mapping" aria-label="Permalink for Section 6.3.3"></a></div>
           
           <p>
-            Unlike IDL reflection, operating system accessibility <abbr title="Application Programming Interface">API</abbr> mappings of <abbr title="Accessible Rich Internet Applications">ARIA</abbr> attributes can have defaults. Any default values from the <abbr title="Accessible Rich Internet Applications">ARIA</abbr> values tables are exposed to the operating system
-            accessibility <abbr title="Application Programming Interface">API</abbr> as described in <a href="#supportedState" data-matched-text="[[[#supportedState]]]" class="sec-ref"><bdi class="secno">5.2.3 </bdi>Supported States and Properties</a>, and in <cite><a data-matched-text="[[[CORE-AAM]]]" href="https://www.w3.org/TR/core-aam-1.1/">Core Accessibility API Mappings 1.1</a></cite>.
+            Unlike IDL reflection, operating system accessibility <abbr title="Application Programming Interface">API</abbr> mappings of <abbr title="Accessible Rich Internet Applications">ARIA</abbr> attributes can have defaults. Any default values from the <abbr title="Accessible Rich Internet Applications">ARIA</abbr> values tables are <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-16">exposed</a> to the operating
+            system accessibility <abbr title="Application Programming Interface">API</abbr> as described in <a href="#supportedState" data-matched-text="[[[#supportedState]]]" class="sec-ref"><bdi class="secno">5.2.3 </bdi>Supported States and Properties</a>, and in <cite><a data-matched-text="[[[CORE-AAM]]]" href="https://www.w3.org/TR/core-aam-1.1/">Core Accessibility API Mappings 1.1</a></cite>.
           </p>
         </section>
         <section id="enumerated-attribute-values-html"><div class="header-wrapper"><h4 id="x6-3-4-aria-nullable-domstring-attributes"><bdi class="secno">6.3.4 </bdi><abbr title="Accessible Rich Internet Applications">ARIA</abbr> nullable DOMString Attributes</h4><a class="self-link" href="#enumerated-attribute-values-html" aria-label="Permalink for Section 6.3.4"></a></div>
@@ -12395,7 +12395,7 @@ button.<span class="hljs-property">ariaPressed</span>; <span class="hljs-comment
           <p>
             This section contains <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-attribute">attributes</a> specific to <a href="#dfn-live-region" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-live-region-6">live regions</a> in rich internet applications. These attributes <em class="rfc2119">MAY</em> be applied to any <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-element">element</a>. The purpose of these attributes
             is to indicate that content changes might occur without the element having focus, and to provide <a href="#assistive-technology" class="internalDFN" data-link-type="dfn" id="ref-for-assistive-technology-51">assistive technologies</a> with information on how to process those content updates.
-            Some <a href="#dfn-role" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-role-86">roles</a> specify a default value for the <a href="https://w3c.github.io/aria/#aria-live" class="property-reference"><code>aria-live</code></a> attribute specific to that role. An example of a live region is a chat log that lists incoming chat meessages. User
+            Some <a href="#dfn-role" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-role-86">roles</a> specify a default value for the <a href="https://w3c.github.io/aria/#aria-live" class="property-reference"><code>aria-live</code></a> attribute specific to that role. An example of a live region is a chat log that lists incoming chat messages. User
             agents <em class="rfc2119">MAY</em> ignore changes triggered by direct user action on an <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-element">element</a> inside a live region (e.g., editing the value of a text field).
           </p>
           <ul>
@@ -12912,7 +12912,7 @@ button.<span class="hljs-property">ariaPressed</span>; <span class="hljs-comment
               <a href="#assistive-technology" class="internalDFN" data-link-type="dfn" id="ref-for-assistive-technology-55">Assistive technologies</a> <em class="rfc2119">SHOULD</em> use the value of <code>aria-braillelabel</code> when presenting the accessible name of an element in Braille, but <em class="rfc2119">SHOULD NOT</em> change other
               functionality. For example, an assistive technology that provides aural rendering <em class="rfc2119">SHOULD</em> use the accessible name.
             </p>
-            <p><a href="#assistive-technology" class="internalDFN" data-link-type="dfn" id="ref-for-assistive-technology-56">Assistive technologies</a> <em class="rfc2119">SHOULD</em> expose the <code>aria-braillelabel</code> property as follows:</p>
+            <p><a href="#assistive-technology" class="internalDFN" data-link-type="dfn" id="ref-for-assistive-technology-56">Assistive technologies</a> <em class="rfc2119">SHOULD</em> <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-17">expose</a> the <code>aria-braillelabel</code> property as follows:</p>
             <ol>
               <li>
                 If the value of <code>aria-braillelabel</code> does not contain characters in <a href="#dfn-unicode-braille" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-unicode-braille-3">Unicode Braille Patterns</a>, translate the value according to the user's preferred translation table.
@@ -13002,7 +13002,7 @@ button.<span class="hljs-property">ariaPressed</span>; <span class="hljs-comment
               <a href="#assistive-technology" class="internalDFN" data-link-type="dfn" id="ref-for-assistive-technology-60">Assistive Technologies</a> will pass such content directly to the user without applying user specific braille translations; in general, authors are
               <strong>strongly discouraged</strong> from using Unicode Braille Patterns in <code>aria-brailleroledescription</code>.
             </p></div>
-            <p>User agents <em class="rfc2119">MUST NOT</em> expose the <code>aria-brailleroledescription</code> property if any of the following conditions exist:</p>
+            <p>User agents <em class="rfc2119">MUST NOT</em> <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-18">expose</a> the <code>aria-brailleroledescription</code> property if any of the following conditions exist:</p>
             <ol>
               <li>
                 The value of <code>aria-brailleroledescription</code> is empty or contains only whitespace characters, which includes standard <a data-link-type="dfn" data-lt="ascii whitespace" href="https://infra.spec.whatwg.org/#ascii-whitespace">whitespace</a> and the empty Braille
@@ -13526,7 +13526,7 @@ button.<span class="hljs-property">ariaPressed</span>; <span class="hljs-comment
             <p>
               This <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-attribute">attribute</a> is intended for cells and gridcells which are not contained in a native table. When defining the column span of cells or gridcells in a native table, authors <em class="rfc2119">SHOULD</em>
               use the host language's attribute instead of <a href="https://w3c.github.io/aria/#aria-colspan" class="property-reference"><code>aria-colspan</code></a>. If <a href="https://w3c.github.io/aria/#aria-colspan" class="property-reference"><code>aria-colspan</code></a> is used on an element for which the host language provides an equivalent attribute,
-              <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agents</a> <em class="rfc2119">MUST</em> ignore the value of <a href="https://w3c.github.io/aria/#aria-colspan" class="property-reference"><code>aria-colspan</code></a> and instead expose the value of the host language's attribute to <a href="#assistive-technology" class="internalDFN" data-link-type="dfn" id="ref-for-assistive-technology-63">assistive technologies</a>.
+              <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agents</a> <em class="rfc2119">MUST</em> ignore the value of <a href="https://w3c.github.io/aria/#aria-colspan" class="property-reference"><code>aria-colspan</code></a> and instead <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-19">expose</a> the value of the host language's attribute to <a href="#assistive-technology" class="internalDFN" data-link-type="dfn" id="ref-for-assistive-technology-63">assistive technologies</a>.
             </p>
             <p>
               Authors <em class="rfc2119">MUST</em> set the <span>value</span> of <a href="https://w3c.github.io/aria/#aria-colspan" class="property-reference"><code>aria-colspan</code></a> to an integer greater than or equal to 1 and less than the value which would cause the cell or gridcell to overlap
@@ -13634,7 +13634,7 @@ button.<span class="hljs-property">ariaPressed</span>; <span class="hljs-comment
             <p>
               The <a href="https://w3c.github.io/aria/#aria-current" class="state-reference"><code>aria-current</code></a> <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-attribute">attribute</a> is a token type. Any value not included in the list of allowed values <em class="rfc2119">SHOULD</em> be treated by <a href="#assistive-technology" class="internalDFN" data-link-type="dfn" id="ref-for-assistive-technology-65">assistive technologies</a> as if the value
               <code>true</code> had been provided. If the attribute is not present or its value is the empty string or <code>undefined</code>, the default value of <code>false</code> applies and the
-              <a href="https://w3c.github.io/aria/#aria-current" class="state-reference"><code>aria-current</code></a> <a href="#dfn-state" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-state-26">state</a> <em class="rfc2119">MUST NOT</em> be exposed by user agents or assistive technologies.
+              <a href="https://w3c.github.io/aria/#aria-current" class="state-reference"><code>aria-current</code></a> <a href="#dfn-state" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-state-26">state</a> <em class="rfc2119">MUST NOT</em> be <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-20">exposed</a> by user agents or assistive technologies.
             </p>
             <p>The <a href="https://w3c.github.io/aria/#aria-current" class="state-reference"><code>aria-current</code></a> attribute is used when an element within a set of related elements is visually styled to indicate it is the current item in the set. For example:</p>
             <ul>
@@ -13778,7 +13778,7 @@ button.<span class="hljs-property">ariaPressed</span>; <span class="hljs-comment
             </p>
             <p>
               The purpose of <a href="https://w3c.github.io/aria/#aria-description" class="property-reference"><code>aria-description</code></a> is the same as that of <a href="https://w3c.github.io/aria/#aria-describedby" class="property-reference"><code>aria-describedby</code></a>. It provides the user with additional descriptive text for the object. The most common
-              <a href="#dfn-accessibility-api" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessibility-api-24">accessibility <abbr title="Application Programming Interface">API</abbr></a> mapping for a description is the <a class="informative" data-link-type="dfn" data-cite-href="https://w3c.github.io/aria/accname/#dfn-accessible-description" href="https://w3c.github.io/aria/accname/#dfn-accessible-description">accessible description</a> property. User agents
+              <a href="#dfn-accessibility-api" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessibility-api-24">accessibility <abbr title="Application Programming Interface">API</abbr></a> mapping for a description is the <a class="informative" data-link-type="dfn" href="https://www.w3.org/TR/accname-1.2/#dfn-accessible-description">accessible description</a> property. User agents
               <em class="rfc2119">MUST</em> give precedence to <a href="https://w3c.github.io/aria/#aria-describedby" class="property-reference"><code>aria-describedby</code></a> over <a href="https://w3c.github.io/aria/#aria-description" class="property-reference"><code>aria-description</code></a> when computing the accessible description property.
             </p>
             <p>
@@ -13857,8 +13857,8 @@ button.<span class="hljs-property">ariaPressed</span>; <span class="hljs-comment
             </p>
             <p>
               The <code>aria-details</code> property supports referring to multiple elements. For example, a paragraph in a document editor might reference multiple comments that are not related to
-              each other. If a user agent relies on an accessibility <abbr title="Application Programming Interface">API</abbr> that does not support exposing multiple descriptive relations, the user agent <em class="rfc2119">SHOULD</em> expose the relationship to the first
-              element referenced by <code>aria-details</code>.
+              each other. If a user agent relies on an accessibility <abbr title="Application Programming Interface">API</abbr> that does not support exposing multiple descriptive relations, the user agent <em class="rfc2119">SHOULD</em> <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-21">expose</a> the relationship to the
+              first element referenced by <code>aria-details</code>.
             </p>
             <p>
               It is valid for an element to have both <code>aria-details</code> and a description specified with either <code>aria-describedby</code> or <code>aria-description</code>. If a user agent
@@ -14148,7 +14148,7 @@ button.<span class="hljs-property">ariaPressed</span>; <span class="hljs-comment
               Similarly, when <code>aria-errormessage</code> is not pertinent, authors <em class="rfc2119">MUST</em> either ensure the content is <a data-link-type="dfn|abstract-op" href="#dfn-hide-from-all-users" class="internalDFN" id="ref-for-dfn-hide-from-all-users-9">hidden from all users</a> or remove the
               <code>aria-errormessage</code> attribute or its value.
             </p>
-            <p>User agents <em class="rfc2119">MUST NOT</em> expose <code>aria-errormessage</code> for an object with an <a href="https://w3c.github.io/aria/#aria-invalid" class="state-reference"><code>aria-invalid</code></a> value of <code>false</code>.</p>
+            <p>User agents <em class="rfc2119">MUST NOT</em> <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-22">expose</a> <code>aria-errormessage</code> for an object with an <a href="https://w3c.github.io/aria/#aria-invalid" class="state-reference"><code>aria-invalid</code></a> value of <code>false</code>.</p>
             <p>
               Authors <em class="rfc2119">MAY</em> call attention to a new error message with a live region by modifying inserting the error message into the contents of a existing, rendered element with a
               <a href="#live_region_roles">live region role</a>, such as <a href="https://w3c.github.io/aria/#alert" class="role-reference"><code>alert</code></a>. A live region notification is appropriate when an error message is displayed to users after they have
@@ -14459,7 +14459,7 @@ button.<span class="hljs-property">ariaPressed</span>; <span class="hljs-comment
               the empty string, as if the value <code>false</code> had been provided. To provide backward compatibility with <abbr title="Accessible Rich Internet Applications">ARIA</abbr> 1.0 content, user agents <em class="rfc2119">MUST</em> treat an
               <code>aria-haspopup</code> value of <code>true</code> as equivalent to a value of <code>menu</code>.
             </p>
-            <p><a href="#assistive-technology" class="internalDFN" data-link-type="dfn" id="ref-for-assistive-technology-68">Assistive technologies</a> and user agents <em class="rfc2119">SHOULD NOT</em> expose the <code>aria-haspopup</code> property if it has a value of <code>false</code>.</p>
+            <p><a href="#assistive-technology" class="internalDFN" data-link-type="dfn" id="ref-for-assistive-technology-68">Assistive technologies</a> and user agents <em class="rfc2119">SHOULD NOT</em> <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-23">expose</a> the <code>aria-haspopup</code> property if it has a value of <code>false</code>.</p>
             <div class="note" role="note" id="issue-container-generatedID-53"><div class="note-title marker" id="h-note-53"><span>Note</span></div><p class="">A <a href="https://w3c.github.io/aria/#tooltip" class="role-reference"><code>tooltip</code></a> is not considered to be a popup in this context.</p></div>
             <div class="note" role="note" id="issue-container-generatedID-54"><div class="note-title marker" id="h-note-54"><span>Note</span></div><p class="">
               <code>aria-haspopup</code> is most relevant to use when there is a visual indicator in the element that triggers the popup. For example, many controls styled with a downward pointing
@@ -14575,7 +14575,7 @@ button.<span class="hljs-property">ariaPressed</span>; <span class="hljs-comment
               of the primary document in view. For instance, the <code>html</code> or <code>body</code> elements in an <abbr title="Hypertext Markup Language">HTML</abbr> document. Authors <em class="rfc2119">MAY</em>, with caution, use <code>aria-hidden</code> to hide
               visibly rendered content from assistive technologies <em>only</em> if the act of hiding this content is intended to improve the experience for users of assistive technologies by removing
               redundant or extraneous content. Authors using <code>aria-hidden</code> to hide visible content from screen readers <em class="rfc2119">MUST</em> ensure that identical or equivalent meaning and functionality is
-              exposed to assistive technologies.
+              <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-24">exposed</a> to assistive technologies.
             </p>
             <div class="note" role="note" id="issue-container-generatedID-56"><div class="note-title marker" id="h-note-56"><span>Note</span></div><p class="">
               Authors are advised to use extreme caution and consider a wide range of disabilities when hiding visibly rendered content from assistive technologies. For example, a sighted,
@@ -14803,7 +14803,7 @@ button.<span class="hljs-property">ariaPressed</span>; <span class="hljs-comment
               users.
             </p>
             <p>
-              Authors <em class="rfc2119">SHOULD</em> provide a way to expose keyboard shortcuts so that all users can discover them, such as through the use of a tooltip. Authors <em class="rfc2119">MUST</em> ensure that
+              Authors <em class="rfc2119">SHOULD</em> provide a way to <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-25">expose</a> keyboard shortcuts so that all users can discover them, such as through the use of a tooltip. Authors <em class="rfc2119">MUST</em> ensure that
               <code>aria-keyshortcuts</code> applied to disabled elements are unavailable.
             </p>
             <p>
@@ -14849,7 +14849,7 @@ button.<span class="hljs-property">ariaPressed</span>; <span class="hljs-comment
             <p><a href="#dfn-defines" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-defines-11">Defines</a> a string value that labels the current element. See related <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference"><code>aria-labelledby</code></a>.</p>
             <p>
               The purpose of <a href="https://w3c.github.io/aria/#aria-label" class="property-reference"><code>aria-label</code></a> is the same as that of <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference"><code>aria-labelledby</code></a>. It provides the user with a recognizable name of the object. The most common
-              <a href="#dfn-accessibility-api" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessibility-api-26">accessibility <abbr title="Application Programming Interface">API</abbr></a> mapping for a label is the <a class="informative" data-link-type="dfn" data-cite-href="https://w3c.github.io/aria/accname/#dfn-accessible-name" href="https://w3c.github.io/aria/accname/#dfn-accessible-name">accessible name</a> property.
+              <a href="#dfn-accessibility-api" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessibility-api-26">accessibility <abbr title="Application Programming Interface">API</abbr></a> mapping for a label is the <a class="informative" data-link-type="dfn" href="https://www.w3.org/TR/accname-1.2/#dfn-accessible-name">accessible name</a> property.
             </p>
             <p>
               Most host languages provide an attribute that could be used to name the element (e.g., the <code><code><a data-link-type="element-attr" href="https://html.spec.whatwg.org/multipage/dom.html#attr-title">title</a></code></code> attribute in <abbr title="Hypertext Markup Language">HTML</abbr>), yet this could present a browser
@@ -14892,7 +14892,7 @@ button.<span class="hljs-property">ariaPressed</span>; <span class="hljs-comment
             <p><a href="#dfn-identifies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-identifies-9">Identifies</a> the <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-element">element</a> (or elements) that labels the current element. See related <a href="https://w3c.github.io/aria/#aria-label" class="property-reference"><code>aria-label</code></a> and <a href="https://w3c.github.io/aria/#aria-describedby" class="property-reference"><code>aria-describedby</code></a>.</p>
             <p>
               The purpose of <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference"><code>aria-labelledby</code></a> is the same as that of <a href="https://w3c.github.io/aria/#aria-label" class="property-reference"><code>aria-label</code></a>. It provides the user with a recognizable name of the object. The most common
-              <a href="#dfn-accessibility-api" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessibility-api-27">accessibility <abbr title="Application Programming Interface">API</abbr></a> mapping for a label is the <a class="informative" data-link-type="dfn" data-cite-href="https://w3c.github.io/aria/accname/#dfn-accessible-name" href="https://w3c.github.io/aria/accname/#dfn-accessible-name">accessible name</a> property.
+              <a href="#dfn-accessibility-api" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessibility-api-27">accessibility <abbr title="Application Programming Interface">API</abbr></a> mapping for a label is the <a class="informative" data-link-type="dfn" href="https://www.w3.org/TR/accname-1.2/#dfn-accessible-name">accessible name</a> property.
             </p>
             <p>
               If the interface is such that it is not possible to have a visible label on the screen, authors <em class="rfc2119">SHOULD</em> use <a href="https://w3c.github.io/aria/#aria-label" class="property-reference"><code>aria-label</code></a> and <em class="rfc2119">SHOULD NOT</em> use <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference"><code>aria-labelledby</code></a>.
@@ -15391,7 +15391,7 @@ button.<span class="hljs-property">ariaPressed</span>; <span class="hljs-comment
             </p>
             <p>
               The value of the <a href="https://w3c.github.io/aria/#aria-owns" class="property-reference"><code>aria-owns</code></a> <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-attribute">attribute</a> is a space-separated ID reference list that references one or more elements in the document by ID. The reason for adding
-              <a href="https://w3c.github.io/aria/#aria-owns" class="property-reference"><code>aria-owns</code></a> is to expose a parent/child contextual relationship to <a href="#assistive-technology" class="internalDFN" data-link-type="dfn" id="ref-for-assistive-technology-71">assistive technologies</a> that is otherwise impossible to infer from the
+              <a href="https://w3c.github.io/aria/#aria-owns" class="property-reference"><code>aria-owns</code></a> is to <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-26">expose</a> a parent/child contextual relationship to <a href="#assistive-technology" class="internalDFN" data-link-type="dfn" id="ref-for-assistive-technology-71">assistive technologies</a> that is otherwise impossible to infer from the
               <abbr title="Document Object Model">DOM</abbr>.
             </p>
             <p>
@@ -15991,7 +15991,7 @@ button.<span class="hljs-property">ariaPressed</span>; <span class="hljs-comment
               Additionally, authors <em class="rfc2119">MUST NOT</em> specify <code>aria-roledescription</code> on an element which has an explicit or implicit <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role where <code>aria-roledescription</code> is
               <a href="#prohibitedattributes">prohibited</a>.
             </p>
-            <p>User agents <em class="rfc2119">MUST NOT</em> expose the <code>aria-roledescription</code> property if any of the following conditions exist:</p>
+            <p>User agents <em class="rfc2119">MUST NOT</em> <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-27">expose</a> the <code>aria-roledescription</code> property if any of the following conditions exist:</p>
             <ol>
               <li>
                 The element to which <code>aria-roledescription</code> is applied has an explicit or implicit <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role where <code>aria-roledescription</code> is
@@ -16315,7 +16315,7 @@ button.<span class="hljs-property">ariaPressed</span>; <span class="hljs-comment
             <p>
               This <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-attribute">attribute</a> is intended for cells and gridcells which are not contained in a native table. When defining the row span of cells or gridcells in a native table, authors <em class="rfc2119">SHOULD</em>
               use the host language's attribute instead of <a href="https://w3c.github.io/aria/#aria-rowspan" class="property-reference"><code>aria-rowspan</code></a>. If <a href="https://w3c.github.io/aria/#aria-rowspan" class="property-reference"><code>aria-rowspan</code></a> is used on an element for which the host language provides an equivalent attribute,
-              <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agents</a> <em class="rfc2119">MUST</em> ignore the value of <a href="https://w3c.github.io/aria/#aria-rowspan" class="property-reference"><code>aria-rowspan</code></a> and instead expose the value of the host language's attribute to <a href="#assistive-technology" class="internalDFN" data-link-type="dfn" id="ref-for-assistive-technology-76">assistive technologies</a>.
+              <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agents</a> <em class="rfc2119">MUST</em> ignore the value of <a href="https://w3c.github.io/aria/#aria-rowspan" class="property-reference"><code>aria-rowspan</code></a> and instead <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-28">expose</a> the value of the host language's attribute to <a href="#assistive-technology" class="internalDFN" data-link-type="dfn" id="ref-for-assistive-technology-76">assistive technologies</a>.
             </p>
             <p>
               Authors <em class="rfc2119">MUST</em> set the <span>value</span> of <a href="https://w3c.github.io/aria/#aria-rowspan" class="property-reference"><code>aria-rowspan</code></a> to an integer greater than or equal to 0 and less than the value which would cause the cell or gridcell to overlap
@@ -16826,7 +16826,7 @@ button.<span class="hljs-property">ariaPressed</span>; <span class="hljs-comment
       
       <p>
         The <a class="termref informative internalDFN" href="#dfn-accessibility-tree" data-link-type="dfn" id="ref-for-dfn-accessibility-tree-8">accessibility tree</a> and the <abbr title="Document Object Model">DOM</abbr> tree are parallel structures. The <a class="termref informative internalDFN" href="#dfn-accessibility-tree" data-link-type="dfn" id="ref-for-dfn-accessibility-tree-9">accessibility tree</a> includes the user interface objects of the
-        <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agent</a> and the objects of the document. <a href="#dfn-accessible-object" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessible-object-1">Accessible objects</a> are created in the accessibility tree for every <abbr title="Document Object Model">DOM</abbr> element that should be exposed to an
+        <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agent</a> and the objects of the document. <a href="#dfn-accessible-object" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessible-object-1">Accessible objects</a> are created in the accessibility tree for every <abbr title="Document Object Model">DOM</abbr> element that should be <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-29">exposed</a> to an
         <a href="#assistive-technology" class="internalDFN" data-link-type="dfn" id="ref-for-assistive-technology-79">assistive technology</a>, either because it might fire an accessibility <a href="#dfn-event" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-event-11">event</a> or because it has a <a data-link-type="dfn|abstract-op" href="#dfn-property" class="internalDFN" id="ref-for-dfn-property-29">property</a>, <a href="#dfn-relationship" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relationship-14">relationship</a> or feature which needs to be exposed.
       </p>
       <section id="tree_exclusion"><div class="header-wrapper"><h3 id="x7-1-excluding-elements-from-the-accessibility-tree"><bdi class="secno">7.1 </bdi>Excluding Elements from the Accessibility Tree</h3><a class="self-link" href="#tree_exclusion" aria-label="Permalink for Section 7.1"></a></div>
@@ -16888,7 +16888,7 @@ button.<span class="hljs-property">ariaPressed</span>; <span class="hljs-comment
             Elements that are not <a data-link-type="dfn|abstract-op" href="#dfn-hidden" class="internalDFN" id="ref-for-dfn-hidden-8">hidden</a> and can fire an <a href="#dfn-accessibility-api" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessibility-api-30">accessibility <abbr title="Application Program Interface">API</abbr></a> <a href="#dfn-event" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-event-12">event</a>, including:
             <ul>
               <li>Elements that are currently focused, even if the element or one of its ancestor elements has its <a href="https://w3c.github.io/aria/#aria-hidden" class="state-reference"><code>aria-hidden</code></a> attribute set to <code>true</code>.</li>
-              <li>Elements that are a valid target of an <a href="https://w3c.github.io/aria/#aria-activedescendant" class="property-reference"><code>aria-activedescendant</code></a> attribute.</li>
+              <li>Elements that are a valid <a href="#dfn-target" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-target-2">target</a> of an <a href="https://w3c.github.io/aria/#aria-activedescendant" class="property-reference"><code>aria-activedescendant</code></a> attribute.</li>
             </ul>
           </li>
           <li>
@@ -17127,8 +17127,8 @@ button.<span class="hljs-property">ariaPressed</span>; <span class="hljs-comment
           these semantics are not available, and are generally used on elements that have no native semantics of their own. They can also be used on elements that have similar but non-identical
           semantics (for example, a nested list could be used to represent a tree structure). This method can be part of a fallback strategy for older browsers that have no
           <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> implementation, or because native presentation of the repurposed element reduces the amount of style and/or script needed.
-          Except for the cases outlined below, user agents <em class="rfc2119">MUST</em> always use the <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> semantics to define how it exposes the element to
-          accessibility <abbr title="Application Programming Interfaces">APIs</abbr>, rather than using the host language semantics.
+          Except for the cases outlined below, user agents <em class="rfc2119">MUST</em> always use the <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> semantics to define how it <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-30">exposes</a> the element
+          to accessibility <abbr title="Application Programming Interfaces">APIs</abbr>, rather than using the host language semantics.
         </p>
         <p>
           In addition to these normal situations in which <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> is expected to override native semantics, there are elements that are
@@ -17263,7 +17263,7 @@ button.<span class="hljs-property">ariaPressed</span>; <span class="hljs-comment
         </p>
         <p>
           If the <a href="#attr-role" class="internalDFN" data-link-type="dfn" id="ref-for-attr-role-16"><code>role</code> attribute</a> contains no tokens matching the name of a non-abstract <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role, the user agent <em class="rfc2119">MUST</em>
-          treat the element as if no <a href="#dfn-role" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-role-94">role</a> had been provided. For example, <code>&lt;table&nbsp;role="foo"&gt;</code> should be exposed in the same way as
+          treat the element as if no <a href="#dfn-role" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-role-94">role</a> had been provided. For example, <code>&lt;table&nbsp;role="foo"&gt;</code> should be <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-31">exposed</a> in the same way as
           <code>&lt;table&gt;</code> and <code>&lt;input&nbsp;type="text"&nbsp;role="structure"&gt;</code> in the same way as <code>&lt;input&nbsp;type="text"&gt;</code>.
         </p>
         <p>
@@ -17306,7 +17306,7 @@ button.<span class="hljs-property">ariaPressed</span>; <span class="hljs-comment
           </li>
         </ul>
         <p>
-          If a <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> property contains an unknown or disallowed value, the user agent <em class="rfc2119">SHOULD</em> expose to platform
+          If a <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> property contains an unknown or disallowed value, the user agent <em class="rfc2119">SHOULD</em> <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-32">expose</a> to platform
           <a href="#dfn-accessibility-api" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessibility-api-31">accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a> as follows:
         </p>
         <ul>
@@ -17419,7 +17419,7 @@ button.<span class="hljs-property">ariaPressed</span>; <span class="hljs-comment
       <section id="conflict_resolution_presentation_none"><div class="header-wrapper"><h3 id="x9-3-presentational-roles-conflict-resolution"><bdi class="secno">9.3 </bdi>Presentational Roles Conflict Resolution</h3><a class="self-link" href="#conflict_resolution_presentation_none" aria-label="Permalink for Section 9.3"></a></div>
         
         <p>There are a number of ways presentational role conflicts are resolved.</p>
-        <p>User agents <em class="rfc2119">MUST NOT</em> expose <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-element">elements</a> having explicit or inherited presentational role in the accessibility tree, with these exceptions:</p>
+        <p>User agents <em class="rfc2119">MUST NOT</em> <a href="#dfn-expose" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-expose-33">expose</a> <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-element">elements</a> having explicit or inherited presentational role in the accessibility tree, with these exceptions:</p>
         <ul>
           <li>
             If an element is <a href="#dfn-focusable" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-focusable-19">focusable</a>, user agents <em class="rfc2119">MUST</em> ignore the <a href="https://w3c.github.io/aria/#none" class="role-reference"><code>none</code></a>/<a href="https://w3c.github.io/aria/#presentation" class="role-reference"><code>presentation</code></a> role and expose the element with its implicit role, in order to ensure that the
@@ -18151,7 +18151,7 @@ el.<span class="hljs-title function_">getAttribute</span>(<span class="hljs-stri
         
         <ul>
           
-        <li>Rahim Abdi (Apple Inc.)</li><li>NAVYA AGARWAL (Adobe)</li><li>Joey Arhar (Google LLC)</li><li>Bernardo Barlach (Google LLC)</li><li>Benjamin Beaudry (Microsoft Corporation)</li><li>Curt Bellew (Oracle Corporation)</li><li>Zoë Bijl (<abbr title="World Wide Web Consortium">W3C</abbr> Invited Experts)</li><li>Gautier Chomel (EDRLab)</li><li>Aleksandar Cindrikj (Netcetera)</li><li>Keith Cirkel (Mozilla Foundation)</li><li>Daniel Clark (Microsoft Corporation)</li><li>James Craig (Apple Inc.)</li><li>Chris Cuellar (Bocoup)</li><li>Diego Della Rossa (UsableNet)</li><li>Joanmarie Diggs (Igalia)</li><li>Tamsin Ewing (<abbr title="World Wide Web Consortium">W3C</abbr>)</li><li>Mayuri Faldu (Navy Federal Credit Union)</li><li>Betsy Fanning (PDF Association)</li><li>Steve Faulkner (TetraLogical Services Ltd)</li><li>Patrick Foster (axes4 GmbH)</li><li>Jane Fulton (Cisco)</li><li>Bryan Garaventa (<abbr title="World Wide Web Consortium">W3C</abbr> Invited Experts)</li><li>Matt Garrish (DAISY Consortium)</li><li>Doug Geoffray (Microsoft Corporation)</li><li>Ariella Gilmore (IBM Corporation)</li><li>Taylore Givens (Microsoft Corporation)</li><li>David Grogan (Google LLC)</li><li>Shirisha Gubba (<abbr title="World Wide Web Consortium">W3C</abbr> Invited Experts)</li><li>Jon Gunderson (University of Illinois)</li><li>Oliver Habersetzer (SAP SE)</li><li>Theo Hale (<abbr title="World Wide Web Consortium">W3C</abbr> Invited Experts)</li><li>Sunny Hardasani (Adobe)</li><li>Matthew Hardy (Adobe)</li><li>Chris Harrelson (Google LLC)</li><li>Sarah Higley (Microsoft Corporation)</li><li>Hans Hillen (TPGi)</li><li>takumi hiramatsu (Cybozu)</li><li>Stanley Hon (Microsoft Corporation)</li><li>Michael Jackson (Microsoft Corporation)</li><li>John Jansen (Microsoft Corporation)</li><li>Jilin Jiang (Ant Group Co., Ltd.)</li><li>Duff Johnson (PDF Association)</li><li>Summer Jones (Thomson Reuters Corp.)</li><li>Yuki Kamahori (Cybozu)</li><li>William Kilian (Kilian Codes LLC)</li><li>Matthew King (<abbr title="World Wide Web Consortium">W3C</abbr> Invited Experts)</li><li>Zachary Kinsey (TargetStream Technologies)</li><li>Daisuke Kobayashi (Cybozu)</li><li>Peter Krautzberger (krautzource UG)</li><li>Nina Krauß (SAP SE)</li><li>JaEun Jemma Ku (University of Illinois)</li><li>Steven Lambert (Deque Systems, Inc.)</li><li>Joe Lamyman (TetraLogical Services Ltd)</li><li>Christopher Land (Oracle Corporation)</li><li>Charles LaPierre (Benetech)</li><li>Patrick Lauke (TetraLogical Services Ltd)</li><li>Philip Lazarevic (Level Access)</li><li>Leo Lee (Microsoft Corporation)</li><li>Brett Lewis (TPGi)</li><li>Alison Maher (Microsoft Corporation)</li><li>Gurpreet Kaur Mangera (Rakuten Group, Inc.)</li><li>Mark McCarthy (University of Illinois)</li><li>Katie McDermott (See Me Please)</li><li>Eduardo Meza Etienne (Navy Federal Credit Union)</li><li>Clay Miller (Microsoft Corporation)</li><li>Hirotaka Minamida (Cybozu)</li><li>Daniel Montalvo (<abbr title="World Wide Web Consortium">W3C</abbr>)</li><li>Baldino Morelli (UsableNet)</li><li>Jacques Newman (Microsoft Corporation)</li><li>James Nurthen (Evinced Inc.)</li><li>Scott O'Hara (Microsoft Corporation)</li><li>Lola Odelola (<abbr title="World Wide Web Consortium">W3C</abbr> Invited Experts)</li><li>Neil Osman (Evinced Inc.)</li><li>Yusuke Oyama (Cybozu)</li><li>Adam Page (Hilton)</li><li>Michael Pennisi (Bocoup)</li><li>Giacomo Petri (UsableNet)</li><li>Noah Praskins (TPGi)</li><li>Lucas Radaelli (Google LLC)</li><li>Paul Rayius (PDFix-US)</li><li>Mark Rogers (Powermapper Software)</li><li>Adrian Roselli (<abbr title="World Wide Web Consortium">W3C</abbr> Invited Experts)</li><li>Marco Sabidussi (UsableNet)</li><li>Trisha Salas (Level Access)</li><li>Stefan Schnabel (SAP SE)</li><li>Harris Schneiderman (Deque Systems, Inc.)</li><li>Raymond Schwartz (Navy Federal Credit Union)</li><li>Kyra Seevers (Google LLC)</li><li>Davis Shaver (The Washington Post)</li><li>Cynthia Shelly (<abbr title="World Wide Web Consortium">W3C</abbr> Invited Experts)</li><li>Tzviya Siegman (<abbr title="World Wide Web Consortium">W3C</abbr>)</li><li>Avneesh Singh (DAISY Consortium)</li><li>Michael[tm] Smith (sideshowbarker) (<abbr title="World Wide Web Consortium">W3C</abbr>)</li><li>Francis Storr (Intel Corporation)</li><li>Nobukiyo Sugisaki (Cybozu)</li><li>Melanie Sumner (IBM Corporation)</li><li>Alexander Surkov (Igalia)</li><li>James Teh (Mozilla Foundation)</li><li>Roman Toda (Foxit software)</li><li>David Tseng (Google LLC)</li></ul>
+        <li>Rahim Abdi (Apple Inc.)</li><li>NAVYA AGARWAL (Adobe)</li><li>Joey Arhar (Google LLC)</li><li>Bernardo Barlach (Google LLC)</li><li>Benjamin Beaudry (Microsoft Corporation)</li><li>Zoë Bijl (<abbr title="World Wide Web Consortium">W3C</abbr> Invited Experts)</li><li>Gautier Chomel (EDRLab)</li><li>Aleksandar Cindrikj (Netcetera)</li><li>Keith Cirkel (Mozilla Foundation)</li><li>Daniel Clark (Microsoft Corporation)</li><li>James Craig (Apple Inc.)</li><li>Chris Cuellar (Bocoup)</li><li>Diego Della Rossa (UsableNet)</li><li>Joanmarie Diggs (Igalia)</li><li>Tamsin Ewing (<abbr title="World Wide Web Consortium">W3C</abbr>)</li><li>Mayuri Faldu (Navy Federal Credit Union)</li><li>Betsy Fanning (PDF Association)</li><li>Steve Faulkner (TetraLogical Services Ltd)</li><li>Patrick Foster (axes4 GmbH)</li><li>Jane Fulton (Cisco)</li><li>Bryan Garaventa (<abbr title="World Wide Web Consortium">W3C</abbr> Invited Experts)</li><li>Matt Garrish (DAISY Consortium)</li><li>Doug Geoffray (Microsoft Corporation)</li><li>Ariella Gilmore (IBM Corporation)</li><li>Taylore Givens (Microsoft Corporation)</li><li>David Grogan (Google LLC)</li><li>Shirisha Gubba (<abbr title="World Wide Web Consortium">W3C</abbr> Invited Experts)</li><li>Jon Gunderson (University of Illinois)</li><li>Oliver Habersetzer (SAP SE)</li><li>Theo Hale (<abbr title="World Wide Web Consortium">W3C</abbr> Invited Experts)</li><li>Sunny Hardasani (Adobe)</li><li>Matthew Hardy (Adobe)</li><li>Chris Harrelson (Google LLC)</li><li>Sarah Higley (Microsoft Corporation)</li><li>Hans Hillen (TPGi)</li><li>takumi hiramatsu (Cybozu)</li><li>Stanley Hon (Microsoft Corporation)</li><li>Michael Jackson (Microsoft Corporation)</li><li>John Jansen (Microsoft Corporation)</li><li>Jilin Jiang (Ant Group Co., Ltd.)</li><li>Duff Johnson (PDF Association)</li><li>Summer Jones (Thomson Reuters Corp.)</li><li>Yuki Kamahori (Cybozu)</li><li>William Kilian (Kilian Codes LLC)</li><li>Matthew King (<abbr title="World Wide Web Consortium">W3C</abbr> Invited Experts)</li><li>Zachary Kinsey (TargetStream Technologies)</li><li>Daisuke Kobayashi (Cybozu)</li><li>Peter Krautzberger (krautzource UG)</li><li>Nina Krauß (SAP SE)</li><li>JaEun Jemma Ku (University of Illinois)</li><li>Steven Lambert (Deque Systems, Inc.)</li><li>Joe Lamyman (TetraLogical Services Ltd)</li><li>Charles LaPierre (Benetech)</li><li>Patrick Lauke (TetraLogical Services Ltd)</li><li>Philip Lazarevic (Level Access)</li><li>Leo Lee (Microsoft Corporation)</li><li>Brett Lewis (TPGi)</li><li>Alison Maher (Microsoft Corporation)</li><li>Gurpreet Kaur Mangera (Rakuten Group, Inc.)</li><li>Mark McCarthy (University of Illinois)</li><li>Katie McDermott (See Me Please)</li><li>Eduardo Meza Etienne (Navy Federal Credit Union)</li><li>Clay Miller (Microsoft Corporation)</li><li>Hirotaka Minamida (Cybozu)</li><li>Daniel Montalvo (<abbr title="World Wide Web Consortium">W3C</abbr>)</li><li>Baldino Morelli (UsableNet)</li><li>Jacques Newman (Microsoft Corporation)</li><li>James Nurthen (Evinced Inc.)</li><li>Scott O'Hara (Microsoft Corporation)</li><li>Lola Odelola (<abbr title="World Wide Web Consortium">W3C</abbr> Invited Experts)</li><li>Neil Osman (Evinced Inc.)</li><li>Yusuke Oyama (Cybozu)</li><li>Adam Page (Hilton)</li><li>Michael Pennisi (Igalia)</li><li>Giacomo Petri (UsableNet)</li><li>Noah Praskins (TPGi)</li><li>Lucas Radaelli (Google LLC)</li><li>Paul Rayius (PDFix-US)</li><li>Mark Rogers (Powermapper Software)</li><li>Adrian Roselli (<abbr title="World Wide Web Consortium">W3C</abbr> Invited Experts)</li><li>Marco Sabidussi (UsableNet)</li><li>Trisha Salas (Level Access)</li><li>Stefan Schnabel (SAP SE)</li><li>Harris Schneiderman (Deque Systems, Inc.)</li><li>Raymond Schwartz (Navy Federal Credit Union)</li><li>Kyra Seevers (Google LLC)</li><li>Davis Shaver (The Washington Post)</li><li>Cynthia Shelly (<abbr title="World Wide Web Consortium">W3C</abbr> Invited Experts)</li><li>Tzviya Siegman (<abbr title="World Wide Web Consortium">W3C</abbr>)</li><li>Avneesh Singh (DAISY Consortium)</li><li>Michael[tm] Smith (sideshowbarker) (<abbr title="World Wide Web Consortium">W3C</abbr>)</li><li>Francis Storr (Intel Corporation)</li><li>Nobukiyo Sugisaki (Cybozu)</li><li>Melanie Sumner (IBM Corporation)</li><li>Alexander Surkov (Igalia)</li><li>James Teh (Mozilla Foundation)</li><li>Roman Toda (Foxit software)</li><li>David Tseng (Google LLC)</li><li>Cybozu <abbr title="World Wide Web Consortium">W3C</abbr> (Cybozu)</li><li>Tyler Wilcock (Apple Inc.)</li></ul>
       </section>
       <section class="section" id="ack_funders"><div class="header-wrapper"><h3 id="c-2-enabling-funders"><bdi class="secno">C.2 </bdi>Enabling funders</h3><a class="self-link" href="#ack_funders" aria-label="Permalink for Appendix C.2"></a></div>
 	
@@ -18485,8 +18485,74 @@ el.<span class="hljs-title function_">getAttribute</span>(<span class="hljs-stri
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
-      <li>Not referenced in this document.</li>
-    </ul>
+    <li>
+      <a href="#ref-for-dfn-expose-1" title="§ 3.2 All WAI-ARIA in DOM">§ 3.2 All WAI-ARIA in DOM</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-2" title="§ 5.2.3 Supported States and Properties">§ 5.2.3 Supported States and Properties</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-3" title="§ 5.2.9 Children Presentational">§ 5.2.9 Children Presentational</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-4" title="§ columnheader">§ columnheader</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-5" title="§ combobox">§ combobox</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-6" title="§ comment">§ comment</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-7" title="§ dialog">§ dialog</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-8" title="§ directory">§ directory</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-9" title="§ generic">§ generic</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-10" title="§ grid">§ grid</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-11" title="§ none">§ none</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-12" title="§ row">§ row</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-13" title="§ rowheader">§ rowheader</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-14" title="§ textbox">§ textbox</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-15" title="§ treegrid">§ treegrid</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-16" title="§ 6.3.3 Operating System Accessibility API mapping of multi-value ARIA attributes">§ 6.3.3 Operating System Accessibility API mapping of multi-value ARIA attributes</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-17" title="§ aria-braillelabel">§ aria-braillelabel</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-18" title="§ aria-brailleroledescription">§ aria-brailleroledescription</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-19" title="§ aria-colspan">§ aria-colspan</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-20" title="§ aria-current">§ aria-current</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-21" title="§ aria-details">§ aria-details</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-22" title="§ aria-errormessage">§ aria-errormessage</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-23" title="§ aria-haspopup">§ aria-haspopup</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-24" title="§ aria-hidden">§ aria-hidden</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-25" title="§ aria-keyshortcuts">§ aria-keyshortcuts</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-26" title="§ aria-owns">§ aria-owns</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-27" title="§ aria-roledescription">§ aria-roledescription</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-28" title="§ aria-rowspan">§ aria-rowspan</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-29" title="§ 7. Accessibility Tree">§ 7. Accessibility Tree</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-30" title="§ 8.5 Conflicts with Host Language Semantics">§ 8.5 Conflicts with Host Language Semantics</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-31" title="§ 9.1 Roles">§ 9.1 Roles</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-32" title="§ 9.2 States and Properties">§ 9.2 States and Properties</a> 
+    </li><li>
+      <a href="#ref-for-dfn-expose-33" title="§ 9.3 Presentational Roles Conflict Resolution">§ 9.3 Presentational Roles Conflict Resolution</a> 
+    </li>
+  </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-focusable" aria-label="Links in this document to definition: Focusable">
       <span class="caret"></span>
       <div>
@@ -19245,17 +19311,21 @@ el.<span class="hljs-title function_">getAttribute</span>(<span class="hljs-stri
       <a href="#ref-for-dfn-state-31" title="§ 8. Implementation in Host Languages">§ 8. Implementation in Host Languages</a> 
     </li>
   </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-target-element" aria-label="Links in this document to definition: Target Element">
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-target" aria-label="Links in this document to definition: Target Element">
       <span class="caret"></span>
       <div>
-        <a class="self-link" href="#dfn-target-element" aria-label="Permalink for definition: Target Element. Activate to close this dialog.">Permalink</a>
+        <a class="self-link" href="#dfn-target" aria-label="Permalink for definition: Target Element. Activate to close this dialog.">Permalink</a>
          
         
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
-      <li>Not referenced in this document.</li>
-    </ul>
+    <li>
+      <a href="#ref-for-dfn-target-1" title="§ 4.3.2 Information for User Agents">§ 4.3.2 Information for User Agents</a> 
+    </li><li>
+      <a href="#ref-for-dfn-target-2" title="§ 7.2 Including Elements in the Accessibility Tree">§ 7.2 Including Elements in the Accessibility Tree</a> 
+    </li>
+  </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-unicode-braille" aria-label="Links in this document to definition: Unicode Braille Patterns">
       <span class="caret"></span>
       <div>
