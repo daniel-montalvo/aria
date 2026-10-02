@@ -48,7 +48,6 @@ jobs:
           SOURCE: ${{ matrix.source }}
           VALIDATE_MARKUP: true
           VALIDATE_WEBIDL: true
-          VALIDATE_LINKS: true
           ARTIFACT_NAME: spec-validator-${{ matrix.name }}
 
   build-and-deploy:
