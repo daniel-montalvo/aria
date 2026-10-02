@@ -12071,6 +12071,25 @@ button.ariaPressed; // null</pre
           <li><pref>aria-rowindextext</pref></li>
           <li><pref>aria-valuetext</pref></li>
         </ul>
+        <p>
+          The <a data-cite="html/dom.html#the-lang-and-xml:lang-attributes">web platform</a> does not provide a mechanism to specify language and directionality for a translatable attribute separate
+          from the language and directionality of its containing element.
+        </p>
+        <p>
+          To avoid creating other accessibility issues, authors are encouraged to ensure that the language and directionality of the value of a translatable attribute matches the language and
+          directionality of its containing element.
+        </p>
+        <p>
+          Where language or direction metadata for the translatable attribute value needs to differ from that of its containing element, authors can use a referencing attribute, such as
+          <code>aria-labelledby</code>, <code>aria-describedby</code>, or <code>aria-details</code>, pointing to an element, on which language and direction attributes can be expressed directly. This
+          allows translation of these values when the user agent is presenting the document in a machine-translated rendering, via a built-in "Translate this page" feature, as well as appropriate
+          rendering when the element's contents are rendered visually.
+        </p>
+        <p>
+          Authors are encouraged to avoid using plain text ARIA attribute values such as <code>&lt;button aria-label=&quot;Hola, hello, salut, こんにちは&quot;&gt;&lt;/button&gt;</code> for text
+          alternatives that contain inline language/direction changes or other text-level markup.
+        </p>
+        <p>For more details, see <a class="informative" href="https://www.w3.org/TR/international-specs#markup_elements_attributes">Internationalization best practices for web developers</a>.</p>
       </section>
       <section id="global_states">
         <h2><dfn>Global</dfn> States and Properties</h2>
@@ -16857,6 +16876,10 @@ button.ariaPressed; // null</pre
       </section>
       <section id="ARIANotifyMixin" class="normative" data-dfn-for="ARIANotifyMixin" data-link-for="ARIANotifyMixin">
         <h2>Interface Mixin <dfn>ARIANotifyMixin</dfn></h2>
+        <p>
+          The ariaNotify API allows authors to provide notifications for accessibility. The <code>ariaNotify</code> method accepts a string as a first parameter and a configuration object as a second
+          (optional) parameter.
+        </p>
         <pre class="idl" data-cite="webidl">
           enum AriaNotifyPriority { "normal", "high" };
 
@@ -16869,7 +16892,17 @@ button.ariaPressed; // null</pre
           Element includes ARIANotifyMixin;
           Document includes ARIANotifyMixin;
         </pre>
-
+        <p>Since ariaNotify does not have a parameter to specify the language and directionality of the notification, the notification inherits those of its source element.</p>
+        <p>For cases where the language of the notification differs from that of its source element, authors can use a separate calling element and add language markup to convey the language.</p>
+        <aside class="example">
+          <p>The original page language is English, but there is a notification in Spanish.</p>
+          <pre class="example highlight javascript">
+            const spanishNotification = document.createElement('div');
+            spanishNotification.setAttribute('lang', 'es');
+            document.body.appendChild(spanishNotification);
+            spanishNotification.ariaNotify('Este texto debería leerse con la voz en español'); 
+          </pre>
+        </aside>
         <p>
           The User Agent processing steps for the
           <code><dfn data-df-type="method" data-dfn-for="ARIANotifyMixin">ariaNotify</dfn>(<var>announcement</var>, <var>options</var>)</code>
