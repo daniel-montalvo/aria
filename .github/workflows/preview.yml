@@ -87,6 +87,7 @@ jobs:
       - name: Update PR comment with preview and diff links
         env:
           SITE_NAME: wai-aria
+          PR_STACK_POSITION: ${{ github.event.pull_request.stack.position || 1 }}
         run: |
           node common/script/prComment.mjs \
             --repo ${{ github.repository }} \

@@ -49,6 +49,7 @@ const args = yargs(hideBin(process.argv))
   .help().argv;
 
 const { repo, pull_request_number, token, update_pr, build_specs, base_ref } = args;
+const stackPosition = Number(process.env.PR_STACK_POSITION || 1);
 
 async function updatePRDescription(markdownContent) {
   if (!update_pr) return;
@@ -100,7 +101,23 @@ const previewBaseURL = `https://${netlifyContext}-${pull_request_number}--${netl
 // Extract repo owner and name from the repo parameter (format: owner/repo)
 const repoOwner = repo.split('/')[0];
 const repoName = repo.split('/')[1];
-const EDBaseURL = `https://${repoOwner}.github.io/${repoName}`;
+
+function getDiffSourceUrl(file, parentPullRequestNumber) {
+  if (parentPullRequestNumber) {
+    return `https://${netlifyContext}-${parentPullRequestNumber}--${netlifySite}.netlify.app/${file}`;
+  }
+
+  if (file === 'index.html') {
+    return `https://${repoOwner}.github.io/${repoName}/`;
+  }
+
+  if (file.endsWith('/index.html')) {
+    const specName = file.split('/').slice(-2, -1)[0];
+    return `https://w3c.github.io/${specName}/`;
+  }
+
+  throw new Error(`Unsupported spec source: ${file}`);
+}
 
 async function getChangedFiles() {
   try {
@@ -112,23 +129,31 @@ async function getChangedFiles() {
       return;
     }
 
+    let parentPullRequest;
+    if (stackPosition > 1) {
+      const pullRequestsResponse = await axios.get(`https://api.github.com/repos/${repo}/pulls`, {
+        params: {
+          state: "open",
+          head: `${repoOwner}:${base_ref}`,
+        },
+        headers: {
+          Authorization: `token ${token}`,
+          Accept: "application/vnd.github.v3+json",
+        },
+      });
+      parentPullRequest = pullRequestsResponse.data.find(pullRequest =>
+        pullRequest.number !== pull_request_number &&
+        pullRequest.state === "open" &&
+        pullRequest.head.ref === base_ref
+      );
+    }
+
     // Build the Markdown list with preview URLs and diff links
     const markdownList = specSources.map((file) => {
       const previewUrl = `${previewBaseURL}/${file}`;
-      
-      // Build ED URL based on file path
-      let EDUrl;
-      if (file === 'index.html') {
-        // Main spec: https://w3c.github.io/aria/
-        EDUrl = `${EDBaseURL}/`;
-      } else if (file.endsWith('/index.html')) {
-        // Child specs: https://w3c.github.io/core-aam/ (not /aria/core-aam/)
-        const dirName = file.split('/').slice(-2, -1)[0];
-        EDUrl = `https://w3c.github.io/${dirName}/`;
-      }
-      
-      const diffUrl = `https://services.w3.org/htmldiff?doc1=${encodeURIComponent(EDUrl)}&doc2=${encodeURIComponent(previewUrl)}`;
-      
+      const sourceUrl = getDiffSourceUrl(file, parentPullRequest?.number);
+      const diffUrl = `https://services.w3.org/htmldiff?doc1=${encodeURIComponent(sourceUrl)}&doc2=${encodeURIComponent(previewUrl)}`;
+
       // Generate spec name based on file path
       let specName;
       if (file === 'index.html') {
